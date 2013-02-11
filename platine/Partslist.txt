@@ -1,0 +1,212 @@
+Partlist
+
+Exported from Lichtsteuerung.sch at 1/8/13 2:37 AM
+
+EAGLE Version 5.12.0 Copyright (c) 1988-2011 CadSoft
+
+Part     Value                Device               Package          Library         Sheet
+
+C1       100n                 C-EUC1206            C1206            resistor        1
+C2       100n                 C-EUC1206            C1206            resistor        1
+C3       100n                 C-EUC1206            C1206            resistor        1
+C4       100n                 C-EUC1206            C1206            resistor        1
+C5       100n                 C-EUC1210            C1210            rcl             1
+C6       100n                 C-EUC1210            C1210            rcl             1
+C7       100n                 C-EUC1210            C1210            rcl             1
+C8       100n                 C-EUC1210            C1210            rcl             1
+C9       330n                 C-EUC1206            C1206            rcl             2
+C10      100n                 C-EUC1206            C1206            rcl             2
+C11      22p                  C-EUC0805            C0805            rcl             2
+C12      22p                  C-EUC0805            C0805            rcl             2
+C13      220µ                 CPOL-EU150CLZ-1010   150CLZ-1010      rcl             2
+C14      100n                 C-EUC1206            C1206            rcl             2
+C15      1µ                   CPOL-EU140CLH-1010   140CLH-1010      rcl             2
+C16      1µ                   CPOL-EU140CLH-1010   140CLH-1010      rcl             2
+C17      1µ                   CPOL-EU140CLH-1010   140CLH-1010      rcl             2
+C18      1µ                   CPOL-EU140CLH-1010   140CLH-1010      rcl             2
+D1       4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D2       4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D3       4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D4       4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D5       4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D6       4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D7       4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D8       4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D9       4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D10      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D11      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D12      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D13      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D14      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D15      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D16      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D17      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D18      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D19      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D20      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D21      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D22      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D23      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D24      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D25      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D26      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D27      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D28      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D29      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D30      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D31      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+D32      4148                 DIODE-MINIMELF       MINIMELF         diode           1
+F1       SMD-MICRO-FUSE-BLOCK SMD-MICRO-FUSE-BLOCK OMNIBLOK         f-lf-omniblok-s 2
+G1       CR2032H              CR2032H              CR2032H          battery         2
+IC1      74HC595D             74HC595D             SO16             74xx-eu         1
+IC2      74HC595D             74HC595D             SO16             74xx-eu         1
+IC3      74HC595D             74HC595D             SO16             74xx-eu         1
+IC4      74HC595D             74HC595D             SO16             74xx-eu         1
+IC5      UDN2981A             UDN2981A             DIL18            uln-udn         1
+IC6      UDN2981A             UDN2981A             DIL18            uln-udn         1
+IC7      UDN2981A             UDN2981A             DIL18            uln-udn         1
+IC8      UDN2981A             UDN2981A             DIL18            uln-udn         1
+IC9      24FC128-I/SN         24AA256SN            SO-08            microchip       2
+IC10     MC78M05ABDT          MC78M05ABDT          DPACK_3          linear          2
+IC11     MEGA64-A             MEGA64-A             TQFP64           avr-7           2
+IC12     75176AD              75176AD              D_R-PDSO-G8      751xx           2
+IC13     DS1307SO8            DS1307SO8            SO08             SparkFun        2
+JP1      M05X2SHD_SMD         M05X2SHD_SMD         2X5-SHROUDED_SMD SparkFun        2
+LED1                          LED5MM               LED5MM           led             3
+LED2                          LED5MM               LED5MM           led             3
+LED3                          LED5MM               LED5MM           led             3
+LED4                          LED5MM               LED5MM           led             3
+LED5                          LED5MM               LED5MM           led             3
+LED6                          LED5MM               LED5MM           led             3
+LED7                          LED5MM               LED5MM           led             3
+LED8                          LED5MM               LED5MM           led             3
+LED9                          LED5MM               LED5MM           led             3
+LED10                         LED5MM               LED5MM           led             3
+LED11                         LED5MM               LED5MM           led             3
+LED12                         LED5MM               LED5MM           led             3
+LED13                         LED5MM               LED5MM           led             3
+LED14                         LED5MM               LED5MM           led             3
+LED15                         LED5MM               LED5MM           led             3
+LED16                         LED5MM               LED5MM           led             3
+LED17                         LED5MM               LED5MM           led             3
+LED18                         LED5MM               LED5MM           led             3
+LED19                         LED5MM               LED5MM           led             3
+LED20                         LED5MM               LED5MM           led             3
+LED21                         LED5MM               LED5MM           led             3
+LED22                         LED5MM               LED5MM           led             3
+LED23                         LED5MM               LED5MM           led             3
+LED24                         LED5MM               LED5MM           led             3
+LED25                         LED5MM               LED5MM           led             3
+LED26                         LED5MM               LED5MM           led             3
+LED27                         LED5MM               LED5MM           led             3
+LED28                         LED5MM               LED5MM           led             3
+LED29                         LED5MM               LED5MM           led             3
+LED30                         LED5MM               LED5MM           led             3
+LED31                         LED5MM               LED5MM           led             3
+LED32                         LED5MM               LED5MM           led             3
+OK1      LTV356T              LTV816S              SMD4             optocoupler     2
+OK2      LTV356T              LTV816S              SMD4             optocoupler     2
+OK3      LTV356T              LTV816S              SMD4             optocoupler     2
+OK4      LTV356T              LTV816S              SMD4             optocoupler     2
+OK5      LTV356T              LTV816S              SMD4             optocoupler     2
+OK6      LTV356T              LTV816S              SMD4             optocoupler     2
+OK7      LTV356T              LTV816S              SMD4             optocoupler     2
+OK8      LTV356T              LTV816S              SMD4             optocoupler     2
+OK9      LTV356T              LTV816S              SMD4             optocoupler     2
+OK10     LTV356T              LTV816S              SMD4             optocoupler     2
+OK11     LTV356T              LTV816S              SMD4             optocoupler     2
+OK12     LTV356T              LTV816S              SMD4             optocoupler     2
+OK13     LTV356T              LTV816S              SMD4             optocoupler     2
+OK14     LTV356T              LTV816S              SMD4             optocoupler     2
+OK15     LTV356T              LTV816S              SMD4             optocoupler     2
+OK16     LTV356T              LTV816S              SMD4             optocoupler     2
+Q1       32.768               MC-406               MC-406           crystal         2
+Q2       16MHz                CRYSTALCTS406        CTS406           crystal         2
+R1       1k                   R-EU_R1206           R1206            resistor        1
+R2       1k                   R-EU_R1206           R1206            resistor        1
+R3       1k                   R-EU_R1206           R1206            resistor        1
+R4       1k                   R-EU_R1206           R1206            resistor        1
+R5                            R-EU_R1206           R1206            rcl             3
+R6                            R-EU_R1206           R1206            rcl             3
+R7                            R-EU_R1206           R1206            rcl             3
+R8                            R-EU_R1206           R1206            rcl             3
+R9                            R-EU_R1206           R1206            rcl             3
+R10                           R-EU_R1206           R1206            rcl             3
+R11                           R-EU_R1206           R1206            rcl             3
+R12                           R-EU_R1206           R1206            rcl             3
+R13                           R-EU_R1206           R1206            rcl             3
+R14                           R-EU_R1206           R1206            rcl             3
+R15                           R-EU_R1206           R1206            rcl             3
+R16                           R-EU_R1206           R1206            rcl             3
+R17                           R-EU_R1206           R1206            rcl             3
+R18                           R-EU_R1206           R1206            rcl             3
+R19                           R-EU_R1206           R1206            rcl             3
+R20                           R-EU_R1206           R1206            rcl             3
+R21                           R-EU_R1206           R1206            rcl             3
+R22                           R-EU_R1206           R1206            rcl             3
+R23                           R-EU_R1206           R1206            rcl             3
+R24                           R-EU_R1206           R1206            rcl             3
+R25                           R-EU_R1206           R1206            rcl             3
+R26                           R-EU_R1206           R1206            rcl             3
+R27                           R-EU_R1206           R1206            rcl             3
+R28                           R-EU_R1206           R1206            rcl             3
+R29                           R-EU_R1206           R1206            rcl             3
+R30                           R-EU_R1206           R1206            rcl             3
+R31                           R-EU_R1206           R1206            rcl             3
+R32                           R-EU_R1206           R1206            rcl             3
+R33                           R-EU_R1206           R1206            rcl             3
+R34                           R-EU_R1206           R1206            rcl             3
+R35                           R-EU_R1206           R1206            rcl             3
+R36                           R-EU_R1206           R1206            rcl             3
+R37      10k                  R-EU_R1206           R1206            rcl             2
+R38      10k                  R-EU_R1206           R1206            rcl             2
+R39      10k                  R-EU_R1206           R1206            rcl             2
+R40      1.2k                 R-EU_R1206           R1206            resistor        2
+R41      1.2k                 R-EU_R1206           R1206            resistor        2
+R42      1.2k                 R-EU_R1206           R1206            resistor        2
+R43      1.2k                 R-EU_R1206           R1206            resistor        2
+R44      1.2k                 R-EU_R1206           R1206            resistor        2
+R45      1.2k                 R-EU_R1206           R1206            resistor        2
+R46      1.2k                 R-EU_R1206           R1206            resistor        2
+R47      1.2k                 R-EU_R1206           R1206            resistor        2
+R48      10k                  R-EU_R1206           R1206            resistor        2
+R49      10k                  R-EU_R1206           R1206            resistor        2
+R50      10k                  R-EU_R1206           R1206            resistor        2
+R51      10k                  R-EU_R1206           R1206            resistor        2
+R52      10k                  R-EU_R1206           R1206            resistor        2
+R53      10k                  R-EU_R1206           R1206            resistor        2
+R54      10k                  R-EU_R1206           R1206            resistor        2
+R55      10k                  R-EU_R1206           R1206            resistor        2
+R56      1.2k                 R-EU_R1206           R1206            resistor        2
+R57      1.2k                 R-EU_R1206           R1206            resistor        2
+R58      1.2k                 R-EU_R1206           R1206            resistor        2
+R59      1.2k                 R-EU_R1206           R1206            resistor        2
+R60      1.2k                 R-EU_R1206           R1206            resistor        2
+R61      1.2k                 R-EU_R1206           R1206            resistor        2
+R62      1.2k                 R-EU_R1206           R1206            resistor        2
+R63      1.2k                 R-EU_R1206           R1206            resistor        2
+R64      10k                  R-EU_R1206           R1206            resistor        2
+R65      10k                  R-EU_R1206           R1206            resistor        2
+R66      10k                  R-EU_R1206           R1206            resistor        2
+R67      10k                  R-EU_R1206           R1206            resistor        2
+R68      10k                  R-EU_R1206           R1206            resistor        2
+R69      10k                  R-EU_R1206           R1206            resistor        2
+R70      10k                  R-EU_R1206           R1206            resistor        2
+R71      10k                  R-EU_R1206           R1206            resistor        2
+R72      10k                  R-EU_R1206           R1206            rcl             2
+S1       SWS010               SWS010               SMS-010          smd-special     2
+SV1                           ML16                 ML16             con-harting-ml  1
+SV2                           ML16                 ML16             con-harting-ml  1
+SV3                           ML16                 ML16             con-harting-ml  3
+SV4                           ML16                 ML16             con-harting-ml  3
+U1       MAX232SOIC16         MAX232SOIC16         SO016            SparkFun        2
+X1       MKKDS04              MKKDS04              MKKDS04          con-phoenix-508 1
+X2       MKKDS04              MKKDS04              MKKDS04          con-phoenix-508 1
+X3       MKKDS04              MKKDS04              MKKDS04          con-phoenix-508 1
+X4       MKKDS04              MKKDS04              MKKDS04          con-phoenix-508 1
+X5       MKKDS04              MKKDS04              MKKDS04          con-phoenix-508 2
+X6       MKKDS04              MKKDS04              MKKDS04          con-phoenix-508 2
+X7       MKKDS04              MKKDS04              MKKDS04          con-phoenix-508 2
+X8       MKKDS04              MKKDS04              MKKDS04          con-phoenix-508 2
+X9       MKKDS04              MKKDS04              MKKDS04          con-phoenix-508 2
+X10      MKKDS04              MKKDS04              MKKDS04          con-phoenix-508 2
