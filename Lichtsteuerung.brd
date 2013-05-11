@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003125" unitdist="mic" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.35" altunitdist="mm" altunit="mm"/>
+<grid distance="39.3700787" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -412,7 +412,7 @@
 <wire x1="50.65" y1="65.9" x2="107.05" y2="65.9" width="0" layer="39"/>
 <text x="129.54" y="84.7725" size="1.016" layer="25" rot="R180">ISP MAIN</text>
 <text x="151.13" y="84.7725" size="1.016" layer="25" rot="R180">ISP DMX OUT</text>
-<text x="154.94" y="19.05" size="1.778" layer="25" rot="R90">RaumZeitLabor Lichtsteuerung Rev. A</text>
+<text x="154.94" y="19.05" size="1.778" layer="25" rot="R90">RaumZeitLabor Lichtsteuerung Rev. B</text>
 <text x="15.875" y="76.2" size="1.016" layer="25" rot="R270">DMX IN A</text>
 <text x="4.445" y="76.2" size="1.016" layer="25" rot="R270">DMX OUT A</text>
 <text x="18.415" y="76.2" size="1.016" layer="25" rot="R270">DMX IN B</text>
@@ -469,7 +469,7 @@
 <text x="81.1725" y="17.145" size="1.016" layer="25">27</text>
 <text x="84.3475" y="17.145" size="1.016" layer="25">29</text>
 <text x="88.1575" y="17.145" size="1.016" layer="25">31</text>
-<text x="145.485" y="17.145" size="1.016" layer="25">GND</text>
+<text x="145.485" y="17.145" size="1.016" layer="25">+24V</text>
 <text x="117.2275" y="17.145" size="1.016" layer="25">1</text>
 <text x="120.72" y="17.145" size="1.016" layer="25">3</text>
 <text x="124.2125" y="17.145" size="1.016" layer="25">5</text>
@@ -3804,6 +3804,39 @@ Low profile connectors, straight&lt;p&gt;
 </package>
 </packages>
 </library>
+<library name="ptc-littlefuse">
+<description>&lt;p&gt;&lt;b&gt;Littelfuse Inc&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href = "http://www.littelfuse.com/"&gt;http://www.littelfuse.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Fuse Type: PTC Resettable&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;3425L series
+&lt;li&gt;1812L series
+&lt;li&gt;1206L series
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;created by Shigeru Kobayashi (mayfair@iamas.ac.jp)&lt;/p&gt;</description>
+<packages>
+<package name="1812L">
+<wire x1="-2.2" y1="1.6" x2="-1.5" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.6" x2="1.5" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.6" x2="2.2" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.2" y1="1.6" x2="2.2" y2="0.4" width="0.127" layer="21"/>
+<wire x1="2.2" y1="-0.4" x2="2.2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.2" y1="-1.6" x2="1.5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.6" x2="-1.5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.6" x2="-2.2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-1.6" x2="-2.2" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="0.4" x2="-2.2" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="0.4" x2="-2.2" y2="-0.4" width="0.127" layer="21" curve="-180"/>
+<wire x1="2.2" y1="-0.4" x2="2.2" y2="0.4" width="0.127" layer="21" curve="-180"/>
+<wire x1="-1.5" y1="1.6" x2="-1.5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.6" x2="1.5" y2="-1.6" width="0.127" layer="21"/>
+<smd name="P$1" x="-2.16" y="0" dx="3.3" dy="2.03" layer="1" rot="R90"/>
+<smd name="P$2" x="2.16" y="0" dx="3.3" dy="2.03" layer="1" rot="R90"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4574,6 +4607,9 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="VALUE" x="47.625" y="44.45" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$1" library="RaumZeitLabor" package="RAUMZEITLABOR_-_LOGO_-_SCHWARZ" value="" x="113.4" y="47.95"/>
+<element name="F3" library="ptc-littlefuse" package="1812L" value="500mA" x="44.5" y="19" rot="MR180"/>
+<element name="F4" library="ptc-littlefuse" package="1812L" value="500mA" x="98" y="18" rot="MR0"/>
+<element name="F5" library="ptc-littlefuse" package="1812L" value="500mA" x="153" y="15" rot="MR270"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -5110,10 +5146,6 @@ Low profile connectors, straight&lt;p&gt;
 <contactref element="C3" pad="1"/>
 <contactref element="ULN4" pad="10"/>
 <contactref element="C4" pad="1"/>
-<contactref element="X1" pad="L19"/>
-<contactref element="X1" pad="L17"/>
-<contactref element="X2" pad="L19"/>
-<contactref element="X2" pad="L17"/>
 <contactref element="F2" pad="P$1"/>
 <wire x1="44.45" y1="68.63" x2="44.13" y2="68.58" width="0.6096" layer="16"/>
 <wire x1="44.31" y1="72.14" x2="44.9" y2="72.73" width="0.6096" layer="16"/>
@@ -5126,11 +5158,6 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="24.765" y1="22.225" x2="36.5125" y2="22.225" width="0.508" layer="16"/>
 <wire x1="36.5125" y1="22.225" x2="37.465" y2="20.6375" width="0.508" layer="16"/>
 <wire x1="37.465" y1="20.6375" x2="37.465" y2="18.9103" width="0.508" layer="16"/>
-<wire x1="37.465" y1="18.9103" x2="37.465" y2="17.78" width="0.508" layer="16"/>
-<wire x1="37.465" y1="17.78" x2="39.0525" y2="16.1925" width="0.508" layer="16"/>
-<wire x1="39.0525" y1="16.1925" x2="39.0525" y2="12.7425" width="0.508" layer="16"/>
-<wire x1="39.0525" y1="12.7425" x2="38.92" y2="12.61" width="0.508" layer="16"/>
-<wire x1="38.92" y1="12.61" x2="42.42" y2="12.61" width="0.508" layer="16"/>
 <wire x1="37.465" y1="20.6375" x2="39.0525" y2="22.225" width="0.508" layer="16"/>
 <wire x1="39.0525" y1="22.225" x2="39.9425" y2="22.5425" width="0.508" layer="16"/>
 <wire x1="39.9425" y1="22.5425" x2="40.3175" y2="22.7325" width="0.508" layer="16"/>
@@ -5144,14 +5171,10 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="90.805" y1="21.59" x2="91.44" y2="22.225" width="0.508" layer="16"/>
 <wire x1="91.44" y1="22.225" x2="93.625" y2="22.225" width="0.508" layer="16"/>
 <wire x1="93.625" y1="22.225" x2="94" y2="23.05" width="0.508" layer="16"/>
-<wire x1="90.805" y1="18.9103" x2="90.805" y2="17.4625" width="0.508" layer="16"/>
-<wire x1="90.805" y1="17.4625" x2="92.075" y2="16.1925" width="0.508" layer="16"/>
-<wire x1="92.075" y1="16.1925" x2="92.075" y2="12.795" width="0.508" layer="16"/>
-<wire x1="92.075" y1="12.795" x2="92.26" y2="12.61" width="0.508" layer="16"/>
-<wire x1="92.26" y1="12.61" x2="95.76" y2="12.61" width="0.508" layer="16"/>
 <wire x1="74.295" y1="18.9103" x2="74.295" y2="21.2725" width="0.508" layer="16"/>
 <wire x1="74.295" y1="21.2725" x2="73.025" y2="22.5425" width="0.508" layer="16"/>
-<wire x1="73.025" y1="22.5425" x2="44.45" y2="22.5425" width="0.508" layer="16"/>
+<wire x1="73.025" y1="22.5425" x2="46" y2="22.5425" width="0.508" layer="16"/>
+<wire x1="46" y1="22.5425" x2="44.45" y2="22.5425" width="0.508" layer="16"/>
 <wire x1="44.45" y1="22.5425" x2="40.64" y2="22.5425" width="0.508" layer="16"/>
 <wire x1="40.64" y1="22.5425" x2="40.3175" y2="22.7325" width="0.508" layer="16"/>
 <wire x1="44.19" y1="22.6" x2="46.99" y2="25.4" width="0.508" layer="16"/>
@@ -5168,6 +5191,25 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="44.45" y1="68.26" x2="44.13" y2="68.58" width="0.6096" layer="16"/>
 <wire x1="44.31" y1="72.14" x2="44.31" y2="68.76" width="0.6096" layer="16"/>
 <wire x1="44.31" y1="68.76" x2="44.13" y2="68.58" width="0.6096" layer="16"/>
+<contactref element="F5" pad="P$1"/>
+<contactref element="F4" pad="P$1"/>
+<contactref element="F3" pad="P$2"/>
+<wire x1="46.66" y1="19" x2="46.66" y2="21.8825" width="0.508" layer="16"/>
+<wire x1="46.66" y1="21.8825" x2="46" y2="22.5425" width="0.508" layer="16"/>
+<wire x1="100.16" y1="18" x2="100.16" y2="20.84" width="0.508" layer="16"/>
+<wire x1="100.16" y1="20.84" x2="99" y2="22" width="0.508" layer="16"/>
+<wire x1="99" y1="22" x2="95.05" y2="22" width="0.508" layer="16"/>
+<wire x1="95.05" y1="22" x2="94" y2="23.05" width="0.508" layer="16"/>
+<wire x1="153" y1="17.16" x2="150.16" y2="17.16" width="0.508" layer="16"/>
+<wire x1="150.16" y1="17.16" x2="150" y2="17" width="0.6096" layer="16"/>
+<wire x1="150" y1="17" x2="149" y2="16" width="0.508" layer="16"/>
+<via x="149" y="16" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="149" y1="16" x2="103" y2="16" width="0.508" layer="1"/>
+<via x="103" y="16" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="103" y1="16" x2="101" y2="16" width="0.508" layer="16"/>
+<wire x1="101" y1="16" x2="100" y2="17" width="0.508" layer="16"/>
+<wire x1="100" y1="17" x2="100" y2="17.84" width="0.6096" layer="16"/>
+<wire x1="100" y1="17.84" x2="100.16" y2="18" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$37">
 <contactref element="IC2" pad="10"/>
@@ -5939,8 +5981,6 @@ Low profile connectors, straight&lt;p&gt;
 <contactref element="OK114" pad="2"/>
 <contactref element="OK115" pad="2"/>
 <contactref element="OK116" pad="2"/>
-<contactref element="X5" pad="L19"/>
-<contactref element="X5" pad="L17"/>
 <contactref element="X5" pad="L20"/>
 <contactref element="X5" pad="L18"/>
 <polygon width="0.3048" layer="16">
@@ -7433,6 +7473,30 @@ Low profile connectors, straight&lt;p&gt;
 </signal>
 <signal name="AUXCON_22">
 <contactref element="IC11" pad="43"/>
+</signal>
+<signal name="+24V_01" class="1">
+<contactref element="X1" pad="L19"/>
+<contactref element="X1" pad="L17"/>
+<contactref element="F3" pad="P$1"/>
+<wire x1="38.92" y1="12.61" x2="42.42" y2="12.61" width="0.508" layer="16"/>
+<wire x1="42.34" y1="19" x2="42.34" y2="12.69" width="0.508" layer="16"/>
+<wire x1="42.34" y1="12.69" x2="42.42" y2="12.61" width="0.508" layer="16"/>
+</signal>
+<signal name="+24V_02" class="1">
+<contactref element="X2" pad="L19"/>
+<contactref element="X2" pad="L17"/>
+<contactref element="F4" pad="P$2"/>
+<wire x1="92.26" y1="12.61" x2="95.76" y2="12.61" width="0.508" layer="16"/>
+<wire x1="95.84" y1="18" x2="95.84" y2="12.69" width="0.508" layer="16"/>
+<wire x1="95.84" y1="12.69" x2="95.76" y2="12.61" width="0.508" layer="16"/>
+</signal>
+<signal name="+24V_03" class="1">
+<contactref element="X5" pad="L19"/>
+<contactref element="X5" pad="L17"/>
+<contactref element="F5" pad="P$2"/>
+<wire x1="145.6" y1="12.61" x2="149.1" y2="12.61" width="0.508" layer="16"/>
+<wire x1="153" y1="12.84" x2="149.33" y2="12.84" width="0.508" layer="16"/>
+<wire x1="149.33" y1="12.84" x2="149.1" y2="12.61" width="0.508" layer="16"/>
 </signal>
 </signals>
 </board>
