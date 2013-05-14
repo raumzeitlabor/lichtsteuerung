@@ -19820,7 +19820,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="R38" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="JP1" library="con-ml" deviceset="ML10" device=""/>
 <part name="R39" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="IC9" library="microchip" deviceset="24*" device="SN" technology="AA256" value="24FC128-I/SN"/>
+<part name="IC9" library="microchip" deviceset="24*" device="SM" technology="AA01" value="24FC128-I/SN"/>
 <part name="IC10" library="_traco_tsr-1" deviceset="TSR_1-*" device="" technology="2450"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="1µ"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
