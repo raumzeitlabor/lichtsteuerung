@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -4595,6 +4595,7 @@ Low profile connectors, straight&lt;p&gt;
 <element name="F3" library="ptc-littlefuse" package="1812L" value="500mA" x="44.5" y="19" rot="MR180"/>
 <element name="F4" library="ptc-littlefuse" package="1812L" value="500mA" x="98" y="18" rot="MR0"/>
 <element name="F5" library="ptc-littlefuse" package="1812L" value="500mA" x="153" y="15" rot="MR270"/>
+<element name="C21" library="resistor" package="C0805" value="100n" x="135.636" y="42.164" rot="R180"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -4721,6 +4722,7 @@ Low profile connectors, straight&lt;p&gt;
 <via x="6.35" y="27.94" extent="1-16" drill="0.6"/>
 <via x="59.055" y="43.18" extent="1-16" drill="0.6"/>
 <via x="67.31" y="41.91" extent="1-16" drill="0.6"/>
+<contactref element="C21" pad="1"/>
 </signal>
 <signal name="N$36">
 <contactref element="IC1" pad="10"/>
@@ -5040,6 +5042,13 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="147.32" y1="82.55" x2="137.16" y2="82.55" width="0.3048" layer="16"/>
 <wire x1="137.16" y1="82.55" x2="135.89" y2="81.28" width="0.3048" layer="16"/>
 <wire x1="135.89" y1="81.28" x2="135.89" y2="80.01" width="0.3048" layer="16"/>
+<contactref element="C21" pad="2"/>
+<wire x1="134.32816875" y1="38.67248125" x2="134.43048125" y2="38.67248125" width="0.3048" layer="1"/>
+<wire x1="134.43048125" y1="38.67248125" x2="135.382" y2="39.624" width="0.3048" layer="1"/>
+<wire x1="135.382" y1="39.624" x2="135.382" y2="40.386" width="0.3048" layer="1"/>
+<wire x1="135.382" y1="40.386" x2="134.874" y2="40.894" width="0.3048" layer="1"/>
+<wire x1="134.874" y1="40.894" x2="134.874" y2="42.076" width="0.3048" layer="1"/>
+<wire x1="134.874" y1="42.076" x2="134.786" y2="42.164" width="0.3048" layer="1"/>
 </signal>
 <signal name="SR_SCK">
 <contactref element="IC1" pad="11"/>

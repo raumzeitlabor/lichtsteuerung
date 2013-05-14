@@ -19929,6 +19929,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="F3" library="ptc-littlefuse" deviceset="1812L" device="" value="500mA"/>
 <part name="F4" library="ptc-littlefuse" deviceset="1812L" device="" value="500mA"/>
 <part name="F5" library="ptc-littlefuse" deviceset="1812L" device="" value="500mA"/>
+<part name="C21" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -22114,8 +22115,8 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="IC6" gate="G$1" x="137.16" y="187.96"/>
 <instance part="R40" gate="G$1" x="111.76" y="220.98" rot="R90"/>
 <instance part="P+18" gate="1" x="111.76" y="231.14"/>
-<instance part="GND30" gate="1" x="106.68" y="182.88" rot="R270"/>
-<instance part="P+20" gate="1" x="106.68" y="175.26" rot="R90"/>
+<instance part="GND30" gate="1" x="99.06" y="182.88" rot="R270"/>
+<instance part="P+20" gate="1" x="101.6" y="175.26" rot="R90"/>
 <instance part="GND31" gate="1" x="109.22" y="208.28" rot="R270"/>
 <instance part="X3" gate="G$1" x="246.38" y="78.74"/>
 <instance part="X6" gate="G$1" x="373.38" y="45.72"/>
@@ -22140,6 +22141,7 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="NAME" x="348.488" y="146.25" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="347.472" y="157.48" size="1.778" layer="96" rot="MR180"/>
 </instance>
+<instance part="C21" gate="G$1" x="106.68" y="180.34"/>
 </instances>
 <busses>
 </busses>
@@ -22327,7 +22329,8 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="R40" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="109.22" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="175.26" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="175.26" x2="114.3" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="177.8" x2="111.76" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="177.8" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
@@ -22335,6 +22338,8 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="P+20" gate="1" pin="+5V"/>
 <pinref part="IC6" gate="G$1" pin="VCC@2"/>
 <pinref part="IC6" gate="G$1" pin="VCC@1"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+<junction x="106.68" y="175.26"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="205.74" x2="111.76" y2="205.74" width="0.1524" layer="91"/>
@@ -22538,11 +22543,14 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="114.3" y1="182.88" x2="111.76" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="180.34" x2="111.76" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="180.34" x2="111.76" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="182.88" x2="109.22" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="182.88" x2="106.68" y2="182.88" width="0.1524" layer="91"/>
 <junction x="111.76" y="182.88"/>
 <pinref part="IC6" gate="G$1" pin="GND@1"/>
 <pinref part="IC6" gate="G$1" pin="GND@2"/>
 <pinref part="GND30" gate="1" pin="GND"/>
+<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="182.88" x2="101.6" y2="182.88" width="0.1524" layer="91"/>
+<junction x="106.68" y="182.88"/>
 </segment>
 <segment>
 <wire x1="111.76" y1="208.28" x2="114.3" y2="208.28" width="0.1524" layer="91"/>
