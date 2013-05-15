@@ -21973,7 +21973,7 @@ Low profile connectors, straight&lt;p&gt;
 <text x="289.56" y="20.32" size="2.54" layer="94" font="vector">Microcontrollers, I²C</text>
 <text x="289.56" y="15.24" size="2.54" layer="94" font="vector">and Serial I/O</text>
 <text x="190.5" y="175.26" size="2.54" layer="94" font="vector">ISP for atmega8</text>
-<text x="124.46" y="241.3" size="2.54" layer="94" font="vector">DMX Continoous Output Driver</text>
+<text x="124.46" y="241.3" size="2.54" layer="94" font="vector">DMX Continuous Output Driver</text>
 <text x="228.6" y="96.52" size="1.778" layer="94" font="vector">DMX Input Connector</text>
 <text x="261.62" y="96.52" size="1.778" layer="94" font="vector">DMX Ouput Connector</text>
 <text x="297.18" y="96.52" size="1.778" layer="94" font="vector">RS232 Connector</text>
