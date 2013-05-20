@@ -5998,17 +5998,18 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </signal>
 <signal name="RS232_RXD">
 <contactref element="U1" pad="13"/>
-<contactref element="X9" pad="2"/>
 <wire x1="59.7475" y1="79.0575" x2="61.2775" y2="79.0575" width="0.3048" layer="1"/>
 <wire x1="61.2775" y1="79.0575" x2="61.9125" y2="78.4225" width="0.3048" layer="1"/>
 <wire x1="61.9125" y1="78.4225" x2="72.7075" y2="78.4225" width="0.3048" layer="1"/>
 <wire x1="72.7075" y1="78.4225" x2="73.66" y2="79.375" width="0.3048" layer="1"/>
-<wire x1="73.66" y1="79.375" x2="88.5825" y2="79.375" width="0.3048" layer="1"/>
-<wire x1="88.5825" y1="79.375" x2="90.3732" y2="77.6224" width="0.3048" layer="1"/>
+<contactref element="X9" pad="3"/>
+<wire x1="87.63" y1="77.6224" x2="87.63" y2="77.7875" width="0.3048" layer="1"/>
+<wire x1="87.63" y1="77.7875" x2="85.725" y2="79.6925" width="0.3048" layer="1"/>
+<wire x1="85.725" y1="79.6925" x2="73.9775" y2="79.6925" width="0.3048" layer="1"/>
+<wire x1="73.9775" y1="79.6925" x2="73.66" y2="79.375" width="0.3048" layer="1"/>
 </signal>
 <signal name="RS232_TXD">
 <contactref element="U1" pad="14"/>
-<contactref element="X9" pad="3"/>
 <wire x1="59.7475" y1="77.7875" x2="63.8175" y2="77.7875" width="0.3048" layer="1"/>
 <wire x1="63.8175" y1="77.7875" x2="64.4525" y2="77.1525" width="0.3048" layer="1"/>
 <wire x1="64.4525" y1="77.1525" x2="66.3575" y2="77.1525" width="0.3048" layer="1"/>
@@ -6018,8 +6019,10 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <wire x1="67.31" y1="74.6125" x2="71.12" y2="74.6125" width="0.3048" layer="1"/>
 <wire x1="71.12" y1="74.6125" x2="73.3425" y2="72.39" width="0.3048" layer="1"/>
 <wire x1="73.3425" y1="72.39" x2="86.36" y2="72.39" width="0.3048" layer="1"/>
-<wire x1="86.36" y1="72.39" x2="87.63" y2="73.66" width="0.3048" layer="1"/>
-<wire x1="87.63" y1="73.66" x2="87.63" y2="77.6224" width="0.3048" layer="1"/>
+<contactref element="X9" pad="2"/>
+<wire x1="90.3732" y1="77.6224" x2="90.3732" y2="72.9107" width="0.3048" layer="1"/>
+<wire x1="90.3732" y1="72.9107" x2="89.8525" y2="72.39" width="0.3048" layer="1"/>
+<wire x1="89.8525" y1="72.39" x2="86.36" y2="72.39" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$156">
 <contactref element="U1" pad="6"/>

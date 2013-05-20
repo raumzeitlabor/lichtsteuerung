@@ -26962,9 +26962,9 @@ Source: www.kingbright.com</description>
 <pinref part="U1" gate="G$1" pin="R1IN"/>
 </segment>
 <segment>
-<wire x1="309.88" y1="81.28" x2="307.34" y2="81.28" width="0.1524" layer="91"/>
-<label x="307.34" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="X9" gate="G$1" pin="2"/>
+<wire x1="309.88" y1="78.74" x2="307.34" y2="78.74" width="0.1524" layer="91"/>
+<label x="307.34" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="X9" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="RS232_TXD" class="0">
@@ -26974,9 +26974,9 @@ Source: www.kingbright.com</description>
 <pinref part="U1" gate="G$1" pin="T1OUT"/>
 </segment>
 <segment>
-<wire x1="309.88" y1="78.74" x2="307.34" y2="78.74" width="0.1524" layer="91"/>
-<label x="307.34" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="X9" gate="G$1" pin="3"/>
+<wire x1="309.88" y1="81.28" x2="307.34" y2="81.28" width="0.1524" layer="91"/>
+<label x="307.34" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="X9" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$156" class="0">
