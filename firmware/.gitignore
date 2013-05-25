@@ -1,0 +1,14 @@
+*.o
+*.hex
+*.out
+*.elf
+*.eep
+*.lst
+*.map
+nbproject/
+*.swp
+*.lss
+*.sym
+.cproject
+.dep/
+.project

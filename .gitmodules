@@ -1,0 +1,3 @@
+[submodule "firmware/bitlash"]
+	path = firmware/bitlash
+	url = git://github.com/billroy/bitlash.git
