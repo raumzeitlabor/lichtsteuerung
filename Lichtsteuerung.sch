@@ -24060,80 +24060,150 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="+24V" device=""/>
 <part name="OK101" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R101" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R201" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R101" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R201" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="P+40" library="supply1" deviceset="+5V" device=""/>
 <part name="GND12" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK102" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R102" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R202" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R102" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R202" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="P+42" library="supply1" deviceset="+5V" device=""/>
 <part name="GND13" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK103" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R103" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R203" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R103" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R203" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="P+43" library="supply1" deviceset="+5V" device=""/>
 <part name="GND14" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK104" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R104" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R204" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R104" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R204" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="P+44" library="supply1" deviceset="+5V" device=""/>
 <part name="GND15" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK105" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R105" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R205" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R105" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R205" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="P+45" library="supply1" deviceset="+5V" device=""/>
 <part name="GND16" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK106" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R106" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R206" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R106" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R206" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="P+46" library="supply1" deviceset="+5V" device=""/>
 <part name="GND28" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK107" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R107" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R207" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R107" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R207" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="P+47" library="supply1" deviceset="+5V" device=""/>
 <part name="GND47" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK108" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R108" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R208" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R108" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R208" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="P+48" library="supply1" deviceset="+5V" device=""/>
 <part name="GND48" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK109" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R109" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R209" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R109" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R209" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="GND49" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK110" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R110" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R210" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R110" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R210" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="GND50" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK111" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R111" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R211" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R111" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R211" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="GND51" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK112" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R112" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R212" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R112" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R212" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="GND52" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK113" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R113" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R213" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R113" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R213" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="GND53" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK114" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R114" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R214" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R114" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R214" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="GND54" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK115" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R115" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R215" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R115" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R215" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="GND55" library="supply1" deviceset="GNDINT" device=""/>
 <part name="OK116" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
-<part name="R116" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k"/>
-<part name="R216" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R116" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
+</part>
+<part name="R216" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="GND56" library="supply1" deviceset="GNDINT" device=""/>
-<part name="X5" library="con-wago_3.5mm" deviceset="713-1410" device=""/>
-<part name="X1" library="con-wago_3.5mm" deviceset="713-1410" device=""/>
-<part name="X2" library="con-wago_3.5mm" deviceset="713-1410" device=""/>
+<part name="X5" library="con-wago_3.5mm" deviceset="713-1410" device="">
+<attribute name="OC_REICHELT" value="WAGO 713-1410"/>
+</part>
+<part name="X1" library="con-wago_3.5mm" deviceset="713-1410" device="">
+<attribute name="OC_REICHELT" value="WAGO 713-1410"/>
+</part>
+<part name="X2" library="con-wago_3.5mm" deviceset="713-1410" device="">
+<attribute name="OC_REICHELT" value="WAGO 713-1410"/>
+</part>
 <part name="P+19" library="supply1" deviceset="+5V" device=""/>
 <part name="P+21" library="supply1" deviceset="+5V" device=""/>
 <part name="P+22" library="supply1" deviceset="+5V" device=""/>
@@ -24143,17 +24213,39 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="P+26" library="supply1" deviceset="+5V" device=""/>
 <part name="P+27" library="supply1" deviceset="+5V" device=""/>
 <part name="FRAME3" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="IC13" library="SparkFun" deviceset="DS1307" device="SO8"/>
-<part name="G1" library="cr2032v2" deviceset="CR2032V" device=""/>
-<part name="Q1" library="crystal" deviceset="MC-306" device="" value="32.768"/>
-<part name="R37" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R38" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="JP1" library="con-ml" deviceset="ML10" device=""/>
-<part name="R39" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="IC9" library="microchip" deviceset="24*" device="SM" technology="AA01" value="24FC128-I/SN"/>
-<part name="IC10" library="_traco_tsr-1" deviceset="TSR_1-*" device="" technology="2450"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="1µ"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="IC13" library="SparkFun" deviceset="DS1307" device="SO8">
+<attribute name="OC_REICHELT" value="DS 1307Z"/>
+</part>
+<part name="G1" library="cr2032v2" deviceset="CR2032V" device="">
+<attribute name="OC_REICHELT" value="KZH 20PCB-V"/>
+</part>
+<part name="Q1" library="crystal" deviceset="MC-306" device="" value="32.768">
+<attribute name="OC_REICHELT" value="0,032768-SMD"/>
+</part>
+<part name="R37" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R38" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="JP1" library="con-ml" deviceset="ML10" device="">
+<attribute name="OC_REICHELT" value="WSL 10G"/>
+</part>
+<part name="R39" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="IC9" library="microchip" deviceset="24*" device="SM" technology="AA01" value="24FC128-I/SN">
+<attribute name="OC_REICHELT" value="24FC128-I/SN"/>
+</part>
+<part name="IC10" library="_traco_tsr-1" deviceset="TSR_1-*" device="" technology="2450">
+<attribute name="OC_REICHELT" value="TSR 1-2450"/>
+</part>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="1µ">
+<attribute name="OC_REICHELT" value="X7R-G0805 1,0/50"/>
+</part>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
@@ -24162,37 +24254,73 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="Q2" library="Crystals-new" deviceset="CRYSTAL" device="MJ" value="16MHz"/>
-<part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="22p"/>
-<part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="22p"/>
+<part name="Q2" library="Crystals-new" deviceset="CRYSTAL" device="MJ" value="16MHz">
+<attribute name="OC_REICHELT" value="16,000000-MJ"/>
+</part>
+<part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="22p">
+<attribute name="OC_REICHELT" value="X7R-G0805 22P"/>
+</part>
+<part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="22p">
+<attribute name="OC_REICHELT" value="X7R-G0805 22P"/>
+</part>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="IC12" library="751xx" deviceset="75176A" device="D"/>
+<part name="IC12" library="751xx" deviceset="75176A" device="D">
+<attribute name="OC_REICHELT" value="SN 75176BD"/>
+</part>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="P+33" library="supply1" deviceset="+5V" device=""/>
-<part name="IC11" library="avr-7" deviceset="MEGA64" device="-A"/>
+<part name="IC11" library="avr-7" deviceset="MEGA64" device="-A">
+<attribute name="OC_REICHELT" value="ATMEGA 64-16 TQ"/>
+</part>
 <part name="P+34" library="supply1" deviceset="+5V" device=""/>
-<part name="R72" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="C13" library="rcl" deviceset="CPOL-EU" device="D" value="220µ"/>
-<part name="C14" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="R72" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="C13" library="rcl" deviceset="CPOL-EU" device="D" value="220µ">
+<attribute name="OC_REICHELT" value="VF 220/6,3 K-D"/>
+</part>
+<part name="C14" library="resistor" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="P+35" library="supply1" deviceset="+5V" device=""/>
-<part name="U1" library="SparkFun" deviceset="MAX232" device="SOIC16"/>
-<part name="C15" library="rcl" deviceset="CPOL-EU" device="153CLV-0405" value="1µ"/>
-<part name="C16" library="rcl" deviceset="CPOL-EU" device="153CLV-0405" value="1µ"/>
-<part name="C17" library="rcl" deviceset="CPOL-EU" device="153CLV-0405" value="1µ"/>
-<part name="C18" library="rcl" deviceset="CPOL-EU" device="153CLV-0405" value="1µ"/>
+<part name="U1" library="SparkFun" deviceset="MAX232" device="SOIC16">
+<attribute name="OC_REICHELT" value="MAX 232 CSE SMD"/>
+</part>
+<part name="C15" library="rcl" deviceset="CPOL-EU" device="153CLV-0405" value="1µ">
+<attribute name="OC_REICHELT" value="VF 1,0/50 C-B"/>
+</part>
+<part name="C16" library="rcl" deviceset="CPOL-EU" device="153CLV-0405" value="1µ">
+<attribute name="OC_REICHELT" value="VF 1,0/50 C-B"/>
+</part>
+<part name="C17" library="rcl" deviceset="CPOL-EU" device="153CLV-0405" value="1µ">
+<attribute name="OC_REICHELT" value="VF 1,0/50 C-B"/>
+</part>
+<part name="C18" library="rcl" deviceset="CPOL-EU" device="153CLV-0405" value="1µ">
+<attribute name="OC_REICHELT" value="VF 1,0/50 C-B"/>
+</part>
 <part name="P+36" library="supply1" deviceset="+5V" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="F1" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK" value="500mA"/>
+<part name="F1" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK" value="500mA">
+<attribute name="OC_REICHELT" value="SMD-HASF 0,5A"/>
+</part>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="P+39" library="supply1" deviceset="+24V" device=""/>
 <part name="VCC1" library="supply2" deviceset="+5V/1" device=""/>
-<part name="DC1" library="dc-dc-converter" deviceset="VA-*?" device="S" technology="0505"/>
-<part name="R73" library="resistor" deviceset="R-EU_" device="R0805" value="220"/>
-<part name="R74" library="resistor" deviceset="R-EU_" device="R0805" value="220"/>
-<part name="R75" library="resistor" deviceset="R-EU_" device="R0805" value="220"/>
+<part name="DC1" library="dc-dc-converter" deviceset="VA-*?" device="S" technology="0505">
+<attribute name="OC_REICHELT" value="SIM1-0505 SIL4"/>
+</part>
+<part name="R73" library="resistor" deviceset="R-EU_" device="R0805" value="220">
+<attribute name="OC_REICHELT" value="SMD-0805 220"/>
+</part>
+<part name="R74" library="resistor" deviceset="R-EU_" device="R0805" value="220">
+<attribute name="OC_REICHELT" value="SMD-0805 220"/>
+</part>
+<part name="R75" library="resistor" deviceset="R-EU_" device="R0805" value="220">
+<attribute name="OC_REICHELT" value="SMD-0805 220"/>
+</part>
 <part name="P+41" library="supply1" deviceset="+5V" device=""/>
 <part name="VCC4" library="supply2" deviceset="+5V/1" device=""/>
 <part name="VCC5" library="supply2" deviceset="+5V/1" device=""/>
@@ -24203,77 +24331,179 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C19" library="rcl" deviceset="CPOL-EU" device="D" value="220µ">
 <attribute name="OC_REICHELT" value="VF 220/6,3 K-D"/>
 </part>
-<part name="C20" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="IC5" library="751xx" deviceset="75176A" device="D"/>
+<part name="C20" library="rcl" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
+<part name="IC5" library="751xx" deviceset="75176A" device="D">
+<attribute name="OC_REICHELT" value="SN 75176BD"/>
+</part>
 <part name="VCC2" library="supply2" deviceset="+5V/2" device=""/>
-<part name="DC2" library="dc-dc-converter" deviceset="VA-*?" device="S" technology="0505"/>
+<part name="DC2" library="dc-dc-converter" deviceset="VA-*?" device="S" technology="0505">
+<attribute name="OC_REICHELT" value="SIM1-0505 SIL4"/>
+</part>
 <part name="VCC8" library="supply2" deviceset="+5V/2" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+38" library="supply1" deviceset="+5V" device=""/>
 <part name="C22" library="rcl" deviceset="CPOL-EU" device="D" value="220µ">
 <attribute name="OC_REICHELT" value="VF 220/6,3 K-D"/>
 </part>
-<part name="C23" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="Q3" library="Crystals-new" deviceset="CRYSTAL" device="MJ" value="16MHz"/>
-<part name="C25" library="rcl" deviceset="C-EU" device="C0805" value="22p"/>
-<part name="C26" library="rcl" deviceset="C-EU" device="C0805" value="22p"/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
+<part name="Q3" library="Crystals-new" deviceset="CRYSTAL" device="MJ" value="16MHz">
+<attribute name="OC_REICHELT" value="16,000000-MJ"/>
+</part>
+<part name="C25" library="rcl" deviceset="C-EU" device="C0805" value="22p">
+<attribute name="OC_REICHELT" value="X7R-G0805 22P"/>
+</part>
+<part name="C26" library="rcl" deviceset="C-EU" device="C0805" value="22p">
+<attribute name="OC_REICHELT" value="X7R-G0805 22P"/>
+</part>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
-<part name="JP2" library="con-ml" deviceset="ML10" device=""/>
+<part name="JP2" library="con-ml" deviceset="ML10" device="">
+<attribute name="OC_REICHELT" value="WSL 10G"/>
+</part>
 <part name="P+17" library="supply1" deviceset="+5V" device=""/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
-<part name="IC6" library="atmel" deviceset="MEGA8" device="-AI"/>
-<part name="R40" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="IC6" library="atmel" deviceset="MEGA8" device="-AI">
+<attribute name="OC_REICHELT" value="ATMEGA 8A-AU"/>
+</part>
+<part name="R40" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="P+18" library="supply1" deviceset="+5V" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="P+20" library="supply1" deviceset="+5V" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
-<part name="X3" library="con-wago_2.5mm" deviceset="733-333" device=""/>
-<part name="X6" library="con-wago_2.5mm" deviceset="733-334" device=""/>
-<part name="X7" library="con-wago_2.5mm" deviceset="733-333" device=""/>
+<part name="X3" library="con-wago_2.5mm" deviceset="733-333" device="">
+<attribute name="OC_REICHELT" value="WAGO 733-333"/>
+</part>
+<part name="X6" library="con-wago_2.5mm" deviceset="733-334" device="">
+<attribute name="OC_REICHELT" value="WAGO 733-334"/>
+</part>
+<part name="X7" library="con-wago_2.5mm" deviceset="733-333" device="">
+<attribute name="OC_REICHELT" value="WAGO 733-333"/>
+</part>
 <part name="SUPPLY1" library="supply2" deviceset="GND1" device=""/>
-<part name="X8" library="con-wago_2.5mm" deviceset="733-333" device=""/>
+<part name="X8" library="con-wago_2.5mm" deviceset="733-333" device="">
+<attribute name="OC_REICHELT" value="WAGO 733-333"/>
+</part>
 <part name="SUPPLY2" library="supply2" deviceset="GND2" device=""/>
-<part name="X9" library="con-subd" deviceset="F09VP" device=""/>
+<part name="X9" library="con-subd" deviceset="F09VP" device="">
+<attribute name="OC_REICHELT" value="D-SUB BU 09P"/>
+</part>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
-<part name="F2" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK" value="125mA"/>
-<part name="L1" library="epcos-b82790c0" deviceset="EPCOS_B82790C0" device="" value="2x51µH"/>
-<part name="L2" library="epcos-b82790c0" deviceset="EPCOS_B82790C0" device="" value="2x51µH"/>
-<part name="JP3" library="pinhead" deviceset="PINHD-2X8" device=""/>
-<part name="F3" library="ptc-littlefuse" deviceset="1812L" device="" value="500mA"/>
-<part name="F4" library="ptc-littlefuse" deviceset="1812L" device="" value="500mA"/>
-<part name="F5" library="ptc-littlefuse" deviceset="1812L" device="" value="500mA"/>
-<part name="C21" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="JP4" library="pinhead" deviceset="PINHD-2X3" device=""/>
-<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="24V"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="5V"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="1,5k"/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="220"/>
+<part name="F2" library="f-lf-omniblok-s" deviceset="SMD-MICRO-FUSE" device="-BLOCK" value="125mA">
+<attribute name="OC_REICHELT" value="SMD-HASF 0,25A"/>
+</part>
+<part name="L1" library="epcos-b82790c0" deviceset="EPCOS_B82790C0" device="" value="2x51µH">
+<attribute name="OC_DIGIKEY" value="495-1868-1-ND"/>
+</part>
+<part name="L2" library="epcos-b82790c0" deviceset="EPCOS_B82790C0" device="" value="2x51µH">
+<attribute name="OC_DIGIKEY" value="495-1868-1-ND"/>
+</part>
+<part name="JP3" library="pinhead" deviceset="PINHD-2X8" device="">
+<attribute name="OC_REICHELT" value="MPE 087-2-016"/>
+</part>
+<part name="F3" library="ptc-littlefuse" deviceset="1812L" device="" value="500mA">
+<attribute name="OC_REICHELT" value="PTC194600-050"/>
+</part>
+<part name="F4" library="ptc-littlefuse" deviceset="1812L" device="" value="500mA">
+<attribute name="OC_REICHELT" value="PTC194600-050"/>
+</part>
+<part name="F5" library="ptc-littlefuse" deviceset="1812L" device="" value="500mA">
+<attribute name="OC_REICHELT" value="PTC194600-050"/>
+</part>
+<part name="C21" library="resistor" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
+<part name="JP4" library="pinhead" deviceset="PINHD-2X3" device="">
+<attribute name="OC_REICHELT" value="MPE 087-2-006"/>
+</part>
+<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="24V">
+<attribute name="OC_REICHELT" value="SMD-LED 0805 RT"/>
+</part>
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="5V">
+<attribute name="OC_REICHELT" value="SMD-LED 0805 GE"/>
+</part>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="1,5k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,50K"/>
+</part>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="220">
+<attribute name="OC_REICHELT" value="SMD-0805 220"/>
+</part>
 <part name="P+28" library="supply1" deviceset="+24V" device=""/>
 <part name="P+29" library="supply1" deviceset="+5V" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
-<part name="R11" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="P+30" library="supply1" deviceset="+5V" device=""/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="680"/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="680"/>
-<part name="R15" library="rcl" deviceset="R-EU_" device="R0805" value="680"/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="680"/>
-<part name="R17" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
-<part name="R18" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R19" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R20" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R21" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R22" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R23" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R24" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R25" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R26" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R27" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R28" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R29" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R30" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R31" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R33" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R11" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="P+30" library="supply1" deviceset="+5V" device="">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="120">
+<attribute name="OC_REICHELT" value="SMD-0805 120"/>
+</part>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="680">
+<attribute name="OC_REICHELT" value="SMD-0805 680"/>
+</part>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="680">
+<attribute name="OC_REICHELT" value="SMD-0805 680"/>
+</part>
+<part name="R15" library="rcl" deviceset="R-EU_" device="R0805" value="680">
+<attribute name="OC_REICHELT" value="SMD-0805 680"/>
+</part>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="680">
+<attribute name="OC_REICHELT" value="SMD-0805 680"/>
+</part>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0805" value="120">
+<attribute name="OC_REICHELT" value="SMD-0805 120"/>
+</part>
+<part name="R229" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R230" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R231" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R232" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R233" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R234" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R235" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R236" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R228" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R227" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R226" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R225" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R224" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R223" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="R221" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -24290,36 +24520,80 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
 <part name="GND57" library="supply1" deviceset="GND" device=""/>
 <part name="GND58" library="supply1" deviceset="GND" device=""/>
-<part name="R32" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="OK32" library="ACPL-M50L" deviceset="ACPL-M50L" device=""/>
-<part name="R34" library="resistor" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="OK31" library="ACPL-M50L" deviceset="ACPL-M50L" device=""/>
+<part name="R222" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
+<attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
+</part>
+<part name="OK32" library="ACPL-M50L" deviceset="ACPL-M50L" device="">
+<attribute name="OC_DIGIKEY" value="516-2166-5-ND"/>
+</part>
+<part name="R34" library="resistor" deviceset="R-EU_" device="R0805" value="1k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,00K"/>
+</part>
+<part name="OK31" library="ACPL-M50L" deviceset="ACPL-M50L" device="">
+<attribute name="OC_DIGIKEY" value="516-2166-5-ND"/>
+</part>
 <part name="VCC3" library="supply2" deviceset="+5V/1" device=""/>
-<part name="R35" library="resistor" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="OK30" library="ACPL-M50L" deviceset="ACPL-M50L" device=""/>
-<part name="R36" library="resistor" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R35" library="resistor" deviceset="R-EU_" device="R0805" value="1k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,00K"/>
+</part>
+<part name="OK30" library="ACPL-M50L" deviceset="ACPL-M50L" device="">
+<attribute name="OC_DIGIKEY" value="516-2166-5-ND"/>
+</part>
+<part name="R36" library="resistor" deviceset="R-EU_" device="R0805" value="1k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,00K"/>
+</part>
 <part name="GND59" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="resistor" deviceset="R-EU_" device="R0805" value="220"/>
-<part name="R41" library="resistor" deviceset="R-EU_" device="R0805" value="220"/>
-<part name="R42" library="resistor" deviceset="R-EU_" device="R0805" value="220"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="R0805" value="220">
+<attribute name="OC_REICHELT" value="SMD-0805 220"/>
+</part>
+<part name="R41" library="resistor" deviceset="R-EU_" device="R0805" value="220">
+<attribute name="OC_REICHELT" value="SMD-0805 220"/>
+</part>
+<part name="R42" library="resistor" deviceset="R-EU_" device="R0805" value="220">
+<attribute name="OC_REICHELT" value="SMD-0805 220"/>
+</part>
 <part name="P+31" library="supply1" deviceset="+5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND60" library="supply1" deviceset="GND" device=""/>
-<part name="OK1" library="ACPL-M50L" deviceset="ACPL-M50L" device=""/>
-<part name="R43" library="resistor" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="OK2" library="ACPL-M50L" deviceset="ACPL-M50L" device=""/>
-<part name="R44" library="resistor" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="OK3" library="ACPL-M50L" deviceset="ACPL-M50L" device=""/>
-<part name="R45" library="resistor" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="OK1" library="ACPL-M50L" deviceset="ACPL-M50L" device="">
+<attribute name="OC_DIGIKEY" value="516-2166-5-ND"/>
+</part>
+<part name="R43" library="resistor" deviceset="R-EU_" device="R0805" value="1k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,00K"/>
+</part>
+<part name="OK2" library="ACPL-M50L" deviceset="ACPL-M50L" device="">
+<attribute name="OC_DIGIKEY" value="516-2166-5-ND"/>
+</part>
+<part name="R44" library="resistor" deviceset="R-EU_" device="R0805" value="1k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,00K"/>
+</part>
+<part name="OK3" library="ACPL-M50L" deviceset="ACPL-M50L" device="">
+<attribute name="OC_DIGIKEY" value="516-2166-5-ND"/>
+</part>
+<part name="R45" library="resistor" deviceset="R-EU_" device="R0805" value="1k">
+<attribute name="OC_REICHELT" value="SMD-0805 1,00K"/>
+</part>
 <part name="GND61" library="supply1" deviceset="GND" device=""/>
 <part name="VCC6" library="supply2" deviceset="+5V/2" device=""/>
 <part name="VCC7" library="supply2" deviceset="+5V/2" device=""/>
-<part name="C24" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C27" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C28" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C29" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C30" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C31" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C24" library="rcl" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
+<part name="C27" library="rcl" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
+<part name="C28" library="rcl" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
+<part name="C29" library="rcl" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
+<part name="C30" library="rcl" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
+<part name="C31" library="rcl" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
+</part>
 <part name="SJ1" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ3" library="jumper" deviceset="SJ" device=""/>
@@ -24442,12 +24716,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND8" gate="1" x="78.74" y="15.24" rot="R270"/>
 <instance part="P+9" gate="1" x="121.92" y="15.24" rot="R270"/>
 <instance part="OK101" gate="G$1" x="325.12" y="233.68" rot="R180"/>
-<instance part="R101" gate="G$1" x="342.9" y="231.14"/>
+<instance part="R101" gate="G$1" x="342.9" y="231.14">
+<attribute name="OC_REICHELT" x="342.9" y="231.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R201" gate="G$1" x="309.88" y="231.14"/>
 <instance part="P+40" gate="1" x="299.72" y="231.14" rot="R90"/>
 <instance part="GND12" gate="G$1" x="355.6" y="236.22" rot="R90"/>
 <instance part="OK102" gate="G$1" x="325.12" y="215.9" rot="R180"/>
-<instance part="R102" gate="G$1" x="342.9" y="213.36"/>
+<instance part="R102" gate="G$1" x="342.9" y="213.36">
+<attribute name="OC_REICHELT" x="342.9" y="213.36" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R202" gate="G$1" x="309.88" y="213.36"/>
 <instance part="P+42" gate="1" x="299.72" y="213.36" rot="R90"/>
 <instance part="GND13" gate="G$1" x="355.6" y="218.44" rot="R90"/>
@@ -24457,65 +24735,101 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="P+43" gate="1" x="299.72" y="195.58" rot="R90"/>
 <instance part="GND14" gate="G$1" x="355.6" y="200.66" rot="R90"/>
 <instance part="OK104" gate="G$1" x="325.12" y="180.34" rot="R180"/>
-<instance part="R104" gate="G$1" x="342.9" y="177.8"/>
+<instance part="R104" gate="G$1" x="342.9" y="177.8">
+<attribute name="OC_REICHELT" x="342.9" y="177.8" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R204" gate="G$1" x="309.88" y="177.8"/>
 <instance part="P+44" gate="1" x="299.72" y="177.8" rot="R90"/>
 <instance part="GND15" gate="G$1" x="355.6" y="182.88" rot="R90"/>
 <instance part="OK105" gate="G$1" x="325.12" y="162.56" rot="R180"/>
-<instance part="R105" gate="G$1" x="342.9" y="160.02"/>
+<instance part="R105" gate="G$1" x="342.9" y="160.02">
+<attribute name="OC_REICHELT" x="342.9" y="160.02" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R205" gate="G$1" x="309.88" y="160.02"/>
 <instance part="P+45" gate="1" x="299.72" y="160.02" rot="R90"/>
 <instance part="GND16" gate="G$1" x="355.6" y="165.1" rot="R90"/>
 <instance part="OK106" gate="G$1" x="325.12" y="144.78" rot="R180"/>
-<instance part="R106" gate="G$1" x="342.9" y="142.24"/>
+<instance part="R106" gate="G$1" x="342.9" y="142.24">
+<attribute name="OC_REICHELT" x="342.9" y="142.24" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R206" gate="G$1" x="309.88" y="142.24"/>
 <instance part="P+46" gate="1" x="299.72" y="142.24" rot="R90"/>
 <instance part="GND28" gate="G$1" x="355.6" y="147.32" rot="R90"/>
 <instance part="OK107" gate="G$1" x="325.12" y="127" rot="R180"/>
-<instance part="R107" gate="G$1" x="342.9" y="124.46"/>
+<instance part="R107" gate="G$1" x="342.9" y="124.46">
+<attribute name="OC_REICHELT" x="342.9" y="124.46" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R207" gate="G$1" x="309.88" y="124.46"/>
 <instance part="P+47" gate="1" x="299.72" y="124.46" rot="R90"/>
 <instance part="GND47" gate="G$1" x="355.6" y="129.54" rot="R90"/>
 <instance part="OK108" gate="G$1" x="325.12" y="109.22" rot="R180"/>
-<instance part="R108" gate="G$1" x="342.9" y="106.68"/>
+<instance part="R108" gate="G$1" x="342.9" y="106.68">
+<attribute name="OC_REICHELT" x="342.9" y="106.68" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R208" gate="G$1" x="309.88" y="106.68"/>
 <instance part="P+48" gate="1" x="299.72" y="106.68" rot="R90"/>
 <instance part="GND48" gate="G$1" x="355.6" y="111.76" rot="R90"/>
 <instance part="OK109" gate="G$1" x="246.38" y="233.68" rot="R180"/>
-<instance part="R109" gate="G$1" x="264.16" y="231.14"/>
-<instance part="R209" gate="G$1" x="231.14" y="231.14"/>
+<instance part="R109" gate="G$1" x="264.16" y="231.14">
+<attribute name="OC_REICHELT" x="264.16" y="231.14" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R209" gate="G$1" x="231.14" y="231.14">
+<attribute name="OC_REICHELT" x="231.14" y="231.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND49" gate="G$1" x="276.86" y="236.22" rot="R90"/>
 <instance part="OK110" gate="G$1" x="246.38" y="215.9" rot="R180"/>
-<instance part="R110" gate="G$1" x="264.16" y="213.36"/>
-<instance part="R210" gate="G$1" x="231.14" y="213.36"/>
+<instance part="R110" gate="G$1" x="264.16" y="213.36">
+<attribute name="OC_REICHELT" x="264.16" y="213.36" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R210" gate="G$1" x="231.14" y="213.36">
+<attribute name="OC_REICHELT" x="231.14" y="213.36" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND50" gate="G$1" x="276.86" y="218.44" rot="R90"/>
 <instance part="OK111" gate="G$1" x="246.38" y="198.12" rot="R180"/>
-<instance part="R111" gate="G$1" x="264.16" y="195.58"/>
+<instance part="R111" gate="G$1" x="264.16" y="195.58">
+<attribute name="OC_REICHELT" x="264.16" y="195.58" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R211" gate="G$1" x="231.14" y="195.58"/>
 <instance part="GND51" gate="G$1" x="276.86" y="200.66" rot="R90"/>
 <instance part="OK112" gate="G$1" x="246.38" y="180.34" rot="R180"/>
-<instance part="R112" gate="G$1" x="264.16" y="177.8"/>
+<instance part="R112" gate="G$1" x="264.16" y="177.8">
+<attribute name="OC_REICHELT" x="264.16" y="177.8" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R212" gate="G$1" x="231.14" y="177.8"/>
 <instance part="GND52" gate="G$1" x="276.86" y="182.88" rot="R90"/>
 <instance part="OK113" gate="G$1" x="246.38" y="162.56" rot="R180"/>
-<instance part="R113" gate="G$1" x="264.16" y="160.02"/>
+<instance part="R113" gate="G$1" x="264.16" y="160.02">
+<attribute name="OC_REICHELT" x="264.16" y="160.02" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R213" gate="G$1" x="231.14" y="160.02"/>
 <instance part="GND53" gate="G$1" x="276.86" y="165.1" rot="R90"/>
 <instance part="OK114" gate="G$1" x="246.38" y="144.78" rot="R180"/>
-<instance part="R114" gate="G$1" x="264.16" y="142.24"/>
+<instance part="R114" gate="G$1" x="264.16" y="142.24">
+<attribute name="OC_REICHELT" x="264.16" y="142.24" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R214" gate="G$1" x="231.14" y="142.24"/>
 <instance part="GND54" gate="G$1" x="276.86" y="147.32" rot="R90"/>
 <instance part="OK115" gate="G$1" x="246.38" y="127" rot="R180"/>
-<instance part="R115" gate="G$1" x="264.16" y="124.46"/>
+<instance part="R115" gate="G$1" x="264.16" y="124.46">
+<attribute name="OC_REICHELT" x="264.16" y="124.46" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R215" gate="G$1" x="231.14" y="124.46"/>
 <instance part="GND55" gate="G$1" x="276.86" y="129.54" rot="R90"/>
 <instance part="OK116" gate="G$1" x="246.38" y="109.22" rot="R180"/>
-<instance part="R116" gate="G$1" x="264.16" y="106.68"/>
+<instance part="R116" gate="G$1" x="264.16" y="106.68">
+<attribute name="OC_REICHELT" x="264.16" y="106.68" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R216" gate="G$1" x="231.14" y="106.68"/>
 <instance part="GND56" gate="G$1" x="276.86" y="111.76" rot="R90"/>
-<instance part="X5" gate="G$1" x="337.82" y="55.88"/>
-<instance part="X1" gate="G$1" x="172.72" y="55.88"/>
-<instance part="X2" gate="G$1" x="228.6" y="55.88"/>
+<instance part="X5" gate="G$1" x="337.82" y="55.88">
+<attribute name="OC_REICHELT" x="337.82" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="X1" gate="G$1" x="172.72" y="55.88">
+<attribute name="OC_REICHELT" x="172.72" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="X2" gate="G$1" x="228.6" y="55.88">
+<attribute name="OC_REICHELT" x="228.6" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+19" gate="1" x="220.98" y="231.14" rot="R90"/>
 <instance part="P+21" gate="1" x="220.98" y="213.36" rot="R90"/>
 <instance part="P+22" gate="1" x="220.98" y="195.58" rot="R90"/>
@@ -24524,66 +24838,74 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="P+25" gate="1" x="220.98" y="142.24" rot="R90"/>
 <instance part="P+26" gate="1" x="220.98" y="124.46" rot="R90"/>
 <instance part="P+27" gate="1" x="220.98" y="106.68" rot="R90"/>
-<instance part="F3" gate="G$1" x="152.4" y="76.2" rot="R180"/>
-<instance part="F4" gate="G$1" x="208.28" y="76.2"/>
-<instance part="F5" gate="G$1" x="304.8" y="76.2"/>
-<instance part="R18" gate="G$1" x="228.6" y="238.76" smashed="yes">
+<instance part="F3" gate="G$1" x="152.4" y="76.2" rot="R180">
+<attribute name="OC_REICHELT" x="152.4" y="76.2" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="F4" gate="G$1" x="208.28" y="76.2">
+<attribute name="OC_REICHELT" x="208.28" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="F5" gate="G$1" x="304.8" y="76.2">
+<attribute name="OC_REICHELT" x="304.8" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R229" gate="G$1" x="228.6" y="238.76" smashed="yes">
 <attribute name="NAME" x="224.79" y="240.2586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.14" y="240.284" size="1.778" layer="96"/>
+<attribute name="OC_REICHELT" x="228.6" y="238.76" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R19" gate="G$1" x="228.6" y="220.98" smashed="yes">
+<instance part="R230" gate="G$1" x="228.6" y="220.98" smashed="yes">
 <attribute name="NAME" x="224.79" y="222.4786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.14" y="222.504" size="1.778" layer="96"/>
+<attribute name="OC_REICHELT" x="228.6" y="220.98" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R20" gate="G$1" x="228.6" y="203.2" smashed="yes">
+<instance part="R231" gate="G$1" x="228.6" y="203.2" smashed="yes">
 <attribute name="NAME" x="224.79" y="204.6986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.14" y="204.724" size="1.778" layer="96"/>
 </instance>
-<instance part="R21" gate="G$1" x="228.6" y="185.42" smashed="yes">
+<instance part="R232" gate="G$1" x="228.6" y="185.42" smashed="yes">
 <attribute name="NAME" x="224.79" y="186.9186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.394" y="186.944" size="1.778" layer="96"/>
 </instance>
-<instance part="R22" gate="G$1" x="228.6" y="167.64" smashed="yes">
+<instance part="R233" gate="G$1" x="228.6" y="167.64" smashed="yes">
 <attribute name="NAME" x="224.79" y="169.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="230.886" y="169.164" size="1.778" layer="96"/>
 </instance>
-<instance part="R23" gate="G$1" x="228.6" y="149.86" smashed="yes">
+<instance part="R234" gate="G$1" x="228.6" y="149.86" smashed="yes">
 <attribute name="NAME" x="224.79" y="151.3586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.648" y="151.384" size="1.778" layer="96"/>
 </instance>
-<instance part="R24" gate="G$1" x="228.6" y="132.08" smashed="yes">
+<instance part="R235" gate="G$1" x="228.6" y="132.08" smashed="yes">
 <attribute name="NAME" x="224.79" y="133.5786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="230.886" y="133.604" size="1.778" layer="96"/>
 </instance>
-<instance part="R25" gate="G$1" x="228.6" y="114.3" smashed="yes">
+<instance part="R236" gate="G$1" x="228.6" y="114.3" smashed="yes">
 <attribute name="NAME" x="224.79" y="115.7986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.14" y="115.824" size="1.778" layer="96"/>
 </instance>
-<instance part="R26" gate="G$1" x="307.34" y="114.3" smashed="yes">
+<instance part="R228" gate="G$1" x="307.34" y="114.3" smashed="yes">
 <attribute name="NAME" x="303.53" y="115.7986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="310.388" y="115.824" size="1.778" layer="96"/>
 </instance>
-<instance part="R27" gate="G$1" x="307.34" y="132.08" smashed="yes">
+<instance part="R227" gate="G$1" x="307.34" y="132.08" smashed="yes">
 <attribute name="NAME" x="303.53" y="133.5786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="310.134" y="133.604" size="1.778" layer="96"/>
 </instance>
-<instance part="R28" gate="G$1" x="307.34" y="149.86" smashed="yes">
+<instance part="R226" gate="G$1" x="307.34" y="149.86" smashed="yes">
 <attribute name="NAME" x="303.53" y="151.3586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="309.626" y="151.384" size="1.778" layer="96"/>
 </instance>
-<instance part="R29" gate="G$1" x="307.34" y="167.64" smashed="yes">
+<instance part="R225" gate="G$1" x="307.34" y="167.64" smashed="yes">
 <attribute name="NAME" x="303.53" y="169.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="310.134" y="169.164" size="1.778" layer="96"/>
 </instance>
-<instance part="R30" gate="G$1" x="307.34" y="185.42" smashed="yes">
+<instance part="R224" gate="G$1" x="307.34" y="185.42" smashed="yes">
 <attribute name="NAME" x="303.53" y="186.9186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="310.134" y="186.944" size="1.778" layer="96"/>
 </instance>
-<instance part="R31" gate="G$1" x="307.34" y="203.2" smashed="yes">
+<instance part="R223" gate="G$1" x="307.34" y="203.2" smashed="yes">
 <attribute name="NAME" x="303.53" y="204.6986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="309.88" y="204.724" size="1.778" layer="96"/>
 </instance>
-<instance part="R33" gate="G$1" x="307.34" y="238.76" smashed="yes">
+<instance part="R221" gate="G$1" x="307.34" y="238.76" smashed="yes">
 <attribute name="NAME" x="303.53" y="240.2586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="311.15" y="240.284" size="1.778" layer="96"/>
 </instance>
@@ -24603,7 +24925,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND43" gate="1" x="297.18" y="149.86" rot="R270"/>
 <instance part="GND57" gate="1" x="297.18" y="132.08" rot="R270"/>
 <instance part="GND58" gate="1" x="297.18" y="114.3" rot="R270"/>
-<instance part="R32" gate="G$1" x="307.34" y="220.98" smashed="yes">
+<instance part="R222" gate="G$1" x="307.34" y="220.98" smashed="yes">
 <attribute name="NAME" x="303.53" y="222.4786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="311.15" y="222.504" size="1.778" layer="96"/>
 </instance>
@@ -24753,82 +25075,82 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </segment>
 <segment>
 <pinref part="GND43" gate="1" pin="GND"/>
-<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="R226" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="149.86" x2="302.26" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND57" gate="1" pin="GND"/>
-<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="R227" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="132.08" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND58" gate="1" pin="GND"/>
-<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="R228" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="114.3" x2="302.26" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND42" gate="1" pin="GND"/>
-<pinref part="R29" gate="G$1" pin="1"/>
+<pinref part="R225" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="167.64" x2="302.26" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND41" gate="1" pin="GND"/>
-<pinref part="R30" gate="G$1" pin="1"/>
+<pinref part="R224" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="185.42" x2="302.26" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND40" gate="1" pin="GND"/>
-<pinref part="R31" gate="G$1" pin="1"/>
+<pinref part="R223" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="203.2" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND39" gate="1" pin="GND"/>
 <wire x1="299.72" y1="220.98" x2="302.26" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="R32" gate="G$1" pin="1"/>
+<pinref part="R222" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND38" gate="1" pin="GND"/>
-<pinref part="R33" gate="G$1" pin="1"/>
+<pinref part="R221" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="238.76" x2="302.26" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND37" gate="1" pin="GND"/>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R229" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="238.76" x2="223.52" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND36" gate="1" pin="GND"/>
-<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="R230" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="220.98" x2="223.52" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND35" gate="1" pin="GND"/>
-<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="R231" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="203.2" x2="223.52" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND33" gate="1" pin="GND"/>
-<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="R232" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="185.42" x2="223.52" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="R233" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="167.64" x2="223.52" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="R23" gate="G$1" pin="1"/>
+<pinref part="R234" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="149.86" x2="223.52" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="R235" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="132.08" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="R25" gate="G$1" pin="1"/>
+<pinref part="R236" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="114.3" x2="223.52" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -25772,7 +26094,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="317.5" y1="236.22" x2="314.96" y2="236.22" width="0.1524" layer="91"/>
 <label x="312.42" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK101" gate="G$1" pin="EMIT"/>
-<pinref part="R33" gate="G$1" pin="2"/>
+<pinref part="R221" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="236.22" x2="312.42" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="238.76" x2="314.96" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="238.76" x2="314.96" y2="236.22" width="0.1524" layer="91"/>
@@ -25788,7 +26110,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="312.42" y1="220.98" x2="314.96" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="220.98" x2="314.96" y2="218.44" width="0.1524" layer="91"/>
 <junction x="314.96" y="218.44"/>
-<pinref part="R32" gate="G$1" pin="2"/>
+<pinref part="R222" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="INPUT_3" class="0">
@@ -25796,7 +26118,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="317.5" y1="200.66" x2="314.96" y2="200.66" width="0.1524" layer="91"/>
 <label x="312.42" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK103" gate="G$1" pin="EMIT"/>
-<pinref part="R31" gate="G$1" pin="2"/>
+<pinref part="R223" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="200.66" x2="312.42" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="203.2" x2="314.96" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="203.2" x2="314.96" y2="200.66" width="0.1524" layer="91"/>
@@ -25808,7 +26130,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="317.5" y1="182.88" x2="314.96" y2="182.88" width="0.1524" layer="91"/>
 <label x="312.42" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK104" gate="G$1" pin="EMIT"/>
-<pinref part="R30" gate="G$1" pin="2"/>
+<pinref part="R224" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="182.88" x2="312.42" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="185.42" x2="314.96" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="185.42" x2="314.96" y2="182.88" width="0.1524" layer="91"/>
@@ -25820,7 +26142,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="317.5" y1="165.1" x2="314.96" y2="165.1" width="0.1524" layer="91"/>
 <label x="312.42" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK105" gate="G$1" pin="EMIT"/>
-<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="R225" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="165.1" x2="312.42" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="167.64" x2="314.96" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="167.64" x2="314.96" y2="165.1" width="0.1524" layer="91"/>
@@ -25832,7 +26154,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="317.5" y1="147.32" x2="314.96" y2="147.32" width="0.1524" layer="91"/>
 <label x="312.42" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK106" gate="G$1" pin="EMIT"/>
-<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="R226" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="147.32" x2="312.42" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="149.86" x2="314.96" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="149.86" x2="314.96" y2="147.32" width="0.1524" layer="91"/>
@@ -25844,7 +26166,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="317.5" y1="129.54" x2="314.96" y2="129.54" width="0.1524" layer="91"/>
 <label x="312.42" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK107" gate="G$1" pin="EMIT"/>
-<pinref part="R27" gate="G$1" pin="2"/>
+<pinref part="R227" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="129.54" x2="312.42" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="132.08" x2="314.96" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="132.08" x2="314.96" y2="129.54" width="0.1524" layer="91"/>
@@ -25856,7 +26178,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="317.5" y1="111.76" x2="314.96" y2="111.76" width="0.1524" layer="91"/>
 <label x="312.42" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK108" gate="G$1" pin="EMIT"/>
-<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="R228" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="111.76" x2="312.42" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="114.3" x2="314.96" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="114.3" x2="314.96" y2="111.76" width="0.1524" layer="91"/>
@@ -25889,7 +26211,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="OK109" gate="G$1" pin="EMIT"/>
 <wire x1="236.22" y1="236.22" x2="233.68" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="236.22" x2="236.22" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R229" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="238.76" x2="233.68" y2="238.76" width="0.1524" layer="91"/>
 <junction x="236.22" y="236.22"/>
 </segment>
@@ -25899,7 +26221,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="238.76" y1="218.44" x2="236.22" y2="218.44" width="0.1524" layer="91"/>
 <label x="233.68" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK110" gate="G$1" pin="EMIT"/>
-<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R230" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="218.44" x2="233.68" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="220.98" x2="236.22" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="220.98" x2="236.22" y2="218.44" width="0.1524" layer="91"/>
@@ -25911,7 +26233,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="238.76" y1="200.66" x2="236.22" y2="200.66" width="0.1524" layer="91"/>
 <label x="233.68" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK111" gate="G$1" pin="EMIT"/>
-<pinref part="R20" gate="G$1" pin="2"/>
+<pinref part="R231" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="200.66" x2="233.68" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="203.2" x2="236.22" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="203.2" x2="236.22" y2="200.66" width="0.1524" layer="91"/>
@@ -25923,7 +26245,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="238.76" y1="182.88" x2="236.22" y2="182.88" width="0.1524" layer="91"/>
 <label x="233.68" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK112" gate="G$1" pin="EMIT"/>
-<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R232" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="182.88" x2="233.68" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="185.42" x2="236.22" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="185.42" x2="236.22" y2="182.88" width="0.1524" layer="91"/>
@@ -25935,7 +26257,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="238.76" y1="165.1" x2="236.22" y2="165.1" width="0.1524" layer="91"/>
 <label x="233.68" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK113" gate="G$1" pin="EMIT"/>
-<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="R233" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="165.1" x2="233.68" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="167.64" x2="236.22" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="167.64" x2="236.22" y2="165.1" width="0.1524" layer="91"/>
@@ -25947,7 +26269,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="238.76" y1="147.32" x2="236.22" y2="147.32" width="0.1524" layer="91"/>
 <label x="233.68" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK114" gate="G$1" pin="EMIT"/>
-<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="R234" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="147.32" x2="233.68" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="149.86" x2="236.22" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="149.86" x2="236.22" y2="147.32" width="0.1524" layer="91"/>
@@ -25961,7 +26283,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="OK115" gate="G$1" pin="EMIT"/>
 <wire x1="236.22" y1="129.54" x2="233.68" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="129.54" x2="236.22" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="R235" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="132.08" x2="233.68" y2="132.08" width="0.1524" layer="91"/>
 <junction x="236.22" y="129.54"/>
 </segment>
@@ -25971,7 +26293,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="238.76" y1="111.76" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
 <label x="233.68" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="OK116" gate="G$1" pin="EMIT"/>
-<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="R236" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="111.76" x2="233.68" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="114.3" x2="236.22" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="114.3" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
@@ -26624,23 +26946,43 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
-<instance part="IC13" gate="G$1" x="43.18" y="147.32"/>
+<instance part="IC13" gate="G$1" x="43.18" y="147.32">
+<attribute name="OC_REICHELT" x="43.18" y="147.32" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="G1" gate="1" x="22.86" y="137.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="24.765" y="133.858" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="19.304" y="130.302" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_REICHELT" x="22.86" y="137.16" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="Q1" gate="P" x="25.4" y="152.4" rot="R90"/>
-<instance part="R37" gate="G$1" x="63.5" y="152.4" rot="R90"/>
-<instance part="R38" gate="G$1" x="71.12" y="152.4" rot="R90"/>
+<instance part="Q1" gate="P" x="25.4" y="152.4" rot="R90">
+<attribute name="OC_REICHELT" x="25.4" y="152.4" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R37" gate="G$1" x="63.5" y="152.4" rot="R90">
+<attribute name="OC_REICHELT" x="63.5" y="152.4" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R38" gate="G$1" x="71.12" y="152.4" rot="R90">
+<attribute name="OC_REICHELT" x="71.12" y="152.4" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="JP1" gate="G$1" x="203.2" y="127" smashed="yes">
 <attribute name="NAME" x="200.66" y="135.382" size="1.778" layer="95"/>
 <attribute name="VALUE" x="190.5" y="116.84" size="1.778" layer="96"/>
+<attribute name="OC_REICHELT" x="203.2" y="127" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R39" gate="G$1" x="106.68" y="134.62" rot="R90"/>
-<instance part="IC9" gate="G$1" x="45.72" y="96.52"/>
-<instance part="IC10" gate="G$1" x="40.64" y="63.5"/>
-<instance part="C9" gate="G$1" x="25.4" y="53.34"/>
-<instance part="C10" gate="G$1" x="55.88" y="53.34"/>
+<instance part="R39" gate="G$1" x="106.68" y="134.62" rot="R90">
+<attribute name="OC_REICHELT" x="106.68" y="134.62" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="IC9" gate="G$1" x="45.72" y="96.52">
+<attribute name="OC_REICHELT" x="45.72" y="96.52" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="IC10" gate="G$1" x="40.64" y="63.5">
+<attribute name="OC_REICHELT" x="40.64" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C9" gate="G$1" x="25.4" y="53.34">
+<attribute name="OC_REICHELT" x="25.4" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C10" gate="G$1" x="55.88" y="53.34">
+<attribute name="OC_REICHELT" x="55.88" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+5" gate="1" x="190.5" y="121.92" rot="R90"/>
 <instance part="P+11" gate="1" x="53.34" y="114.3"/>
 <instance part="P+12" gate="1" x="58.42" y="160.02"/>
@@ -26652,46 +26994,78 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="Q2" gate="G$1" x="106.68" y="119.38" smashed="yes" rot="MR270">
 <attribute name="NAME" x="106.68" y="122.936" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="109.22" y="114.3" size="1.778" layer="96" rot="MR0"/>
+<attribute name="OC_REICHELT" x="106.68" y="119.38" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
 <instance part="C11" gate="G$1" x="96.52" y="116.84" smashed="yes" rot="R270">
 <attribute name="NAME" x="89.154" y="117.221" size="1.778" layer="95"/>
 <attribute name="VALUE" x="96.774" y="117.221" size="1.778" layer="96"/>
+<attribute name="OC_REICHELT" x="96.52" y="116.84" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C12" gate="G$1" x="96.52" y="121.92" smashed="yes" rot="R270">
 <attribute name="NAME" x="89.154" y="122.301" size="1.778" layer="95"/>
 <attribute name="VALUE" x="96.774" y="122.301" size="1.778" layer="96"/>
+<attribute name="OC_REICHELT" x="96.52" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND22" gate="1" x="86.36" y="111.76"/>
-<instance part="IC12" gate="G$1" x="317.5" y="226.06"/>
+<instance part="IC12" gate="G$1" x="317.5" y="226.06">
+<attribute name="OC_REICHELT" x="317.5" y="226.06" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND23" gate="1" x="104.14" y="91.44"/>
 <instance part="P+15" gate="1" x="96.52" y="99.06" rot="R90"/>
 <instance part="GND24" gate="1" x="104.14" y="104.14"/>
 <instance part="P+33" gate="1" x="96.52" y="109.22" rot="R90"/>
-<instance part="IC11" gate="G$1" x="137.16" y="76.2"/>
+<instance part="IC11" gate="G$1" x="137.16" y="76.2">
+<attribute name="OC_REICHELT" x="137.16" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+34" gate="1" x="101.6" y="53.34" rot="R180"/>
-<instance part="R72" gate="G$1" x="101.6" y="63.5" rot="R270"/>
-<instance part="C13" gate="G$1" x="205.74" y="27.94"/>
-<instance part="C14" gate="G$1" x="215.9" y="27.94"/>
+<instance part="R72" gate="G$1" x="101.6" y="63.5" rot="R270">
+<attribute name="OC_REICHELT" x="101.6" y="63.5" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C13" gate="G$1" x="205.74" y="27.94">
+<attribute name="OC_REICHELT" x="205.74" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C14" gate="G$1" x="215.9" y="27.94">
+<attribute name="OC_REICHELT" x="215.9" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND26" gate="1" x="200.66" y="15.24"/>
 <instance part="P+35" gate="1" x="198.12" y="33.02" rot="R90"/>
-<instance part="U1" gate="G$1" x="40.64" y="208.28"/>
-<instance part="C15" gate="G$1" x="20.32" y="220.98" rot="R270"/>
-<instance part="C16" gate="G$1" x="20.32" y="210.82" rot="R270"/>
-<instance part="C17" gate="G$1" x="66.04" y="218.44" rot="R90"/>
-<instance part="C18" gate="G$1" x="68.58" y="213.36" rot="R270"/>
+<instance part="U1" gate="G$1" x="40.64" y="208.28">
+<attribute name="OC_REICHELT" x="40.64" y="208.28" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C15" gate="G$1" x="20.32" y="220.98" rot="R270">
+<attribute name="OC_REICHELT" x="20.32" y="220.98" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C16" gate="G$1" x="20.32" y="210.82" rot="R270">
+<attribute name="OC_REICHELT" x="20.32" y="210.82" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C17" gate="G$1" x="66.04" y="218.44" rot="R90">
+<attribute name="OC_REICHELT" x="66.04" y="218.44" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C18" gate="G$1" x="68.58" y="213.36" rot="R270">
+<attribute name="OC_REICHELT" x="68.58" y="213.36" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="P+36" gate="1" x="43.18" y="236.22"/>
 <instance part="GND27" gate="1" x="43.18" y="177.8"/>
 <instance part="F1" gate="F1" x="63.5" y="63.5" smashed="yes">
 <attribute name="NAME" x="59.69" y="64.897" size="1.778" layer="95"/>
 <attribute name="VALUE" x="58.166" y="60.579" size="1.778" layer="96"/>
+<attribute name="OC_REICHELT" x="63.5" y="63.5" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+10" gate="1" x="76.2" y="63.5" rot="R270"/>
 <instance part="P+39" gate="1" x="17.78" y="63.5" rot="R90"/>
 <instance part="VCC1" gate="G$1" x="325.12" y="238.76" rot="R90"/>
-<instance part="DC1" gate="G$1" x="317.5" y="198.12"/>
-<instance part="R73" gate="G$1" x="246.38" y="195.58"/>
-<instance part="R74" gate="G$1" x="246.38" y="218.44"/>
-<instance part="R75" gate="G$1" x="279.4" y="241.3"/>
+<instance part="DC1" gate="G$1" x="317.5" y="198.12">
+<attribute name="OC_REICHELT" x="317.5" y="198.12" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R73" gate="G$1" x="246.38" y="195.58">
+<attribute name="OC_REICHELT" x="246.38" y="195.58" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R74" gate="G$1" x="246.38" y="218.44">
+<attribute name="OC_REICHELT" x="246.38" y="218.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R75" gate="G$1" x="279.4" y="241.3">
+<attribute name="OC_REICHELT" x="279.4" y="241.3" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+41" gate="1" x="251.46" y="246.38" smashed="yes">
 <attribute name="VALUE" x="252.476" y="246.38" size="1.778" layer="96"/>
 </instance>
@@ -26706,10 +27080,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="C19" gate="G$1" x="337.82" y="195.58">
 <attribute name="OC_REICHELT" x="337.82" y="195.58" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="C20" gate="G$1" x="345.44" y="195.58"/>
-<instance part="IC5" gate="G$1" x="317.5" y="154.94"/>
+<instance part="C20" gate="G$1" x="345.44" y="195.58">
+<attribute name="OC_REICHELT" x="345.44" y="195.58" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="IC5" gate="G$1" x="317.5" y="154.94">
+<attribute name="OC_REICHELT" x="317.5" y="154.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="VCC2" gate="G$1" x="325.12" y="167.64" rot="R90"/>
-<instance part="DC2" gate="G$1" x="317.5" y="124.46"/>
+<instance part="DC2" gate="G$1" x="317.5" y="124.46">
+<attribute name="OC_REICHELT" x="317.5" y="124.46" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="VCC8" gate="G$1" x="370.84" y="127" rot="R270"/>
 <instance part="GND9" gate="1" x="302.26" y="116.84"/>
 <instance part="P+38" gate="1" x="299.72" y="127" smashed="yes" rot="R90">
@@ -26718,138 +27098,223 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="C22" gate="G$1" x="337.82" y="121.92">
 <attribute name="OC_REICHELT" x="337.82" y="121.92" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="C23" gate="G$1" x="345.44" y="121.92"/>
+<instance part="C23" gate="G$1" x="345.44" y="121.92">
+<attribute name="OC_REICHELT" x="345.44" y="121.92" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="Q3" gate="G$1" x="111.76" y="193.04" smashed="yes" rot="MR270">
 <attribute name="NAME" x="111.76" y="196.596" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="114.3" y="187.96" size="1.778" layer="96" rot="MR0"/>
+<attribute name="OC_REICHELT" x="111.76" y="193.04" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
 <instance part="C25" gate="G$1" x="101.6" y="190.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="98.806" y="192.659" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="101.854" y="190.881" size="1.778" layer="96"/>
+<attribute name="OC_REICHELT" x="101.6" y="190.5" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C26" gate="G$1" x="101.6" y="195.58" smashed="yes" rot="R270">
 <attribute name="NAME" x="98.806" y="197.739" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="101.854" y="195.961" size="1.778" layer="96"/>
+<attribute name="OC_REICHELT" x="101.6" y="195.58" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND25" gate="1" x="91.44" y="185.42"/>
 <instance part="JP2" gate="G$1" x="205.74" y="162.56" smashed="yes">
 <attribute name="NAME" x="203.2" y="170.942" size="1.778" layer="95"/>
 <attribute name="VALUE" x="190.5" y="152.4" size="1.778" layer="96"/>
+<attribute name="OC_REICHELT" x="205.74" y="162.56" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+17" gate="1" x="190.5" y="157.48" rot="R90"/>
 <instance part="GND29" gate="1" x="193.04" y="167.64" rot="R270"/>
-<instance part="IC6" gate="G$1" x="137.16" y="187.96"/>
-<instance part="R40" gate="G$1" x="111.76" y="220.98" rot="R90"/>
+<instance part="IC6" gate="G$1" x="137.16" y="187.96">
+<attribute name="OC_REICHELT" x="137.16" y="187.96" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R40" gate="G$1" x="111.76" y="220.98" rot="R90">
+<attribute name="OC_REICHELT" x="111.76" y="220.98" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="P+18" gate="1" x="111.76" y="231.14"/>
 <instance part="GND30" gate="1" x="99.06" y="182.88" rot="R270"/>
 <instance part="P+20" gate="1" x="101.6" y="175.26" rot="R90"/>
 <instance part="GND31" gate="1" x="109.22" y="208.28" rot="R270"/>
-<instance part="X3" gate="G$1" x="246.38" y="78.74"/>
-<instance part="X6" gate="G$1" x="373.38" y="45.72"/>
-<instance part="X7" gate="G$1" x="347.98" y="83.82"/>
+<instance part="X3" gate="G$1" x="246.38" y="78.74">
+<attribute name="OC_REICHELT" x="246.38" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="X6" gate="G$1" x="373.38" y="45.72">
+<attribute name="OC_REICHELT" x="373.38" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="X7" gate="G$1" x="347.98" y="83.82">
+<attribute name="OC_REICHELT" x="347.98" y="83.82" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY1" gate="G$1" x="236.22" y="73.66" rot="R270"/>
-<instance part="X8" gate="G$1" x="281.94" y="78.74"/>
+<instance part="X8" gate="G$1" x="281.94" y="78.74">
+<attribute name="OC_REICHELT" x="281.94" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY2" gate="G$1" x="271.78" y="73.66" rot="R270"/>
-<instance part="X9" gate="G$1" x="317.5" y="78.74"/>
+<instance part="X9" gate="G$1" x="317.5" y="78.74">
+<attribute name="OC_REICHELT" x="317.5" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND34" gate="1" x="304.8" y="73.66" rot="R270"/>
 <instance part="F2" gate="F1" x="355.6" y="48.26" smashed="yes">
 <attribute name="NAME" x="351.79" y="54.737" size="1.778" layer="95"/>
 <attribute name="VALUE" x="351.79" y="50.419" size="1.778" layer="96"/>
+<attribute name="OC_REICHELT" x="355.6" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="L1" gate="G$1" x="350.52" y="226.06" smashed="yes"/>
+<instance part="L1" gate="G$1" x="350.52" y="226.06" smashed="yes">
+<attribute name="OC_DIGIKEY" x="350.52" y="226.06" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="L1" gate="G$2" x="350.52" y="223.52" smashed="yes" rot="MR180">
 <attribute name="NAME" x="347.472" y="231.086" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="347.218" y="219.964" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="L2" gate="G$1" x="350.52" y="154.94" smashed="yes"/>
-<instance part="JP3" gate="A" x="261.62" y="48.26"/>
+<instance part="L2" gate="G$1" x="350.52" y="154.94" smashed="yes">
+<attribute name="OC_DIGIKEY" x="350.52" y="154.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="JP3" gate="A" x="261.62" y="48.26">
+<attribute name="OC_REICHELT" x="261.62" y="48.26" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="L2" gate="G$2" x="350.52" y="152.4" smashed="yes" rot="MR180">
 <attribute name="NAME" x="348.488" y="148.79" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="347.472" y="160.02" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C21" gate="G$1" x="106.68" y="180.34"/>
-<instance part="JP4" gate="A" x="261.62" y="25.4"/>
-<instance part="LED1" gate="G$1" x="25.4" y="33.02" rot="R90"/>
-<instance part="LED2" gate="G$1" x="25.4" y="22.86" rot="R90"/>
-<instance part="R9" gate="G$1" x="38.1" y="33.02" rot="R180"/>
-<instance part="R10" gate="G$1" x="38.1" y="22.86" rot="R180"/>
+<instance part="C21" gate="G$1" x="106.68" y="180.34">
+<attribute name="OC_REICHELT" x="106.68" y="180.34" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="JP4" gate="A" x="261.62" y="25.4">
+<attribute name="OC_REICHELT" x="261.62" y="25.4" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="LED1" gate="G$1" x="25.4" y="33.02" rot="R90">
+<attribute name="OC_REICHELT" x="25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="LED2" gate="G$1" x="25.4" y="22.86" rot="R90">
+<attribute name="OC_REICHELT" x="25.4" y="22.86" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R9" gate="G$1" x="38.1" y="33.02" rot="R180">
+<attribute name="OC_REICHELT" x="38.1" y="33.02" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R10" gate="G$1" x="38.1" y="22.86" rot="R180">
+<attribute name="OC_REICHELT" x="38.1" y="22.86" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="P+28" gate="1" x="17.78" y="33.02" rot="R90"/>
 <instance part="P+29" gate="1" x="17.78" y="22.86" rot="R90"/>
 <instance part="GND32" gate="1" x="50.8" y="22.86" rot="R90"/>
-<instance part="R11" gate="G$1" x="190.5" y="104.14"/>
-<instance part="P+30" gate="1" x="200.66" y="104.14" rot="R270"/>
+<instance part="R11" gate="G$1" x="190.5" y="104.14">
+<attribute name="OC_REICHELT" x="190.5" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="P+30" gate="1" x="200.66" y="104.14" rot="R270">
+<attribute name="OC_REICHELT" x="200.66" y="104.14" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="R12" gate="G$1" x="350.52" y="215.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="354.33" y="214.4014" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="346.71" y="214.63" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="354.076" y="212.09" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="350.52" y="215.9" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R13" gate="G$1" x="335.28" y="233.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="340.6394" y="229.616" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="338.582" y="229.87" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_REICHELT" x="335.28" y="233.68" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R14" gate="G$1" x="335.28" y="215.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="340.3854" y="213.36" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="338.328" y="213.36" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_REICHELT" x="335.28" y="215.9" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="R15" gate="G$1" x="335.28" y="144.78" rot="R270"/>
-<instance part="R16" gate="G$1" x="335.28" y="162.56" rot="R90"/>
+<instance part="R15" gate="G$1" x="335.28" y="144.78" rot="R270">
+<attribute name="OC_REICHELT" x="335.28" y="144.78" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R16" gate="G$1" x="335.28" y="162.56" rot="R90">
+<attribute name="OC_REICHELT" x="335.28" y="162.56" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="R17" gate="G$1" x="350.52" y="144.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="354.33" y="143.2814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="346.71" y="143.51" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="350.52" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="OK32" gate="G$1" x="264.16" y="193.04"/>
+<instance part="OK32" gate="G$1" x="264.16" y="193.04">
+<attribute name="OC_DIGIKEY" x="264.16" y="193.04" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R34" gate="G$1" x="284.48" y="195.58" smashed="yes" rot="R180">
 <attribute name="NAME" x="282.956" y="198.9074" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="288.29" y="198.882" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="284.48" y="195.58" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="OK31" gate="G$1" x="264.16" y="215.9"/>
+<instance part="OK31" gate="G$1" x="264.16" y="215.9">
+<attribute name="OC_DIGIKEY" x="264.16" y="215.9" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="VCC3" gate="G$1" x="274.32" y="223.52"/>
 <instance part="R35" gate="G$1" x="281.94" y="218.44" smashed="yes" rot="R180">
 <attribute name="NAME" x="280.416" y="221.7674" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="285.75" y="221.742" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="281.94" y="218.44" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="OK30" gate="G$1" x="261.62" y="238.76" rot="MR0"/>
+<instance part="OK30" gate="G$1" x="261.62" y="238.76" rot="MR0">
+<attribute name="OC_DIGIKEY" x="261.62" y="238.76" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="R36" gate="G$1" x="243.84" y="241.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="242.316" y="244.6274" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="247.65" y="244.602" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="243.84" y="241.3" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND59" gate="1" x="246.38" y="233.68" rot="R270"/>
-<instance part="R7" gate="G$1" x="246.38" y="121.92"/>
-<instance part="R41" gate="G$1" x="246.38" y="144.78"/>
-<instance part="R42" gate="G$1" x="279.4" y="167.64"/>
+<instance part="R7" gate="G$1" x="246.38" y="121.92">
+<attribute name="OC_REICHELT" x="246.38" y="121.92" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R41" gate="G$1" x="246.38" y="144.78">
+<attribute name="OC_REICHELT" x="246.38" y="144.78" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R42" gate="G$1" x="279.4" y="167.64">
+<attribute name="OC_REICHELT" x="279.4" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+31" gate="1" x="251.46" y="172.72" smashed="yes">
 <attribute name="VALUE" x="252.476" y="172.72" size="1.778" layer="96"/>
 </instance>
 <instance part="GND11" gate="1" x="248.92" y="137.16" rot="R270"/>
 <instance part="GND60" gate="1" x="248.92" y="114.3" rot="R270"/>
-<instance part="OK1" gate="G$1" x="264.16" y="119.38"/>
+<instance part="OK1" gate="G$1" x="264.16" y="119.38">
+<attribute name="OC_DIGIKEY" x="264.16" y="119.38" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R43" gate="G$1" x="284.48" y="121.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="282.956" y="125.2474" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="288.29" y="125.222" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="284.48" y="121.92" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="OK2" gate="G$1" x="264.16" y="142.24"/>
+<instance part="OK2" gate="G$1" x="264.16" y="142.24">
+<attribute name="OC_DIGIKEY" x="264.16" y="142.24" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R44" gate="G$1" x="281.94" y="144.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="280.416" y="148.1074" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="285.75" y="148.082" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="281.94" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="OK3" gate="G$1" x="261.62" y="165.1" rot="MR0"/>
+<instance part="OK3" gate="G$1" x="261.62" y="165.1" rot="MR0">
+<attribute name="OC_DIGIKEY" x="261.62" y="165.1" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="R45" gate="G$1" x="243.84" y="167.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="242.316" y="170.9674" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="247.65" y="170.942" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_REICHELT" x="243.84" y="167.64" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND61" gate="1" x="246.38" y="160.02" rot="R270"/>
 <instance part="VCC6" gate="G$1" x="274.32" y="149.86"/>
 <instance part="VCC7" gate="G$1" x="274.32" y="127"/>
-<instance part="C24" gate="G$1" x="353.06" y="195.58"/>
-<instance part="C27" gate="G$1" x="360.68" y="195.58"/>
-<instance part="C28" gate="G$1" x="353.06" y="121.92"/>
-<instance part="C29" gate="G$1" x="360.68" y="121.92"/>
+<instance part="C24" gate="G$1" x="353.06" y="195.58">
+<attribute name="OC_REICHELT" x="353.06" y="195.58" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C27" gate="G$1" x="360.68" y="195.58">
+<attribute name="OC_REICHELT" x="360.68" y="195.58" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C28" gate="G$1" x="353.06" y="121.92">
+<attribute name="OC_REICHELT" x="353.06" y="121.92" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C29" gate="G$1" x="360.68" y="121.92">
+<attribute name="OC_REICHELT" x="360.68" y="121.92" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C30" gate="G$1" x="251.46" y="165.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="252.603" y="158.496" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="250.571" y="158.75" size="1.778" layer="96" rot="MR270"/>
+<attribute name="OC_REICHELT" x="251.46" y="165.1" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="C31" gate="G$1" x="251.46" y="238.76" smashed="yes" rot="MR0">
 <attribute name="NAME" x="252.603" y="232.156" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="250.571" y="232.41" size="1.778" layer="96" rot="MR270"/>
+<attribute name="OC_REICHELT" x="251.46" y="238.76" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="SJ1" gate="1" x="360.68" y="243.84"/>
 <instance part="SJ2" gate="1" x="360.68" y="241.3"/>
