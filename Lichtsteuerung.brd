@@ -3505,6 +3505,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <element name="C21" library="resistor" package="C0805" value="100n" x="135.636" y="41.8465" smashed="yes" rot="R180">
 <attribute name="NAME" x="136.525" y="40.8305" size="1.27" layer="25" rot="R180"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="135.636" y="41.8465" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FOO" value="test" x="135.636" y="41.8465" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="JP4" library="pinhead" package="2X03" value="" x="97.79" y="30.48" rot="R270">
 <attribute name="OC_REICHELT" value="MPE 087-2-006" x="97.79" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>

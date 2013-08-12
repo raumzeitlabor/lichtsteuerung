@@ -24415,6 +24415,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="OC_REICHELT" value="PTC194600-050"/>
 </part>
 <part name="C21" library="resistor" deviceset="C-EU" device="C0805" value="100n">
+<attribute name="OC_FOO" value="test"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
 </part>
 <part name="JP4" library="pinhead" deviceset="PINHD-2X3" device="">
@@ -27174,8 +27175,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="348.488" y="148.79" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="347.472" y="160.02" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C21" gate="G$1" x="106.68" y="180.34">
+<instance part="C21" gate="G$1" x="106.68" y="180.34" smashed="yes">
 <attribute name="OC_REICHELT" x="106.68" y="180.34" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="108.204" y="180.721" size="1.778" layer="95"/>
+<attribute name="VALUE" x="108.204" y="175.641" size="1.778" layer="96"/>
+<attribute name="OC_FOO" x="106.68" y="180.34" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP4" gate="A" x="261.62" y="25.4">
 <attribute name="OC_REICHELT" x="261.62" y="25.4" size="1.778" layer="96" display="off"/>
