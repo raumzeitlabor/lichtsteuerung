@@ -333,9 +333,15 @@
 <connect gate="P" pin="VCC" pad="16"/>
 </connects>
 <technologies>
-<technology name="HC"/>
-<technology name="HCT"/>
-<technology name="LS"/>
+<technology name="HC">
+<attribute name="OC_REICHELT" value="SMD HC 595" constant="no"/>
+</technology>
+<technology name="HCT">
+<attribute name="OC_REICHELT" value="" constant="no"/>
+</technology>
+<technology name="LS">
+<attribute name="OC_REICHELT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="D" package="SO16">
@@ -17578,7 +17584,6 @@ Source: LITEON, LTV816.pdf</description>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
-<attribute name="OC_REICHELT" value="LTV 356T-SMD" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -23091,18 +23096,16 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
  parent: 7db0a6816f5a4a5581e92cecab7d7e08</description>
 <text x="0" y="2.5" size="1" layer="25" align="center">&gt;NAME</text>
 <wire x1="-2.335" y1="1.875" x2="2.335" y2="1.875" width="0.127" layer="21"/>
-<wire x1="-2.335" y1="1.875" x2="2.335" y2="1.875" width="0.127" layer="21"/>
 <circle x="-2.335" y="2.5" radius="0.15625" width="0.15625" layer="21"/>
-<wire x1="-1.181" y1="1.875" x2="-1.181" y2="-1.875" width="0.127" layer="21"/>
 <wire x1="-1.181" y1="1.875" x2="-1.181" y2="-1.875" width="0.127" layer="21"/>
 <wire x1="-0.58375" y1="1.25" x2="-0.58375" y2="1.875" width="0.127" layer="21"/>
 <wire x1="-1.181" y1="1.25" x2="-0.58375" y2="1.25" width="0.127" layer="21"/>
 <text x="0" y="-2.5" size="1" layer="27" align="center">&gt;VALUE</text>
-<smd name="1" x="-2.335" y="1.25" dx="1.8" dy="0.64" layer="1" rot="R180"/>
-<smd name="3" x="-2.335" y="-1.25" dx="1.8" dy="0.64" layer="1" rot="R180"/>
-<smd name="4" x="2.335" y="-1.25" dx="1.8" dy="0.64" layer="1"/>
-<smd name="5" x="2.335" y="0" dx="1.8" dy="0.64" layer="1"/>
-<smd name="6" x="2.335" y="1.25" dx="1.8" dy="0.64" layer="1"/>
+<smd name="1" x="-3.235" y="1.25" dx="1.8" dy="0.64" layer="1" rot="R180"/>
+<smd name="3" x="-3.235" y="-1.25" dx="1.8" dy="0.64" layer="1" rot="R180"/>
+<smd name="4" x="3.235" y="-1.25" dx="1.8" dy="0.64" layer="1"/>
+<smd name="5" x="3.235" y="0" dx="1.8" dy="0.64" layer="1"/>
+<smd name="6" x="3.235" y="1.25" dx="1.8" dy="0.64" layer="1"/>
 </package>
 </packages>
 <symbols>
