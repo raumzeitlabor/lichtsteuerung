@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8,7 +8,7 @@
 </settings>
 <grid distance="39.3700787" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.125" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -3538,69 +3538,69 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="3.81" y="63.5" size="1.016" layer="25" rot="R90"/>
 <attribute name="OC_REICHELT" value="SMD-0805 120" x="4.75" y="61.25" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R229" library="resistor" package="R0805" value="10k" x="128.12183125" y="56.4452" smashed="yes" rot="R90">
+<element name="R229" library="resistor" package="R0805" value="47k" x="128.12183125" y="56.4452" smashed="yes" rot="R90">
 <attribute name="NAME" x="127.10583125" y="55.6832" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="128.12183125" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="128.12183125" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R230" library="resistor" package="R0805" value="10k" x="132.1223375" y="49.5998" smashed="yes" rot="R270">
+<element name="R230" library="resistor" package="R0805" value="47k" x="132.1223375" y="49.5998" smashed="yes" rot="R270">
 <attribute name="NAME" x="133.1383375" y="50.3618" size="1.016" layer="25" rot="R270"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="132.1223375" y="49.5998" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="132.1223375" y="49.5998" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R231" library="resistor" package="R0805" value="10k" x="133.09599375" y="56.4452" smashed="yes" rot="R90">
+<element name="R231" library="resistor" package="R0805" value="47k" x="133.09599375" y="56.4452" smashed="yes" rot="R90">
 <attribute name="NAME" x="132.07999375" y="55.6832" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="133.09599375" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="133.09599375" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R232" library="resistor" package="R0805" value="10k" x="137.308175" y="49.5998" smashed="yes" rot="R270">
+<element name="R232" library="resistor" package="R0805" value="47k" x="137.308175" y="49.5998" smashed="yes" rot="R270">
 <attribute name="NAME" x="138.324175" y="50.3618" size="1.016" layer="25" rot="R270"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="137.308175" y="49.5998" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="137.308175" y="49.5998" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R233" library="resistor" package="R0805" value="10k" x="138.38765625" y="56.4452" smashed="yes" rot="R90">
+<element name="R233" library="resistor" package="R0805" value="47k" x="138.38765625" y="56.4452" smashed="yes" rot="R90">
 <attribute name="NAME" x="137.37165625" y="55.6832" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="138.38765625" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="138.38765625" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R234" library="resistor" package="R0805" value="10k" x="142.4940125" y="49.5998" smashed="yes" rot="R270">
+<element name="R234" library="resistor" package="R0805" value="47k" x="142.4940125" y="49.5998" smashed="yes" rot="R270">
 <attribute name="NAME" x="143.5100125" y="50.3618" size="1.016" layer="25" rot="R270"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="142.4940125" y="49.5998" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="142.4940125" y="49.5998" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R235" library="resistor" package="R0805" value="10k" x="143.36181875" y="56.4452" smashed="yes" rot="R90">
+<element name="R235" library="resistor" package="R0805" value="47k" x="143.36181875" y="56.4452" smashed="yes" rot="R90">
 <attribute name="NAME" x="142.34581875" y="55.6832" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="143.36181875" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="143.36181875" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R236" library="resistor" package="R0805" value="10k" x="147.27765" y="56.4452" smashed="yes" rot="R90">
+<element name="R236" library="resistor" package="R0805" value="47k" x="147.27765" y="56.4452" smashed="yes" rot="R90">
 <attribute name="NAME" x="146.26165" y="55.6832" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="147.27765" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="147.27765" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R228" library="resistor" package="R0805" value="10k" x="127.25401875" y="49.5998" smashed="yes" rot="R270">
+<element name="R228" library="resistor" package="R0805" value="47k" x="127.25401875" y="49.5998" smashed="yes" rot="R270">
 <attribute name="NAME" x="128.27001875" y="50.3618" size="1.016" layer="25" rot="R270"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="127.25401875" y="49.5998" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="127.25401875" y="49.5998" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R227" library="resistor" package="R0805" value="10k" x="123.0418125" y="56.4452" smashed="yes" rot="R90">
+<element name="R227" library="resistor" package="R0805" value="47k" x="123.0418125" y="56.4452" smashed="yes" rot="R90">
 <attribute name="NAME" x="122.0258125" y="55.6832" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="123.0418125" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="123.0418125" y="56.4452" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R226" library="resistor" package="R0805" value="10k" x="121.96235625" y="49.5998" smashed="yes" rot="R270">
+<element name="R226" library="resistor" package="R0805" value="47k" x="121.96235625" y="49.5998" smashed="yes" rot="R270">
 <attribute name="NAME" x="122.97835625" y="50.3618" size="1.016" layer="25" rot="R270"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="121.96235625" y="49.5998" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="121.96235625" y="49.5998" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R225" library="resistor" package="R0805" value="10k" x="121.6025" y="45.4025" smashed="yes" rot="R180">
+<element name="R225" library="resistor" package="R0805" value="47k" x="121.6025" y="45.4025" smashed="yes" rot="R180">
 <attribute name="NAME" x="119.3165" y="45.2755" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="121.6025" y="45.4025" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="121.6025" y="45.4025" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R224" library="resistor" package="R0805" value="10k" x="114.3" y="44.7675" smashed="yes">
+<element name="R224" library="resistor" package="R0805" value="47k" x="114.3" y="44.7675" smashed="yes">
 <attribute name="NAME" x="112.903" y="42.291" size="1.016" layer="25"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="114.3" y="44.7675" size="1.778" layer="27" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="114.3" y="44.7675" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R223" library="resistor" package="R0805" value="10k" x="112.4373625" y="50.8698" smashed="yes" rot="R270">
+<element name="R223" library="resistor" package="R0805" value="47k" x="112.4373625" y="50.8698" smashed="yes" rot="R270">
 <attribute name="NAME" x="109.9608625" y="52.9018" size="1.016" layer="25" rot="R270"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="112.4373625" y="50.8698" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="112.4373625" y="50.8698" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R221" library="resistor" package="R0805" value="10k" x="107.6325" y="53.34" smashed="yes" rot="R270">
+<element name="R221" library="resistor" package="R0805" value="47k" x="107.6325" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="105.156" y="55.372" size="1.016" layer="25" rot="R270"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="107.6325" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="107.6325" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R222" library="resistor" package="R0805" value="10k" x="112.395" y="55.88" smashed="yes" rot="R90">
+<element name="R222" library="resistor" package="R0805" value="47k" x="112.395" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="111.0615" y="54.1655" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="112.395" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="112.395" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="OK32" library="ACPL-M50L" package="JEDEC_MS-012-AA_SOIC5" value="ACPL-M50L" x="16.5" y="52.625" smashed="yes" rot="MR90">
 <attribute name="NAME" x="15.625" y="48.375" size="1.016" layer="26" rot="MR180" align="center"/>
