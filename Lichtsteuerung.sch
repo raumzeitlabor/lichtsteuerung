@@ -24368,8 +24368,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </part>
 <part name="P+17" library="supply1" deviceset="+5V" device=""/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
-<part name="IC6" library="atmel" deviceset="MEGA8" device="-AI">
-<attribute name="OC_REICHELT" value="ATMEGA 8A-AU"/>
+<part name="IC6" library="atmel" deviceset="MEGA8" device="-AI" value="MEGA168-AI">
+<attribute name="OC_REICHELT" value="ATMEGA 168A-AU"/>
 </part>
 <part name="R40" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
