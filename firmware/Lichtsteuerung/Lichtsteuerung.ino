@@ -1,4 +1,19 @@
+#include <EEPROM.h>
+#include <DMXSerial2.h>
+
 #include <bitlash.h>
+
+numvar setOutput(void);
+numvar clearOutput(void);
+void initOutputs ();
+void sendOutputs ();
+void setup (void);
+void loop (void);
+boolean processCommand(struct RDMDATA *rdm);
+
+#define DmxModePin 36
+#define DmxModeOut LOW
+#define DmxModeIn HIGH
 
 #define SR_OUTPUT 39
 #define SR_SCK 38
@@ -8,6 +23,14 @@
 #define NUM_OUTPUTS 32
 
 bool outputs[NUM_OUTPUTS];
+
+struct RDMINIT rdmInit = {
+  "mathertel.de",
+  "Arduino RDM Device",
+  3, // footprint
+  2, (uint16_t[]){SWAPINT(E120_DEVICE_HOURS), SWAPINT(E120_LAMP_HOURS)}
+};
+
 
 /**
  * bitlash function to set an output.
@@ -93,13 +116,58 @@ void sendOutputs () {
 }
 
 void setup (void) {
+  int i=0;
+  
   initOutputs();
-  initBitlash(57600);
+  
+  Serial1.begin(115200);
+  Serial1.println("FOOBAR");
+  //initBitlash(115200);
+  DMXSerial2.init(&rdmInit, processCommand, 36, HIGH, LOW);
+  
+  pinMode(0, INPUT);
+  pinMode(1, INPUT);
 
+//  uint16_t start = DMXSerial2.getStartAddress();
+  
+//  Serial1.print("Listening on DMX address #"); Serial1.println(start);
+  
+  outputs[1] = HIGH;
+    sendOutputs();
+    
   addBitlashFunction("setoutput", (bitlash_function) setOutput);
   addBitlashFunction("clearoutput", (bitlash_function) clearOutput);
 }
 
 void loop (void) {
-  runBitlash(); 
+  //runBitlash();
+  DMXSerial2.tick();
 }
+
+boolean processCommand(struct RDMDATA *rdm)
+{
+  byte CmdClass       = rdm->CmdClass;     // command class
+  uint16_t Parameter  = rdm->Parameter;    // parameter ID
+  boolean handled = false;
+
+// This is a sample of how to return some device specific data
+  if ((CmdClass == E120_GET_COMMAND) && (Parameter == SWAPINT(E120_DEVICE_HOURS))) { // 0x0400
+    rdm->DataLength = 4;
+    rdm->Data[0] = 0;
+    rdm->Data[1] = 0;
+    rdm->Data[2] = 2;
+    rdm->Data[3] = 0;
+    handled = true;
+
+  } else if ((CmdClass == E120_GET_COMMAND) && (Parameter == SWAPINT(E120_LAMP_HOURS))) { // 0x0401
+    rdm->DataLength = 4;
+    rdm->Data[0] = 0;
+    rdm->Data[1] = 0;
+    rdm->Data[2] = 0;
+    rdm->Data[3] = 1;
+    handled = true;
+  } // if
+
+  return(handled);
+} // processCommand
+
