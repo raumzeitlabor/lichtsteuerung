@@ -1,4 +1,4 @@
-lichtsteuerung
-==============
+RaumZeitLabor Lichtsteuerung
+============================
 
-Dokumentation der RZL-Lichtsteuerung
+https://wiki.raumzeitlabor.de/wiki/Lichtsteuerung
