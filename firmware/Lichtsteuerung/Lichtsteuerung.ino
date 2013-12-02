@@ -122,7 +122,7 @@ void setup (void) {
   
   Serial1.begin(115200);
   Serial1.println("FOOBAR");
-  //initBitlash(115200);
+
   DMXSerial2.init(&rdmInit, processCommand, 36, HIGH, LOW);
   
   pinMode(0, INPUT);
@@ -133,7 +133,7 @@ void setup (void) {
 //  Serial1.print("Listening on DMX address #"); Serial1.println(start);
   
   outputs[1] = HIGH;
-    sendOutputs();
+  sendOutputs();
     
   addBitlashFunction("setoutput", (bitlash_function) setOutput);
   addBitlashFunction("clearoutput", (bitlash_function) clearOutput);
