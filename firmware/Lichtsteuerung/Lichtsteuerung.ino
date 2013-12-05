@@ -1,15 +1,8 @@
 #include <EEPROM.h>
+#include <avr/pgmspace.h>
 #include <DMXSerial2.h>
-
+#include <Bounce.h>
 #include <bitlash.h>
-
-numvar setOutput(void);
-numvar clearOutput(void);
-void initOutputs ();
-void sendOutputs ();
-void setup (void);
-void loop (void);
-boolean processCommand(struct RDMDATA *rdm);
 
 #define DmxModePin 36
 #define DmxModeOut LOW
@@ -21,66 +14,37 @@ boolean processCommand(struct RDMDATA *rdm);
 #define SR_OE  13
 
 #define NUM_OUTPUTS 32
+#define NUM_INPUTS 16
 
 bool outputs[NUM_OUTPUTS];
 
 struct RDMINIT rdmInit = {
-  "mathertel.de",
-  "Arduino RDM Device",
-  3, // footprint
+  "raumzeitlabor.de",
+  "Lichtsteuerung",
+  32, // footprint
   2, (uint16_t[]){SWAPINT(E120_DEVICE_HOURS), SWAPINT(E120_LAMP_HOURS)}
 };
 
+PROGMEM const prog_uchar inputPins[] = {
+	0,
+	1,
+	2,
+	3,
+	4,
+	5,
+	6,
+	7,
+	16,
+	17,
+	18,
+	19,
+	20,
+	21,
+	22,
+	23
+};
 
-/**
- * bitlash function to set an output.
- *
- * Usage: setOutput [output]
- *
- * [output]: 1-32
- */
-numvar setOutput(void) {
-    if (getarg(0) != 1) {
-       Serial1.println("Usage: setOutput [output]");
-       return 0;
-    }
-    
-    int i = getarg(1);
-    if (i<1 || i>32) {
-       Serial1.print("Port ");
-       Serial1.print(i);
-       Serial1.println(" out of range. Valid values are 1-32");
-       return 0;
-    }
-    
-    outputs[i-1] = HIGH;
-    sendOutputs();
-}
-
-/**
- * bitlash function to clear an output.
- *
- * Usage: clearOutput [output]
- *
- * [output]: 1-32
- */
-numvar clearOutput(void) {
-    if (getarg(0) != 1) {
-       Serial1.println("Usage: clearOutput [output]");
-       return 0;
-    }
-    
-    int i = getarg(1);
-    if (i<1 || i>32) {
-       Serial1.print("Port ");
-       Serial1.print(i);
-       Serial1.println(" out of range. Valid values are 1-32");
-       return 0;
-    }
-    
-    outputs[i-1] = LOW;
-    sendOutputs();
-}
+Bounce debouncers[16];
 
 /**
  * Initializes the output array and sets up the pins required for the shift register.
@@ -120,28 +84,46 @@ void setup (void) {
   
   initOutputs();
   
-  Serial1.begin(115200);
-  Serial1.println("FOOBAR");
+  initBitlash(57600);
+  DMXSerial2.init(&rdmInit, processCommand, DmxModePin, HIGH, LOW);
 
-  DMXSerial2.init(&rdmInit, processCommand, 36, HIGH, LOW);
-  
-  pinMode(0, INPUT);
-  pinMode(1, INPUT);
+  for (i=0;i<sizeof(inputPins);i++) {
+	  pinMode(pgm_read_byte(&inputPins[i]), INPUT);
+	  
+	  debouncers[i].setPin(pgm_read_byte(&inputPins[i]));
+	  debouncers[i].setInterval(10);
+  }
 
-//  uint16_t start = DMXSerial2.getStartAddress();
+  addBitlashFunction("setoutputstate", (bitlash_function) bl_setOutputState);
+  addBitlashFunction("getdevicename", (bitlash_function) bl_getDeviceName);
+  addBitlashFunction("setdevicename", (bitlash_function) bl_setDeviceName);
   
-//  Serial1.print("Listening on DMX address #"); Serial1.println(start);
-  
-  outputs[1] = HIGH;
-  sendOutputs();
-    
-  addBitlashFunction("setoutput", (bitlash_function) setOutput);
-  addBitlashFunction("clearoutput", (bitlash_function) clearOutput);
 }
 
 void loop (void) {
-  //runBitlash();
-  DMXSerial2.tick();
+	int i;
+	runBitlash();
+	DMXSerial2.tick();
+  
+	for (i=0;i<sizeof(inputPins);i++) {
+		debouncers[i].update();
+		
+		if (debouncers[i].fallingEdge()) {
+			
+			if (debouncers[i].previousDuration() > 500) {
+				Serial1.println("LONG");
+				
+			}
+			Serial1.print("INPUT ");
+			Serial1.print(i);
+			Serial1.print(" (");
+			Serial1.print(pgm_read_byte(&inputPins[i]));
+			Serial1.print(") ");
+			Serial1.println("HIGH");
+		}
+	}
+	
+	delay(100);
 }
 
 boolean processCommand(struct RDMDATA *rdm)
