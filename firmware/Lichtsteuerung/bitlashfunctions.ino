@@ -19,9 +19,9 @@ PGM_P const messages[] PROGMEM = {
 };
 
 /**
- * bitlash function to set an output.
+ * bitlash function to set or clear an output.
  *
- * Usage: setOutput [output]
+ * Usage: setOutputState [output]
  *
  * [output]: 1-32
  */
