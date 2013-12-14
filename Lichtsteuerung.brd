@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -488,16 +488,16 @@
 <text x="26.035" y="76.2" size="1.016" layer="25" rot="R270">GND</text>
 <text x="49" y="64.75" size="1.016" layer="21">Lasercat was here. Meow. Pew Pew.</text>
 <text x="109.0085" y="11.568" size="1.016" layer="25">EXT PWR</text>
-<text x="38.625" y="55.5" size="0.6096" layer="27" align="center">PULL
+<text x="38.625" y="55.5" size="0.6096" layer="25" align="center">PULL
 DOWN</text>
-<text x="42" y="55.5" size="0.6096" layer="27" align="center">PULL
+<text x="42" y="55.5" size="0.6096" layer="25" align="center">PULL
 UP</text>
-<text x="45.375" y="55.5" size="0.6096" layer="27" align="center">TERM</text>
-<text x="37.75" y="30.375" size="0.6096" layer="27" align="center">INT +24V
+<text x="45.375" y="55.5" size="0.6096" layer="25" align="center">TERM</text>
+<text x="37.75" y="30.375" size="0.6096" layer="25" align="center">INT +24V
 FOR X1</text>
-<text x="106" y="31.25" size="0.6096" layer="27" align="center">INT +24V
+<text x="106" y="31.25" size="0.6096" layer="25" align="center">INT +24V
 FOR X2</text>
-<text x="155.375" y="35.625" size="0.6096" layer="27" rot="R90" align="center">VIA X4 INT +24V
+<text x="155.375" y="35.625" size="0.6096" layer="25" rot="R90" align="center">VIA X4 INT +24V
 X5 POWER</text>
 <wire x1="153.75" y1="37.5" x2="154.25" y2="37.5" width="0.2032" layer="21"/>
 <wire x1="154.25" y1="37.5" x2="154.25" y2="35" width="0.2032" layer="21"/>
@@ -3314,7 +3314,7 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 </element>
 <element name="F2" library="f-lf-omniblok-s" package="OMNIBLOK" value="125mA" x="17" y="60" smashed="yes">
 <attribute name="OC_REICHELT" value="SMD-HASF 0,25A" x="17" y="60" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="21.85" y="62.95" size="0.6096" layer="27" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="21.85" y="62.95" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="NAME" x="12.15" y="62.925" size="0.6096" layer="25" align="center-left"/>
 </element>
 <element name="L1" library="epcos-b82790c0" package="EPCOS_B82790_SERIES" value="2x51µH" x="30" y="52.5" smashed="yes" rot="R180">
@@ -3343,12 +3343,12 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <element name="LED2" library="led" package="CHIP-LED0805" value="24V" x="9.25" y="82" smashed="yes">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 RT" x="9.25" y="82" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="9.25" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="9.25" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="9.25" y="80.125" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="LED1" library="led" package="CHIP-LED0805" value="5V" x="11.25" y="82" smashed="yes">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="11.25" y="82" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11.375" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="11.25" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="11.25" y="80.125" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="R9" library="rcl" package="R0805" value="1,5k" x="34.5" y="61" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.625" y="63.125" size="0.6096" layer="25" rot="R90" align="center-left"/>
@@ -3496,12 +3496,12 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <element name="LED3" library="led" package="CHIP-LED0805" value="ACT" x="7.25" y="82" smashed="yes">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="7.25" y="82" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="7.25" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="7.25" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="7.25" y="80.125" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="LED4" library="led" package="CHIP-LED0805" value="RES" x="5.25" y="82" smashed="yes">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="5.25" y="82" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="5.125" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="5.125" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="5.125" y="80.125" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="R5" library="rcl" package="R0805" value="220" x="32" y="61" smashed="yes" rot="R270">
 <attribute name="OC_REICHELT" value="SMD-0805 220" x="32" y="61" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3514,12 +3514,12 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <element name="LED5" library="led" package="CHIP-LED0805" value="TX" x="3.25" y="82" smashed="yes">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="3.25" y="82" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="3.25" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="3.25" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="3.25" y="80.125" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="LED6" library="led" package="CHIP-LED0805" value="RX" x="1.25" y="82" smashed="yes">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="1.25" y="82" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="1.25" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="1.25" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="1.25" y="80.125" size="1.016" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="R7" library="rcl" package="R0805" value="220" x="27" y="61" smashed="yes" rot="R270">
 <attribute name="OC_REICHELT" value="SMD-0805 220" x="27" y="61" size="1.778" layer="27" rot="R270" display="off"/>
