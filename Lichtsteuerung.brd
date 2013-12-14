@@ -23,9 +23,9 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -410,9 +410,8 @@
 <wire x1="148.3991" y1="64.3997" x2="153.2991" y2="64.3997" width="0" layer="39"/>
 <wire x1="153.2991" y1="63.4671" x2="153.2991" y2="64.3997" width="0" layer="39"/>
 <wire x1="50.65" y1="65.9" x2="107.05" y2="65.9" width="0" layer="39"/>
-<text x="129.54" y="84.7725" size="1.016" layer="25" rot="R180">ISP MAIN</text>
-<text x="151.13" y="84.7725" size="1.016" layer="25" rot="R180">ISP DMX OUT</text>
-<text x="155.682" y="20.2585" size="1.778" layer="25" rot="R90">RZL Lichtsteuerung Revishiun E</text>
+<text x="129.5" y="84.25" size="1.016" layer="25" rot="R180" align="center-left">ISP</text>
+<text x="156.3665" y="67.307" size="1.4224" layer="25" rot="R180" align="center-left">RZL Lichtsteuerung Revishiun F</text>
 <text x="14.875" y="76.325" size="1.016" layer="25" rot="R270">DMX IN A</text>
 <text x="17.415" y="76.325" size="1.016" layer="25" rot="R270">DMX IN B</text>
 <text x="19.955" y="76.2" size="1.016" layer="25" rot="R270">GND</text>
@@ -481,118 +480,35 @@
 <text x="137.3975" y="2.2225" size="1.016" layer="25">12</text>
 <text x="140.765" y="2.2225" size="1.016" layer="25">14</text>
 <text x="144.2575" y="2.2225" size="1.016" layer="25">16</text>
-<text x="149.27" y="2.2225" size="1.016" layer="25">GND</text>
+<text x="147.645" y="2.0975" size="1.016" layer="25">GNDINT</text>
 <text x="117.45" y="4.55" size="1.016" layer="25" rot="R90">Digital Inputs</text>
 <text x="7.7" y="4.2" size="1.016" layer="25" rot="R90">Digital Outputs</text>
 <text x="60.9" y="4.2" size="1.016" layer="25" rot="R90">Digital Outputs</text>
-<rectangle x1="34.2" y1="-75.9" x2="35.95" y2="-75.55" layer="26"/>
-<rectangle x1="35.95" y1="-76.25" x2="36.65" y2="-75.9" layer="26"/>
-<rectangle x1="36.65" y1="-76.95" x2="37" y2="-76.25" layer="26"/>
-<rectangle x1="36.3" y1="-76.95" x2="36.65" y2="-76.6" layer="26"/>
-<rectangle x1="35.25" y1="-77.3" x2="36.3" y2="-76.95" layer="26"/>
-<rectangle x1="34.2" y1="-77.65" x2="35.25" y2="-77.3" layer="26"/>
-<rectangle x1="35.25" y1="-78.7" x2="36.3" y2="-78.35" layer="26"/>
-<rectangle x1="36.3" y1="-79.05" x2="37" y2="-78.7" layer="26"/>
-<rectangle x1="36.65" y1="-79.4" x2="37" y2="-79.05" layer="26"/>
-<rectangle x1="35.95" y1="-79.75" x2="36.65" y2="-79.4" layer="26"/>
-<rectangle x1="34.2" y1="-80.1" x2="35.95" y2="-79.75" layer="26"/>
-<rectangle x1="33.5" y1="-79.75" x2="34.2" y2="-79.4" layer="26"/>
-<rectangle x1="33.15" y1="-79.4" x2="33.5" y2="-78.7" layer="26"/>
-<rectangle x1="33.5" y1="-76.25" x2="34.2" y2="-75.9" layer="26"/>
-<rectangle x1="33.15" y1="-76.95" x2="33.5" y2="-76.25" layer="26"/>
-<rectangle x1="32.8" y1="-78" x2="33.15" y2="-76.95" layer="26"/>
-<rectangle x1="32.8" y1="-78.7" x2="33.15" y2="-78" layer="26"/>
-<rectangle x1="34.2" y1="-78.35" x2="35.25" y2="-78" layer="26"/>
-<rectangle x1="33.5" y1="-76.6" x2="36.65" y2="-76.25" layer="26"/>
-<rectangle x1="33.5" y1="-76.95" x2="36.3" y2="-76.6" layer="26"/>
-<rectangle x1="33.15" y1="-77.3" x2="35.25" y2="-76.95" layer="26"/>
-<rectangle x1="33.15" y1="-78.7" x2="34.2" y2="-77.3" layer="26"/>
-<rectangle x1="33.85" y1="-79.4" x2="36.3" y2="-78.7" layer="26"/>
-<rectangle x1="36.3" y1="-79.4" x2="36.65" y2="-79.05" layer="26"/>
-<rectangle x1="34.2" y1="-78.7" x2="34.9" y2="-78.35" layer="26"/>
-<rectangle x1="34.9" y1="-78.7" x2="35.25" y2="-78.35" layer="26"/>
-<rectangle x1="34.2" y1="-79.75" x2="35.95" y2="-79.4" layer="26"/>
-<rectangle x1="33.5" y1="-79.4" x2="33.85" y2="-78.7" layer="26"/>
-<rectangle x1="34.55" y1="-76.25" x2="35.95" y2="-75.9" layer="26"/>
-<rectangle x1="34.2" y1="-76.25" x2="34.55" y2="-75.9" layer="26"/>
-<rectangle x1="38.5" y1="-78" x2="38.85" y2="-77.65" layer="26"/>
-<rectangle x1="42" y1="-78" x2="42.35" y2="-77.65" layer="26"/>
-<rectangle x1="45.5" y1="-78" x2="45.85" y2="-77.65" layer="26"/>
-<rectangle x1="49" y1="-78" x2="49.35" y2="-77.65" layer="26"/>
-<rectangle x1="52.5" y1="-78" x2="52.85" y2="-77.65" layer="26"/>
-<rectangle x1="56" y1="-78" x2="56.35" y2="-77.65" layer="26"/>
-<rectangle x1="59.5" y1="-78" x2="59.85" y2="-77.65" layer="26"/>
-<rectangle x1="63" y1="-78" x2="63.35" y2="-77.65" layer="26"/>
-<rectangle x1="63" y1="-74.5" x2="63.35" y2="-74.15" layer="26"/>
-<rectangle x1="63" y1="-71" x2="63.35" y2="-70.65" layer="26"/>
-<rectangle x1="63" y1="-67.5" x2="63.35" y2="-67.15" layer="26"/>
-<rectangle x1="63" y1="-64" x2="63.35" y2="-63.65" layer="26"/>
-<rectangle x1="63" y1="-60.5" x2="63.35" y2="-60.15" layer="26"/>
-<rectangle x1="63" y1="-57" x2="63.35" y2="-56.65" layer="26"/>
-<rectangle x1="66.5" y1="-57" x2="66.85" y2="-56.65" layer="26"/>
-<rectangle x1="70" y1="-57" x2="70.35" y2="-56.65" layer="26"/>
-<rectangle x1="73.5" y1="-57" x2="73.85" y2="-56.65" layer="26"/>
-<rectangle x1="77" y1="-57" x2="77.35" y2="-56.65" layer="26"/>
-<rectangle x1="80.5" y1="-57" x2="80.85" y2="-56.65" layer="26"/>
-<rectangle x1="80.5" y1="-53.5" x2="80.85" y2="-53.15" layer="26"/>
-<rectangle x1="80.5" y1="-50" x2="80.85" y2="-49.65" layer="26"/>
-<rectangle x1="84" y1="-50" x2="84.35" y2="-49.65" layer="26"/>
-<rectangle x1="87.5" y1="-50" x2="87.85" y2="-49.65" layer="26"/>
-<rectangle x1="91" y1="-50" x2="91.35" y2="-49.65" layer="26"/>
-<rectangle x1="94.5" y1="-50" x2="94.85" y2="-49.65" layer="26"/>
-<rectangle x1="98" y1="-50" x2="98.35" y2="-49.65" layer="26"/>
-<rectangle x1="98" y1="-46.5" x2="98.35" y2="-46.15" layer="26"/>
-<rectangle x1="77" y1="70" x2="77.35" y2="70.35" layer="26"/>
-<rectangle x1="80.5" y1="70" x2="80.85" y2="70.35" layer="26"/>
-<rectangle x1="84" y1="70" x2="84.35" y2="70.35" layer="26"/>
-<rectangle x1="87.5" y1="70" x2="87.85" y2="70.35" layer="26"/>
-<rectangle x1="91" y1="70" x2="91.35" y2="70.35" layer="26"/>
-<rectangle x1="94.5" y1="70" x2="94.85" y2="70.35" layer="26"/>
-<rectangle x1="98" y1="70" x2="98.35" y2="70.35" layer="26"/>
-<rectangle x1="101.5" y1="70" x2="101.85" y2="70.35" layer="26"/>
-<rectangle x1="105" y1="68.6" x2="106.4" y2="68.95" layer="26"/>
-<rectangle x1="105.35" y1="68.25" x2="106.05" y2="68.6" layer="26"/>
-<rectangle x1="106.75" y1="68.6" x2="108.15" y2="68.95" layer="26"/>
-<rectangle x1="107.1" y1="68.25" x2="107.8" y2="68.6" layer="26"/>
-<rectangle x1="108.5" y1="68.6" x2="109.9" y2="68.95" layer="26"/>
-<rectangle x1="108.85" y1="68.25" x2="109.55" y2="68.6" layer="26"/>
-<rectangle x1="109.55" y1="68.95" x2="109.9" y2="71.05" layer="26"/>
-<rectangle x1="105" y1="68.95" x2="105.35" y2="71.05" layer="26"/>
-<rectangle x1="109.2" y1="71.05" x2="109.55" y2="72.1" layer="26"/>
-<rectangle x1="105.7" y1="72.1" x2="109.2" y2="72.45" layer="26"/>
-<rectangle x1="106.75" y1="72.8" x2="108.15" y2="73.15" layer="26"/>
-<rectangle x1="106.05" y1="72.45" x2="108.85" y2="72.8" layer="26"/>
-<rectangle x1="105.35" y1="68.95" x2="105.7" y2="70.35" layer="26"/>
-<rectangle x1="105.7" y1="68.95" x2="109.55" y2="69.65" layer="26"/>
-<rectangle x1="105.7" y1="69.65" x2="109.55" y2="70" layer="26"/>
-<rectangle x1="106.4" y1="70" x2="107.8" y2="70.35" layer="26"/>
-<rectangle x1="108.5" y1="69.65" x2="109.55" y2="70.35" layer="26"/>
-<rectangle x1="106.75" y1="70.35" x2="107.45" y2="71.4" layer="26"/>
-<rectangle x1="109.2" y1="70.35" x2="109.55" y2="71.05" layer="26"/>
-<rectangle x1="108.85" y1="70.7" x2="109.2" y2="71.4" layer="26"/>
-<rectangle x1="108.85" y1="70.35" x2="109.2" y2="70.7" layer="26"/>
-<rectangle x1="108.5" y1="71.4" x2="109.2" y2="72.1" layer="26"/>
-<rectangle x1="107.45" y1="71.4" x2="107.8" y2="72.1" layer="26"/>
-<rectangle x1="107.8" y1="71.75" x2="108.5" y2="72.1" layer="26"/>
-<rectangle x1="106.4" y1="71.4" x2="107.45" y2="71.75" layer="26"/>
-<rectangle x1="105.7" y1="71.75" x2="107.45" y2="72.1" layer="26"/>
-<rectangle x1="105.35" y1="71.4" x2="105.7" y2="72.1" layer="26"/>
-<rectangle x1="106.05" y1="70.7" x2="106.4" y2="71.05" layer="26"/>
-<rectangle x1="107.8" y1="70.7" x2="108.15" y2="71.05" layer="26"/>
 <wire x1="27.94" y1="83.82" x2="27.94" y2="73.35" width="0.4064" layer="25"/>
 <text x="26.035" y="76.2" size="1.016" layer="25" rot="R270">GND</text>
-<text x="56.75" y="-66.875" size="1.27" layer="27" rot="R90">+5V</text>
-<text x="11" y="95.125" size="1.27" layer="27" rot="R270">+24V</text>
-<text x="32" y="-85" size="1.016" layer="21">Lasercat was here. Meow. Pew Pew.</text>
-<text x="65.875" y="-86.75" size="1.016" layer="25" rot="R90">GND</text>
-<text x="65.625" y="-81.375" size="1.016" layer="25" rot="R90">+5V</text>
-<text x="34.5" y="-71.75" size="1.016" layer="25">GNDI1</text>
-<text x="42.75" y="-69.375" size="1.016" layer="25">VCCIO1</text>
-<text x="-12.875" y="52.875" size="1.016" layer="25" rot="R90">GNDI2</text>
-<text x="-9.375" y="43.25" size="1.016" layer="25" rot="R90">VCCIO2</text>
-<text x="254.6335" y="23.943" size="1.016" layer="25">+24V</text>
-<text x="255.7585" y="18.943" size="1.016" layer="25">EXT</text>
-<text x="108.5085" y="12.693" size="1.016" layer="25">EXT PWR</text>
+<text x="49" y="64.75" size="1.016" layer="21">Lasercat was here. Meow. Pew Pew.</text>
+<text x="109.0085" y="11.568" size="1.016" layer="25">EXT PWR</text>
+<text x="38.625" y="55.5" size="0.6096" layer="27" align="center">PULL
+DOWN</text>
+<text x="42" y="55.5" size="0.6096" layer="27" align="center">PULL
+UP</text>
+<text x="45.375" y="55.5" size="0.6096" layer="27" align="center">TERM</text>
+<text x="37.75" y="30.375" size="0.6096" layer="27" align="center">INT +24V
+FOR X1</text>
+<text x="106" y="31.25" size="0.6096" layer="27" align="center">INT +24V
+FOR X2</text>
+<text x="155.375" y="35.625" size="0.6096" layer="27" rot="R90" align="center">VIA X4 INT +24V
+X5 POWER</text>
+<wire x1="153.75" y1="37.5" x2="154.25" y2="37.5" width="0.2032" layer="21"/>
+<wire x1="154.25" y1="37.5" x2="154.25" y2="35" width="0.2032" layer="21"/>
+<wire x1="154.25" y1="35" x2="153.75" y2="35" width="0.2032" layer="21"/>
+<wire x1="153.75" y1="32.375" x2="154.25" y2="32.375" width="0.2032" layer="21"/>
+<wire x1="154.25" y1="35" x2="154.25" y2="32.375" width="0.2032" layer="21"/>
+<wire x1="154.25" y1="35" x2="155.125" y2="35" width="0.2032" layer="21"/>
+<text x="111.125" y="2.375" size="0.6096" layer="25" font="vector" align="center">GND
+INT</text>
+<text x="113.625" y="2.375" size="0.6096" layer="25" font="vector" align="center">EXT
+VCC</text>
 </plain>
 <libraries>
 <library name="74xx-eu">
@@ -2899,59 +2815,59 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 </autorouter>
 <elements>
 <element name="IC1" library="74xx-eu" package="SO16" value="74HC595D" x="9" y="42" smashed="yes">
-<attribute name="NAME" x="14.0625" y="44.29" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="14.625" y="40.375" size="0.6096" layer="25" ratio="10" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD HC 595" x="9" y="42" size="1.778" layer="27" display="off"/>
 </element>
 <element name="IC2" library="74xx-eu" package="SO16" value="74HC595D" x="23" y="42" smashed="yes">
-<attribute name="NAME" x="15.38" y="44.2225" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="28.625" y="40.375" size="0.6096" layer="25" ratio="10" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD HC 595" x="23" y="42" size="1.778" layer="27" display="off"/>
 </element>
 <element name="IC3" library="74xx-eu" package="SO16" value="74HC595D" x="79" y="43" smashed="yes">
-<attribute name="NAME" x="71.38" y="45.2225" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="84.4725" y="40.87" size="0.6096" layer="25" ratio="10" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD HC 595" x="79" y="43" size="1.778" layer="27" display="off"/>
 </element>
 <element name="IC4" library="74xx-eu" package="SO16" value="74HC595D" x="92" y="43" smashed="yes">
-<attribute name="NAME" x="84.38" y="45.286" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="97.411" y="40.995" size="0.6096" layer="25" ratio="10" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD HC 595" x="92" y="43" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R1" library="resistor" package="R0805" value="1k" x="11" y="47.75" smashed="yes">
-<attribute name="NAME" x="8.7775" y="46.7975" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 1,00K" x="11" y="47.75" size="1.778" layer="27" display="off"/>
+<element name="R1" library="resistor" package="R0805" value="1k" x="11.375" y="47.875" smashed="yes">
+<attribute name="NAME" x="13.25" y="49.25" size="0.6096" layer="25" rot="R180" align="center-left"/>
+<attribute name="OC_REICHELT" value="SMD-0805 1,00K" x="11.375" y="47.875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R2" library="resistor" package="R0805" value="1k" x="26.75" y="47.75" smashed="yes" rot="R180">
-<attribute name="NAME" x="29.925" y="46.7975" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="25.0475" y="49.075" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,00K" x="26.75" y="47.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R3" library="resistor" package="R0805" value="1k" x="76" y="48.5" smashed="yes">
-<attribute name="NAME" x="72.825" y="49.4525" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="76.7975" y="49.95" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,00K" x="76" y="48.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R4" library="resistor" package="R0805" value="1k" x="99.5" y="48" smashed="yes" rot="R270">
-<attribute name="NAME" x="100.4525" y="51.175" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="99.9525" y="50.425" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,00K" x="99.5" y="48" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C5" library="rcl" package="C0805" value="100n" x="2.5" y="42.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="1.23" y="41.23" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="2" y="40.125" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="2.5" y="42.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C6" library="rcl" package="C0805" value="100n" x="16.5" y="43" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.4525" y="40.7775" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="17.4525" y="40.7775" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="16.5" y="43" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C7" library="rcl" package="C0805" value="100n" x="72.5" y="44" smashed="yes" rot="R270">
-<attribute name="NAME" x="71.7225" y="40.8475" size="1.016" layer="25"/>
+<attribute name="NAME" x="72.0975" y="41.5975" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="72.5" y="44" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C8" library="rcl" package="C0805" value="100n" x="85.5" y="44" smashed="yes" rot="R270">
-<attribute name="NAME" x="84.5475" y="40.825" size="1.016" layer="25"/>
+<attribute name="NAME" x="85.1725" y="41.575" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="85.5" y="44" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="IC13" library="SparkFun" package="SO08" value="DS1307SO8" x="140" y="60" smashed="yes" rot="R90">
-<attribute name="NAME" x="138.4125" y="62.54" size="1.016" layer="25"/>
+<attribute name="NAME" x="138.1625" y="62.915" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="DS 1307Z" x="140" y="60" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="G1" library="cr2032v2" package="CR2032V2" value="CR2032V" x="87.705" y="51.2475" smashed="yes" rot="R270">
-<attribute name="NAME" x="99.135" y="53.7875" size="1.016" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="95.2125" y="53.76" size="0.6096" layer="25" ratio="10" align="center-left"/>
 <attribute name="OC_REICHELT" value="KZH 20PCB-V" x="87.705" y="51.2475" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="Q1" library="crystal" package="MC-306" value="32.768" x="149" y="60" smashed="yes" rot="R180">
@@ -2959,15 +2875,15 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="MC-306 60.0KHZ  100PPM ,12.5PF" x="149" y="60" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1278040" x="149" y="60" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="31M5576" x="149" y="60" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="149.2092" y="57.5025" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="150.5842" y="58.0025" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="0,032768-SMD" x="149" y="60" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R37" library="resistor" package="R0805" value="10k" x="63.875" y="45.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="65.145" y="43.235" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="64.77" y="47.985" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="63.875" y="45.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R38" library="resistor" package="R0805" value="10k" x="68.5" y="49.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="66.235" y="50.175" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="68.175" y="51.015" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="68.5" y="49.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="JP1" library="con-ml" package="ML10" value="" x="119.38" y="78.74" smashed="yes">
@@ -2975,12 +2891,12 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="119.38" y="78.74" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="119.38" y="78.74" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="119.38" y="78.74" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="109.22" y="83.82" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="109.345" y="84.195" size="1.016" layer="25" align="center-left"/>
 <attribute name="VALUE" x="119.38" y="83.82" size="1.778" layer="27" ratio="10"/>
 <attribute name="OC_REICHELT" value="WSL 10G" x="119.38" y="78.74" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R39" library="resistor" package="R0805" value="10k" x="97.38" y="55.6575" smashed="yes" rot="R180">
-<attribute name="NAME" x="95.0305" y="56.991" size="1.016" layer="25"/>
+<attribute name="NAME" x="97.625" y="54.25" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="97.38" y="55.6575" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="IC9" library="microchip" package="SO-08M" value="24FC128-I/SN" x="130.5" y="60" smashed="yes" rot="R90">
@@ -2988,76 +2904,76 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="24AA01-I/SN" x="130.5" y="60" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1331268" x="130.5" y="60" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="92C6793" x="130.5" y="60" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="131.77" y="57.333" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="127.98" y="62.917" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="24FC128-I/SN" x="130.5" y="60" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="IC10" library="_traco_tsr-1" package="TSR-1" value="TSR_1-2450" x="4" y="56" smashed="yes" rot="R270">
-<attribute name="NAME" x="9.9182" y="61.842" size="1.4224" layer="25" rot="R270"/>
+<attribute name="NAME" x="2.158" y="62.6682" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="TSR 1-2450" x="4" y="56" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C9" library="rcl" package="C0805" value="1µ" x="25.5" y="57.5" smashed="yes">
-<attribute name="NAME" x="24.9" y="58.685" size="1.016" layer="25"/>
+<attribute name="NAME" x="25.525" y="56.06" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 1,0/50" x="25.5" y="57.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C10" library="rcl" package="C0805" value="100n" x="13.435" y="50.29" smashed="yes">
-<attribute name="NAME" x="8.482" y="50.29" size="1.016" layer="25"/>
-<attribute name="OC_REICHELT" value="X7R-G0805 100N" x="13.435" y="50.29" size="1.778" layer="27" display="off"/>
+<element name="C10" library="rcl" package="C0805" value="100n" x="5" y="47.875" smashed="yes">
+<attribute name="NAME" x="7" y="49.25" size="0.6096" layer="25" rot="R180" align="center-left"/>
+<attribute name="OC_REICHELT" value="X7R-G0805 100N" x="5" y="47.875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="Q2" library="Crystals-new" package="MJ" value="16MHz" x="49.105" y="25.46" smashed="yes">
-<attribute name="NAME" x="52.28" y="26.73" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="50.645" y="23.155" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="16,000000-MJ" x="49.105" y="25.46" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C11" library="rcl" package="C0805" value="22p" x="53.25" y="25.29" smashed="yes" rot="R270">
-<attribute name="NAME" x="51.98" y="23.7025" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="54.73" y="23.5775" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 22P" x="53.25" y="25.29" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C12" library="rcl" package="C0805" value="22p" x="44.79" y="25.77" smashed="yes" rot="R90">
-<attribute name="NAME" x="45.425" y="27.9925" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="43.9925" y="28.2" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 22P" x="44.79" y="25.77" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="IC12" library="751xx" package="D_R-PDSO-G8" value="75176AD" x="45" y="60" smashed="yes" rot="R90">
-<attribute name="NAME" x="46.5875" y="63.81" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="43.1625" y="62.94" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="SN 75176BD" x="45" y="60" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="IC11" library="avr-7" package="TQFP64" value="MEGA64-A" x="52.26" y="37.93" smashed="yes" rot="R315">
-<attribute name="NAME" x="59.88" y="43.01" size="1.016" layer="25" rot="R315"/>
+<attribute name="NAME" x="57.755" y="45.135" size="0.6096" layer="25" rot="R315" align="center-left"/>
 <attribute name="OC_REICHELT" value="ATMEGA 64-16 TQ" x="52.26" y="37.93" size="1.778" layer="27" rot="R315" display="off"/>
 </element>
 <element name="R72" library="resistor" package="R0805" value="10k" x="54.8" y="52.11" smashed="yes">
-<attribute name="NAME" x="57.34" y="50.84" size="1.016" layer="25"/>
+<attribute name="NAME" x="55.215" y="50.59" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="54.8" y="52.11" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C13" library="rcl" package="C/6032-28R" value="220µ" x="20.3" y="48.63" smashed="yes">
-<attribute name="NAME" x="17.15" y="44.03" size="1.016" layer="25"/>
+<attribute name="NAME" x="17.625" y="46.625" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="VF 220/6,3 K-D" x="20.3" y="48.63" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C14" library="resistor" package="C0805" value="100n" x="41.5875" y="32.455" smashed="yes" rot="R225">
-<attribute name="NAME" x="41.12788125" y="34.767240625" size="1.016" layer="25" rot="R225"/>
+<attribute name="NAME" x="41.87788125" y="34.767240625" size="0.6096" layer="25" rot="R225" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="41.5875" y="32.455" size="1.778" layer="27" rot="R225" display="off"/>
 </element>
 <element name="U1" library="SparkFun" package="SO016" value="MAX232SOIC16" x="105.5" y="57" smashed="yes" rot="R90">
-<attribute name="NAME" x="107.7225" y="62.08" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="106.3475" y="62.83" size="0.6096" layer="25" ratio="10" align="center-left"/>
 <attribute name="OC_REICHELT" value="MAX 232 CSE SMD" x="105.5" y="57" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C15" library="resistor" package="A/3216-18R" value="1µ" x="108.5" y="48.75" smashed="yes" rot="R270">
-<attribute name="NAME" x="110.98" y="50.99" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="108.5" y="46.125" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="VF 1,0/50 C-B" x="108.5" y="48.75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C16" library="resistor" package="A/3216-18R" value="1µ" x="113.25" y="60.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="115.73" y="62.74" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="113.99" y="63.52" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="VF 1,0/50 C-B" x="113.25" y="60.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C17" library="resistor" package="A/3216-18R" value="1µ" x="106.25" y="48.75" smashed="yes" rot="R270">
-<attribute name="NAME" x="103.71" y="49.0675" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="106.25" y="46" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="VF 1,0/50 C-B" x="106.25" y="48.75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C18" library="resistor" package="A/3216-18R" value="1µ" x="110.5" y="60.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="111.77" y="65.58" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="109.795" y="63.27" size="0.6096" layer="25"/>
 <attribute name="OC_REICHELT" value="VF 1,0/50 C-B" x="110.5" y="60.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="F1" library="f-lf-omniblok-s" package="OMNIBLOK" value="500mA" x="17" y="54" smashed="yes">
-<attribute name="VALUE" x="22.1" y="51.2" size="1.27" layer="25" rot="R180"/>
-<attribute name="NAME" x="11.9" y="56.8" size="1.27" layer="25"/>
+<attribute name="VALUE" x="22.225" y="51.075" size="0.6096" layer="25" rot="R180" align="center-left"/>
+<attribute name="NAME" x="12.15" y="51.05" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-HASF 0,5A" x="17" y="54" size="1.778" layer="27" display="off"/>
 </element>
 <element name="DC1" library="dc-dc-converter" package="4SIL" value="VA-0505S" x="95.85" y="58.59" smashed="yes">
@@ -3065,63 +2981,62 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="95.85" y="58.59" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="95.85" y="58.59" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="95.85" y="58.59" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="102.835" y="57.59" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="102.835" y="57.59" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SIM1-0505 SIL4" x="95.85" y="58.59" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R73" library="resistor" package="R0805" value="220" x="70" y="55.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="72.2225" y="53.595" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="71.3475" y="53.595" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 220" x="70" y="55.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R74" library="resistor" package="R0805" value="220" x="76.495" y="57.775" smashed="yes">
-<attribute name="NAME" x="77.765" y="56.505" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="78.015" y="56.38" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 220" x="76.495" y="57.775" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R75" library="resistor" package="R0805" value="220" x="67.75" y="55.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="70.29" y="53.595" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="68.53" y="57.915" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 220" x="67.75" y="55.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C19" library="rcl" package="C/6032-28R" value="220µ" x="87.78" y="59.34" smashed="yes" rot="R270">
 <attribute name="OC_REICHELT" value="VF 220/6,3 K-D" x="87.78" y="59.34" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="84.28" y="57.615" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="87.115" y="63.845" size="0.6096" layer="25" align="center-left"/>
 </element>
 <element name="C20" library="rcl" package="C0805" value="100n" x="39.375" y="61" smashed="yes" rot="R90">
-<attribute name="NAME" x="39.87" y="63.0925" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="39.375" y="63.125" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="39.375" y="61" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="ULN1" library="SparkFun" package="SO18L" value="" x="8" y="35" smashed="yes" rot="R270">
 <attribute name="VALUE" x="7.238" y="34.746" size="1.27" layer="27" ratio="10" rot="R270"/>
-<attribute name="NAME" x="5.8725" y="37.0875" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="4.5" y="37" size="0.6096" layer="25" ratio="10" align="center-left"/>
 <attribute name="OC_REICHELT" value="ULN 2803 D" x="8" y="35" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C1" library="rcl" package="C0805" value="100n" x="15.5" y="26.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="16.64" y="23.7725" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="15.125" y="24.125" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="15.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="ULN2" library="SparkFun" package="SO18L" value="" x="23" y="35" smashed="yes" rot="R270">
 <attribute name="VALUE" x="22.238" y="34.746" size="1.27" layer="27" ratio="10" rot="R270"/>
-<attribute name="NAME" x="21.3725" y="37.0875" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="19.75" y="37" size="0.6096" layer="25" ratio="10" align="center-left"/>
 <attribute name="OC_REICHELT" value="ULN 2803 D" x="23" y="35" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C2" library="rcl" package="C0805" value="100n" x="31.625" y="25.125" smashed="yes">
-<attribute name="NAME" x="28.8975" y="24.1775" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="34.125" y="24.625" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="31.625" y="25.125" size="1.778" layer="27" display="off"/>
 </element>
 <element name="ULN3" library="SparkFun" package="SO18L" value="" x="76" y="35" smashed="yes" rot="R270">
 <attribute name="VALUE" x="75.238" y="34.746" size="1.27" layer="27" ratio="10" rot="R270"/>
-<attribute name="NAME" x="71.8725" y="36.5875" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="72.4975" y="36.9625" size="0.6096" layer="25" ratio="10" align="center-left"/>
 <attribute name="OC_REICHELT" value="ULN 2803 D" x="76" y="35" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C3" library="rcl" package="C0805" value="100n" x="83.5" y="26.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="84.6175" y="23.7725" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="83.9925" y="29.0225" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="83.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="ULN4" library="SparkFun" package="SO18L" value="" x="91" y="35" smashed="yes" rot="R270">
 <attribute name="VALUE" x="90.238" y="34.746" size="1.27" layer="27" ratio="10" rot="R270"/>
-<attribute name="NAME" x="86.8725" y="36.5875" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="87.3725" y="36.9625" size="0.6096" layer="25" ratio="10" align="center-left"/>
 <attribute name="OC_REICHELT" value="ULN 2803 D" x="91" y="35" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C4" library="rcl" package="C0805" value="100n" x="98.5" y="26.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="78.79" y="-89.2275" size="1.016" layer="25" rot="R180"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="98.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="OK101" library="optocoupler" package="SMD4" value="LTV356T" x="112" y="33" smashed="yes">
@@ -3129,14 +3044,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="101.84" y="44.43" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="101.84" y="44.43" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="101.84" y="44.43" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="114.54" y="28.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="114.415" y="28.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R101" library="resistor" package="R0805" value="1.2k" x="110.97" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="110.97" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="110.97" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="110.97" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R201" library="resistor" package="R0805" value="10k" x="113.25" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="112.9325" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="114.5" y="53.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="113.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK102" library="optocoupler" package="SMD4" value="LTV356T" x="112" y="43" smashed="yes">
@@ -3144,14 +3059,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="75.17" y="46.81" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="75.17" y="46.81" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="75.17" y="46.81" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="114.54" y="38.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="114.04" y="38.305" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R102" library="resistor" package="R0805" value="1.2k" x="113.43" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="113.43" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="113.43" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="113.43" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R202" library="resistor" package="R0805" value="10k" x="110.75" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="110.75" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="112" y="53.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="110.75" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK103" library="optocoupler" package="SMD4" value="LTV356T" x="117" y="33" smashed="yes">
@@ -3159,14 +3074,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="53.5" y="30.46" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="53.5" y="30.46" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="53.5" y="30.46" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="119.54" y="28.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="119.29" y="28.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R103" library="resistor" package="R0805" value="1.2k" x="115.89" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="115.89" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="115.89" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="115.89" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R203" library="resistor" package="R0805" value="10k" x="118.25" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="118.25" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="119.5" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="118.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK104" library="optocoupler" package="SMD4" value="LTV356T" x="117" y="43" smashed="yes">
@@ -3174,14 +3089,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="26.83" y="34.11" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="26.83" y="34.11" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="26.83" y="34.11" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="119.54" y="38.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="118.915" y="38.305" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R104" library="resistor" package="R0805" value="1.2k" x="118.35" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="118.35" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="118.35" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="118.35" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R204" library="resistor" package="R0805" value="10k" x="115.75" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="115.75" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="117" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="115.75" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK105" library="optocoupler" package="SMD4" value="LTV356T" x="122" y="33" smashed="yes">
@@ -3189,14 +3104,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="5.16" y="17.76" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="5.16" y="17.76" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="5.16" y="17.76" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="124.54" y="28.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="124.29" y="28.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R105" library="resistor" package="R0805" value="1.2k" x="120.81" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="120.81" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="120.81" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="120.81" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R205" library="resistor" package="R0805" value="10k" x="123.25" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="123.25" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="124.5" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="123.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK106" library="optocoupler" package="SMD4" value="LTV356T" x="122" y="43" smashed="yes">
@@ -3204,14 +3119,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="29.29" y="32.84" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="29.29" y="32.84" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="29.29" y="32.84" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="124.54" y="38.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="123.915" y="38.305" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R106" library="resistor" package="R0805" value="1.2k" x="123.27" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="123.27" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="123.27" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="123.27" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R206" library="resistor" package="R0805" value="10k" x="120.75" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="120.75" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="122" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="120.75" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK107" library="optocoupler" package="SMD4" value="LTV356T" x="127" y="33" smashed="yes">
@@ -3219,14 +3134,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="7.62" y="15.22" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="7.62" y="15.22" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="7.62" y="15.22" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="129.54" y="28.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="129.165" y="28.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R107" library="resistor" package="R0805" value="1.2k" x="125.73" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="125.73" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="125.73" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="125.73" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R207" library="resistor" package="R0805" value="10k" x="128.25" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="128.25" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="129.5" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="128.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK108" library="optocoupler" package="SMD4" value="LTV356T" x="127" y="43" smashed="yes">
@@ -3234,14 +3149,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="-19.05" y="18.87" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-19.05" y="18.87" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-19.05" y="18.87" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="129.54" y="38.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="128.915" y="38.305" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R108" library="resistor" package="R0805" value="1.2k" x="128.19" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="128.19" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="128.19" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="128.19" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R208" library="resistor" package="R0805" value="10k" x="125.75" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="125.75" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="127" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="125.75" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK109" library="optocoupler" package="SMD4" value="LTV356T" x="132" y="33" smashed="yes">
@@ -3249,14 +3164,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="-40.72" y="2.52" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-40.72" y="2.52" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-40.72" y="2.52" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="134.54" y="28.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="134.04" y="28.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R109" library="resistor" package="R0805" value="1.2k" x="130.65" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="130.65" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="130.65" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="130.65" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R209" library="resistor" package="R0805" value="10k" x="133.25" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="133.25" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="134.5" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="133.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK110" library="optocoupler" package="SMD4" value="LTV356T" x="132" y="43" smashed="yes">
@@ -3264,14 +3179,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="-67.39" y="6.17" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-67.39" y="6.17" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-67.39" y="6.17" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="134.54" y="38.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="134.04" y="38.305" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R110" library="resistor" package="R0805" value="1.2k" x="133.11" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="133.11" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="133.11" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="133.11" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R210" library="resistor" package="R0805" value="10k" x="130.75" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="130.75" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="132" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="130.75" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK111" library="optocoupler" package="SMD4" value="LTV356T" x="137" y="33" smashed="yes">
@@ -3279,14 +3194,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="-38.26" y="1.25" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-38.26" y="1.25" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-38.26" y="1.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="139.54" y="28.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="138.915" y="28.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R111" library="resistor" package="R0805" value="1.2k" x="135.57" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="135.57" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="135.57" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="135.57" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R211" library="resistor" package="R0805" value="10k" x="138.25" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="138.25" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="139.5" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="138.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK112" library="optocoupler" package="SMD4" value="LTV356T" x="137" y="43" smashed="yes">
@@ -3294,14 +3209,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="-64.93" y="4.9" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-64.93" y="4.9" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-64.93" y="4.9" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="139.54" y="38.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="139.165" y="38.305" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R112" library="resistor" package="R0805" value="1.2k" x="138.03" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="138.03" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="138.03" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="138.03" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R212" library="resistor" package="R0805" value="10k" x="135.75" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="135.75" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="137" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="135.75" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK113" library="optocoupler" package="SMD4" value="LTV356T" x="142" y="33" smashed="yes">
@@ -3309,14 +3224,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="-86.6" y="-11.45" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-86.6" y="-11.45" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-86.6" y="-11.45" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="144.54" y="28.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="143.665" y="28.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R113" library="resistor" package="R0805" value="1.2k" x="140.49" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="140.49" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="140.49" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="140.49" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R213" library="resistor" package="R0805" value="10k" x="143.25" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="143.25" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="144.5" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="143.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK114" library="optocoupler" package="SMD4" value="LTV356T" x="142" y="43" smashed="yes">
@@ -3324,14 +3239,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="-113.27" y="-7.8" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-113.27" y="-7.8" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-113.27" y="-7.8" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="144.54" y="38.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="144.165" y="38.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R114" library="resistor" package="R0805" value="1.2k" x="142.95" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="142.95" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="142.95" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="142.95" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R214" library="resistor" package="R0805" value="10k" x="140.75" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="140.75" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="142" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="140.75" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK115" library="optocoupler" package="SMD4" value="LTV356T" x="147" y="33" smashed="yes">
@@ -3339,14 +3254,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="-134.94" y="-24.15" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-134.94" y="-24.15" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-134.94" y="-24.15" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="149.54" y="28.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="148.415" y="28.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R115" library="resistor" package="R0805" value="1.2k" x="145.41" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="145.41" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="145.41" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="145.41" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R215" library="resistor" package="R0805" value="10k" x="148.25" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="148.25" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="149.625" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="148.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK116" library="optocoupler" package="SMD4" value="LTV356T" x="147" y="43" smashed="yes">
@@ -3354,14 +3269,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="MPN" value="" x="-110.81" y="-10.34" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-110.81" y="-10.34" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-110.81" y="-10.34" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="149.54" y="38.555" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="148.79" y="38.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
 </element>
 <element name="R116" library="resistor" package="R0805" value="1.2k" x="147.87" y="25.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="147.87" y="23.955" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="147.87" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K" x="147.87" y="25.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R216" library="resistor" package="R0805" value="10k" x="145.75" y="55" smashed="yes" rot="R270">
-<attribute name="NAME" x="145.75" y="61.0325" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="147" y="53.4675" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="145.75" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X3" library="con-wago_2.5mm" package="P-733-333" value="733-333" x="17.78" y="80.47" smashed="yes" rot="R90">
@@ -3381,7 +3296,7 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="OC_REICHELT" value="WAGO 713-1410" x="136.35" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X1" library="con-wago_3.5mm" package="P-713-1410" value="713-1410" x="26.67" y="10.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="46.02" y="16.01" size="1.016" layer="25" font="vector" ratio="10" rot="R270"/>
+<attribute name="NAME" x="45.27" y="17.135" size="1.016" layer="25" font="vector" ratio="10" rot="R270"/>
 <attribute name="OC_REICHELT" value="WAGO 713-1410" x="26.67" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X2" library="con-wago_3.5mm" package="P-713-1410" value="713-1410" x="80.01" y="10.16" smashed="yes" rot="R270">
@@ -3398,210 +3313,230 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="OC_REICHELT" value="D-SUB BU 09P" x="87.63" y="76.2" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F2" library="f-lf-omniblok-s" package="OMNIBLOK" value="125mA" x="17" y="60" smashed="yes">
-<attribute name="VALUE" x="1.6225" y="176.7875" size="1.016" layer="25" rot="R180"/>
-<attribute name="NAME" x="-9.1" y="175.8" size="1.016" layer="25"/>
 <attribute name="OC_REICHELT" value="SMD-HASF 0,25A" x="17" y="60" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="21.85" y="62.95" size="0.6096" layer="27" rot="R180" align="center-left"/>
+<attribute name="NAME" x="12.15" y="62.925" size="0.6096" layer="25" align="center-left"/>
 </element>
 <element name="L1" library="epcos-b82790c0" package="EPCOS_B82790_SERIES" value="2x51µH" x="30" y="52.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="23.65" y="53.77" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="25.105" y="50.025" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_DIGIKEY" value="495-1868-1-ND" x="30" y="52.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="JP3" library="pinhead" package="2X08" value="" x="32.385" y="38.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="30.2" y="49.265" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="30.45" y="27.515" size="0.6096" layer="25" ratio="10" align="center-left"/>
 <attribute name="VALUE" x="27.94" y="48.26" size="1.27" layer="27" rot="R270"/>
 <attribute name="OC_REICHELT" value="MPE 087-2-016" x="32.385" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="F3" library="ptc-littlefuse" package="1812L" value="500mA" x="41.5" y="27" rot="R90">
 <attribute name="OC_REICHELT" value="PTC194600-050" x="41.5" y="27" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="F4" library="ptc-littlefuse" package="1812L" value="500mA" x="101.875" y="27.125" rot="R270">
+<element name="F4" library="ptc-littlefuse" package="1812L" value="500mA" x="101.875" y="27.125" smashed="yes" rot="R270">
 <attribute name="OC_REICHELT" value="PTC194600-050" x="101.875" y="27.125" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="F5" library="ptc-littlefuse" package="1812L" value="500mA" x="151.75" y="26.875" rot="R270">
+<element name="F5" library="ptc-littlefuse" package="1812L" value="500mA" x="151.75" y="26.875" smashed="yes" rot="R270">
 <attribute name="OC_REICHELT" value="PTC194600-050" x="151.75" y="26.875" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="JP4" library="pinhead" package="2X03" value="" x="68.675" y="44.45" rot="R270">
+<element name="JP4" library="pinhead" package="2X03" value="" x="68.675" y="44.45" smashed="yes" rot="R270">
 <attribute name="OC_REICHELT" value="MPE 087-2-006" x="68.675" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="66.365" y="39.975" size="0.6096" layer="25" ratio="10" align="center-left"/>
+<attribute name="VALUE" x="64.23" y="48.26" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="LED1" library="led" package="CHIP-LED0805" value="24V" x="38" y="69" smashed="yes" rot="R180">
-<attribute name="NAME" x="58.238" y="-49.588" size="1.016" layer="25" rot="R90"/>
-<attribute name="VALUE" x="36.73" y="70.9685" size="1.016" layer="25"/>
-<attribute name="OC_REICHELT" value="SMD-LED 0805 RT" x="38" y="69" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="LED2" library="led" package="CHIP-LED0805" value="24V" x="9.25" y="82" smashed="yes">
+<attribute name="OC_REICHELT" value="SMD-LED 0805 RT" x="9.25" y="82" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="9.25" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="9.25" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
 </element>
-<element name="LED2" library="led" package="CHIP-LED0805" value="5V" x="41" y="69" smashed="yes" rot="R180">
-<attribute name="NAME" x="61.492" y="-49.588" size="1.016" layer="25" rot="R90"/>
-<attribute name="VALUE" x="40.238" y="70.905" size="1.016" layer="25"/>
-<attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="41" y="69" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="LED1" library="led" package="CHIP-LED0805" value="5V" x="11.25" y="82" smashed="yes">
+<attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="11.25" y="82" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="11.375" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="11.25" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
 </element>
-<element name="R9" library="rcl" package="R0805" value="1,5k" x="34.5" y="61" smashed="yes" rot="R90">
-<attribute name="NAME" x="35.008" y="57.19" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 1,50K" x="34.5" y="61" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R9" library="rcl" package="R0805" value="1,5k" x="34.5" y="61" smashed="yes" rot="R270">
+<attribute name="NAME" x="33.625" y="63.125" size="0.6096" layer="25" rot="R90" align="center-left"/>
+<attribute name="OC_REICHELT" value="SMD-0805 1,50K" x="34.5" y="61" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R10" library="rcl" package="R0805" value="220" x="37" y="61" smashed="yes" rot="R90">
-<attribute name="NAME" x="37.508" y="56.301" size="1.016" layer="25" rot="R90"/>
-<attribute name="OC_REICHELT" value="SMD-0805 220" x="37" y="61" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R10" library="rcl" package="R0805" value="220" x="37" y="61" smashed="yes" rot="R270">
+<attribute name="NAME" x="36.125" y="63.125" size="0.6096" layer="25" rot="R90" align="center-left"/>
+<attribute name="OC_REICHELT" value="SMD-0805 220" x="37" y="61" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R11" library="resistor" package="R0805" value="10k" x="99.375" y="44.25" smashed="yes">
-<attribute name="NAME" x="99.113" y="42.016" size="1.016" layer="25"/>
+<attribute name="NAME" x="101.262" y="42.859" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="99.375" y="44.25" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R12" library="rcl" package="R0805" value="120" x="44.125" y="48" smashed="yes" rot="R180">
-<attribute name="NAME" x="41.76" y="48.73" size="1.016" layer="25" rot="R180"/>
-<attribute name="OC_REICHELT" value="SMD-0805 120" x="44.125" y="48" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R12" library="rcl" package="R0805" value="120" x="43.5" y="47.125" smashed="yes" rot="R180">
+<attribute name="NAME" x="45.5" y="45.75" size="0.6096" layer="25" rot="R180" align="center-left"/>
+<attribute name="OC_REICHELT" value="SMD-0805 120" x="43.5" y="47.125" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R13" library="rcl" package="R0805" value="680" x="32.75" y="57" smashed="yes" rot="R180">
-<attribute name="NAME" x="37.885" y="57.98" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="34.865" y="56.27" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 680" x="32.75" y="57" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R14" library="rcl" package="R0805" value="680" x="38" y="48" smashed="yes" rot="R180">
-<attribute name="NAME" x="35.635" y="46.98" size="1.016" layer="25" rot="R180"/>
-<attribute name="OC_REICHELT" value="SMD-0805 680" x="38" y="48" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R14" library="rcl" package="R0805" value="680" x="37.75" y="47.125" smashed="yes" rot="R180">
+<attribute name="NAME" x="39.75" y="45.625" size="0.6096" layer="25" rot="R180" align="center-left"/>
+<attribute name="OC_REICHELT" value="SMD-0805 680" x="37.75" y="47.125" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R229" library="resistor" package="R0805" value="47k" x="135.75" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="135.75" y="52" size="1.016" layer="25" rot="R90" align="center-left"/>
+<attribute name="NAME" x="137" y="48.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="135.75" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R230" library="resistor" package="R0805" value="47k" x="133.25" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="134.266" y="50.762" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="134.484" y="48.488" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="133.25" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R231" library="resistor" package="R0805" value="47k" x="140.75" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="140.75" y="48" size="1.016" layer="25" rot="R270" align="center-left"/>
+<attribute name="NAME" x="142" y="48.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="140.75" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R232" library="resistor" package="R0805" value="47k" x="138.25" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="139.266" y="50.762" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="139.484" y="48.488" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="138.25" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R233" library="resistor" package="R0805" value="47k" x="145.75" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="145.75" y="52" size="1.016" layer="25" rot="R90" align="center-left"/>
+<attribute name="NAME" x="147" y="48.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="145.75" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R234" library="resistor" package="R0805" value="47k" x="143.25" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="144.266" y="50.762" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="144.484" y="48.488" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="143.25" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R235" library="resistor" package="R0805" value="47k" x="150.75" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="150.75" y="48" size="1.016" layer="25" rot="R270" align="center-left"/>
+<attribute name="NAME" x="152" y="48.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="150.75" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R236" library="resistor" package="R0805" value="47k" x="148.25" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="149.266" y="50.762" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="149.484" y="48.488" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="148.25" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R228" library="resistor" package="R0805" value="47k" x="128.25" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="129.266" y="50.762" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="129.484" y="48.488" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="128.25" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R227" library="resistor" package="R0805" value="47k" x="130.75" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="130.75" y="48" size="1.016" layer="25" rot="R270" align="center-left"/>
+<attribute name="NAME" x="132" y="48.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="130.75" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R226" library="resistor" package="R0805" value="47k" x="123.25" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="124.266" y="50.762" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="124.484" y="48.488" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="123.25" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R225" library="resistor" package="R0805" value="47k" x="125.75" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="125.75" y="48" size="1.016" layer="25" rot="R270" align="center-left"/>
+<attribute name="NAME" x="127" y="48.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="125.75" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R224" library="resistor" package="R0805" value="47k" x="118.25" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="118.25" y="48" size="1.016" layer="25" rot="R270" align="center-left"/>
+<attribute name="NAME" x="119.5" y="48.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="118.25" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R223" library="resistor" package="R0805" value="47k" x="120.75" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="120.75" y="48" size="1.016" layer="25" rot="R270" align="center-left"/>
+<attribute name="NAME" x="122" y="48.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="120.75" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R221" library="resistor" package="R0805" value="47k" x="115.75" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="115.75" y="48" size="1.016" layer="25" rot="R270" align="center-left"/>
+<attribute name="NAME" x="117" y="48.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="115.75" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R222" library="resistor" package="R0805" value="47k" x="113.25" y="50" smashed="yes" rot="R270">
-<attribute name="NAME" x="113.25" y="52" size="1.016" layer="25" rot="R90" align="center-left"/>
+<attribute name="NAME" x="114.5" y="48.5" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 47,0K" x="113.25" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK32" library="ACPL-M50L" package="JEDEC_MS-012-AA_SOIC5" value="ACPL-M50L" x="62" y="61" smashed="yes" rot="R180">
-<attribute name="NAME" x="66.25" y="61.875" size="1.016" layer="25" rot="R270" align="center"/>
+<attribute name="NAME" x="61.625" y="58.5" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_DIGIKEY" value="516-2166-5-ND" x="62" y="61" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R34" library="resistor" package="R0805" value="1k" x="50.75" y="58.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="51.782" y="56.314" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="51.532" y="60.939" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,00K" x="50.75" y="58.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="OK31" library="ACPL-M50L" package="JEDEC_MS-012-AA_SOIC5" value="ACPL-M50L" x="77.5" y="61" smashed="yes" rot="R180">
-<attribute name="NAME" x="85.5" y="61.5" size="1" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="78.625" y="63.375" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_DIGIKEY" value="516-2166-5-ND" x="77.5" y="61" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R35" library="resistor" package="R0805" value="1k" x="50.75" y="54.125" smashed="yes" rot="R90">
-<attribute name="NAME" x="50.516" y="52.012" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="50.113" y="51.641" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,00K" x="50.75" y="54.125" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="OK30" library="ACPL-M50L" package="JEDEC_MS-012-AA_SOIC5" value="ACPL-M50L" x="62" y="55.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="62" y="53" size="1.016" layer="25" rot="R180" align="center"/>
+<attribute name="NAME" x="63.75" y="52.875" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_DIGIKEY" value="516-2166-5-ND" x="62" y="55.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R36" library="resistor" package="R0805" value="1k" x="56.25" y="55.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="55.234" y="54.988" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="55.359" y="58.113" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 1,00K" x="56.25" y="55.75" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C24" library="rcl" package="C0805" value="100n" x="71.5" y="61" smashed="yes" rot="R90">
-<attribute name="NAME" x="71.98" y="63.355" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="71.105" y="63.395" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="71.5" y="61" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C27" library="rcl" package="C0805" value="100n" x="53" y="61" smashed="yes" rot="R90">
-<attribute name="NAME" x="51.355" y="57.895" size="1.016" layer="25"/>
+<attribute name="NAME" x="52.605" y="63.395" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="53" y="61" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C31" library="rcl" package="C0805" value="100n" x="53.75" y="55.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="52.48" y="54.48" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="52.355" y="53.855" size="0.6096" layer="25" rot="R90" align="center-left"/>
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="53.75" y="55.75" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="SJ1" library="pinhead" package="1X02" value="" x="42" y="52" smashed="yes" rot="R90">
-<attribute name="NAME" x="41.982" y="47.099" size="1.27" layer="25" ratio="10" rot="R90"/>
+<element name="J2" library="pinhead" package="1X02" value="" x="42" y="52" smashed="yes" rot="R90">
+<attribute name="NAME" x="42" y="48.875" size="0.6096" layer="25" ratio="10" align="center"/>
 <attribute name="VALUE" x="42" y="52.4001" size="0.02" layer="27" rot="R90"/>
 </element>
-<element name="SJ2" library="pinhead" package="1X02" value="" x="45" y="52" smashed="yes" rot="R270">
-<attribute name="NAME" x="43.393" y="57.276" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="45" y="51.5999" size="0.02" layer="27" rot="R270"/>
+<element name="J3" library="pinhead" package="1X02" value="" x="45.375" y="52" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.375" y="48.875" size="0.6096" layer="25" ratio="10" align="center"/>
+<attribute name="VALUE" x="45.375" y="51.5999" size="0.02" layer="27" rot="R270"/>
 </element>
-<element name="SJ3" library="pinhead" package="1X02" value="" x="39" y="52" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.768" y="57.276" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="39" y="51.5999" size="0.02" layer="27" rot="R270"/>
+<element name="J1" library="pinhead" package="1X02" value="" x="38.625" y="52" smashed="yes" rot="R270">
+<attribute name="NAME" x="38.625" y="48.875" size="0.6096" layer="25" ratio="10" align="center"/>
+<attribute name="VALUE" x="38.625" y="51.5999" size="0.02" layer="27" rot="R270"/>
 </element>
 <element name="JP5" library="pinhead" package="1X03" value="" x="152" y="35" smashed="yes" rot="R90">
-<attribute name="NAME" x="150.1138" y="29.5788" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="151.2388" y="39.4538" size="0.6096" layer="25" ratio="10" align="center-left"/>
 <attribute name="VALUE" x="155.175" y="31.19" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="X4" library="con-wago_2.5mm" package="P-733-332" value="733-332" x="112.25" y="7.375" smashed="yes" rot="R90">
-<attribute name="NAME" x="108.475" y="11.52" size="1.016" layer="25" font="vector" ratio="10"/>
+<attribute name="NAME" x="108.23" y="9.725" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="LED4" library="led" package="CHIP-LED0805" value="ACT" x="31" y="69">
-<attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="31" y="69" size="1.778" layer="27" display="off"/>
+<element name="LED3" library="led" package="CHIP-LED0805" value="ACT" x="7.25" y="82" smashed="yes">
+<attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="7.25" y="82" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.25" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="7.25" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
 </element>
-<element name="LED5" library="led" package="CHIP-LED0805" value="RES" x="27" y="69">
-<attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="27" y="69" size="1.778" layer="27" display="off"/>
+<element name="LED4" library="led" package="CHIP-LED0805" value="RES" x="5.25" y="82" smashed="yes">
+<attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="5.25" y="82" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="5.125" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="5.125" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
 </element>
-<element name="R5" library="rcl" package="R0805" value="220" x="32" y="61" rot="R270">
+<element name="R5" library="rcl" package="R0805" value="220" x="32" y="61" smashed="yes" rot="R270">
 <attribute name="OC_REICHELT" value="SMD-0805 220" x="32" y="61" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="31.125" y="63.125" size="0.6096" layer="25" rot="R90" align="center-left"/>
 </element>
-<element name="R6" library="rcl" package="R0805" value="220" x="29.5" y="61" rot="R270">
+<element name="R6" library="rcl" package="R0805" value="220" x="29.5" y="61" smashed="yes" rot="R270">
 <attribute name="OC_REICHELT" value="SMD-0805 220" x="29.5" y="61" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="28.625" y="63.125" size="0.6096" layer="25" rot="R90" align="center-left"/>
 </element>
-<element name="LED6" library="led" package="CHIP-LED0805" value="TX" x="18" y="69">
-<attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="18" y="69" size="1.778" layer="27" display="off"/>
+<element name="LED5" library="led" package="CHIP-LED0805" value="TX" x="3.25" y="82" smashed="yes">
+<attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="3.25" y="82" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="3.25" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="3.25" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
 </element>
-<element name="LED7" library="led" package="CHIP-LED0805" value="RX" x="15" y="69">
-<attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="15" y="69" size="1.778" layer="27" display="off"/>
+<element name="LED6" library="led" package="CHIP-LED0805" value="RX" x="1.25" y="82" smashed="yes">
+<attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="1.25" y="82" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="1.25" y="75.875" size="0.6096" layer="25" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="1.25" y="80.125" size="1.016" layer="27" rot="R270" align="center-left"/>
 </element>
-<element name="R7" library="rcl" package="R0805" value="220" x="27" y="61" rot="R270">
+<element name="R7" library="rcl" package="R0805" value="220" x="27" y="61" smashed="yes" rot="R270">
 <attribute name="OC_REICHELT" value="SMD-0805 220" x="27" y="61" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="26.125" y="63.125" size="0.6096" layer="25" rot="R90" align="center-left"/>
 </element>
-<element name="R8" library="rcl" package="R0805" value="220" x="24.5" y="61" rot="R270">
+<element name="R8" library="rcl" package="R0805" value="220" x="24.5" y="61" smashed="yes" rot="R270">
 <attribute name="OC_REICHELT" value="SMD-0805 220" x="24.5" y="61" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="23.625" y="63.125" size="0.6096" layer="25" rot="R90" align="center-left"/>
 </element>
-<element name="JP6" library="pinhead" package="1X02" value="" x="105.875" y="27.125" rot="R270"/>
-<element name="JP2" library="pinhead" package="1X02" value="" x="37.75" y="26.875" rot="R90"/>
+<element name="JP6" library="pinhead" package="1X02" value="" x="105.875" y="27.125" smashed="yes" rot="R270">
+<attribute name="NAME" x="107.8288" y="29.1162" size="0.6096" layer="25" ratio="10" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="102.7" y="29.665" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JP2" library="pinhead" package="1X02" value="" x="37.75" y="26.875" smashed="yes" rot="R90">
+<attribute name="NAME" x="37.0088" y="23.8288" size="0.6096" layer="25" ratio="10" align="center-left"/>
+<attribute name="VALUE" x="40.925" y="24.335" size="1.27" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -3703,18 +3638,22 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <contactref element="X1" pad="L18"/>
 <contactref element="X6" pad="L2"/>
 <polygon width="0.3048" layer="1" spacing="0.8128">
-<vertex x="2.54" y="2.54"/>
-<vertex x="2.54" y="83.82"/>
-<vertex x="154.94" y="83.82"/>
-<vertex x="155" y="48"/>
+<vertex x="0.165" y="0.54"/>
+<vertex x="0.5" y="65.875"/>
+<vertex x="0.415" y="66.665"/>
+<vertex x="3.665" y="66.665"/>
+<vertex x="3.625" y="66.875"/>
+<vertex x="2" y="81"/>
+<vertex x="0.665" y="82.335"/>
+<vertex x="0.665" y="85.57"/>
+<vertex x="156.94" y="85.82"/>
+<vertex x="157" y="48"/>
 <vertex x="108" y="48"/>
 <vertex x="106.94" y="47.94"/>
-<vertex x="106.94" y="2.54"/>
+<vertex x="106.94" y="0.54"/>
 </polygon>
 <contactref element="JP4" pad="4"/>
 <contactref element="X7" pad="L3"/>
-<contactref element="R10" pad="1"/>
-<contactref element="R9" pad="1"/>
 <contactref element="R226" pad="1"/>
 <contactref element="R227" pad="1"/>
 <contactref element="R228" pad="1"/>
@@ -3736,10 +3675,10 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <contactref element="OK31" pad="3"/>
 <contactref element="OK30" pad="4"/>
 <contactref element="C31" pad="2"/>
-<contactref element="LED7" pad="C"/>
-<contactref element="LED5" pad="C"/>
-<contactref element="LED4" pad="C"/>
 <contactref element="LED6" pad="C"/>
+<contactref element="LED4" pad="C"/>
+<contactref element="LED3" pad="C"/>
+<contactref element="LED5" pad="C"/>
 <wire x1="113.25" y1="50.85" x2="115.75" y2="50.85" width="0.2032" layer="1"/>
 <wire x1="118.25" y1="50.85" x2="120.75" y2="50.85" width="0.2032" layer="1"/>
 <wire x1="123.25" y1="50.85" x2="125.75" y2="50.85" width="0.2032" layer="1"/>
@@ -3778,12 +3717,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="143" y1="53.375" x2="149.625" y2="53.375" width="0.2032" layer="16"/>
 <wire x1="149.625" y1="53.375" x2="150" y2="53" width="0.2032" layer="16"/>
 <via x="150" y="53" extent="1-16" drill="0.3"/>
+<contactref element="LED2" pad="C"/>
+<contactref element="LED1" pad="C"/>
 </signal>
 <signal name="N$36">
 <contactref element="IC1" pad="10"/>
 <contactref element="R1" pad="2"/>
-<wire x1="12.175" y1="45.0734" x2="12.175" y2="47.425" width="0.2032" layer="1"/>
-<wire x1="12.175" y1="47.425" x2="11.85" y2="47.75" width="0.2032" layer="1"/>
+<wire x1="12.175" y1="45.0734" x2="12.175" y2="47.825" width="0.2032" layer="1"/>
+<wire x1="12.175" y1="47.825" x2="12.225" y2="47.875" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$38">
 <contactref element="IC3" pad="10"/>
@@ -3848,19 +3789,18 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <contactref element="R215" pad="1"/>
 <contactref element="R216" pad="1"/>
 <contactref element="JP4" pad="3"/>
-<contactref element="LED2" pad="A"/>
 <contactref element="R11" pad="2"/>
 <contactref element="R36" pad="1"/>
 <contactref element="C31" pad="1"/>
 <contactref element="OK30" pad="6"/>
 <contactref element="IC9" pad="3"/>
 <polygon width="0.4064" layer="16" spacing="0.8128">
-<vertex x="0.04" y="2.54"/>
-<vertex x="0.04" y="83.82"/>
-<vertex x="154.94" y="83.82"/>
-<vertex x="154.94" y="53.34"/>
+<vertex x="0.04" y="0.54"/>
+<vertex x="0.04" y="85.82"/>
+<vertex x="156.94" y="85.82"/>
+<vertex x="156.94" y="53.34"/>
 <vertex x="106.68" y="53.34"/>
-<vertex x="106.68" y="2.54"/>
+<vertex x="106.68" y="0.54"/>
 </polygon>
 <wire x1="106.25" y1="50.125" x2="106.25" y2="51.75" width="0.2032" layer="1"/>
 <via x="106.25" y="51.75" extent="1-16" drill="0.3"/>
@@ -3905,10 +3845,6 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="18.4816" y1="45" x2="18.555" y2="45.0734" width="0.2032" layer="1"/>
 <wire x1="22.825" y1="48.63" x2="24.495" y2="48.63" width="0.2032" layer="1"/>
 <via x="24.625" y="48.625" extent="1-16" drill="0.3"/>
-<wire x1="10.15" y1="47.75" x2="8.875" y2="47.75" width="0.2032" layer="1"/>
-<via x="8.875" y="47.75" extent="1-16" drill="0.3"/>
-<wire x1="8.875" y1="47.75" x2="9" y2="47.75" width="0.2032" layer="16"/>
-<wire x1="9" y1="47.75" x2="8.875" y2="47.875" width="0.2032" layer="16"/>
 <wire x1="24.625" y1="48.625" x2="24.5" y2="48.625" width="0.2032" layer="1"/>
 <wire x1="24.5" y1="48.625" x2="24.495" y2="48.63" width="0.2032" layer="1"/>
 <via x="17.625" y="45" extent="1-16" drill="0.3"/>
@@ -3985,13 +3921,17 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="43.488609375" y1="33.056040625" x2="44.824346875" y2="34.391778125" width="0.2032" layer="1"/>
 <wire x1="67.65" y1="49.5" x2="67.65" y2="51.1" width="0.2032" layer="1"/>
 <wire x1="67.65" y1="51.1" x2="67.625" y2="51.125" width="0.2032" layer="1"/>
-<via x="41" y="72.25" extent="1-16" drill="0.3"/>
-<wire x1="41" y1="70.05" x2="41" y2="72.25" width="0.2032" layer="1"/>
 <via x="46.375" y="34.75" extent="1-16" drill="0.3"/>
 <wire x1="44.824346875" y1="34.391778125" x2="44.891778125" y2="34.391778125" width="0.2032" layer="1"/>
 <wire x1="44.891778125" y1="34.391778125" x2="45.5" y2="35" width="0.2032" layer="1"/>
 <wire x1="45.5" y1="35" x2="46.125" y2="35" width="0.2032" layer="1"/>
 <wire x1="46.125" y1="35" x2="46.375" y2="34.75" width="0.2032" layer="1"/>
+<contactref element="R10" pad="2"/>
+<via x="37" y="58.625" extent="1-16" drill="0.3"/>
+<wire x1="37" y1="58.625" x2="37" y2="60.05" width="0.2032" layer="1"/>
+<via x="10.25" y="49.375" extent="1-16" drill="0.3"/>
+<wire x1="10.525" y1="47.875" x2="10.525" y2="49.1" width="0.2032" layer="1"/>
+<wire x1="10.525" y1="49.1" x2="10.25" y2="49.375" width="0.2032" layer="1"/>
 </signal>
 <signal name="SR_SCK">
 <contactref element="IC1" pad="11"/>
@@ -4099,7 +4039,6 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <contactref element="IC10" pad="1"/>
 <contactref element="C9" pad="1"/>
 <contactref element="F2" pad="P$1"/>
-<contactref element="LED1" pad="A"/>
 <contactref element="JP5" pad="3"/>
 <contactref element="JP6" pad="2"/>
 <contactref element="JP2" pad="2"/>
@@ -4108,8 +4047,8 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="10" y1="60" x2="13.6" y2="60" width="0.6096" layer="1"/>
 <wire x1="13.6" y1="60" x2="13.625" y2="60" width="0.6096" layer="1"/>
 <wire x1="13.625" y1="60" x2="16.125" y2="57.5" width="0.6096" layer="1"/>
-<wire x1="16.125" y1="57.5" x2="23" y2="57.5" width="0.6096" layer="1"/>
-<wire x1="23" y1="57.5" x2="24.55" y2="57.5" width="0.6096" layer="1"/>
+<wire x1="16.125" y1="57.5" x2="22.75" y2="57.5" width="0.6096" layer="1"/>
+<wire x1="22.75" y1="57.5" x2="24.55" y2="57.5" width="0.6096" layer="1"/>
 <wire x1="4" y1="58.54" x2="3.54" y2="58.54" width="0.6096" layer="16"/>
 <wire x1="3.54" y1="58.54" x2="2" y2="57" width="0.6096" layer="16"/>
 <wire x1="2" y1="57" x2="2" y2="7" width="0.6096" layer="16"/>
@@ -4144,16 +4083,13 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="152.04" y1="37.5" x2="152" y2="37.54" width="0.6096" layer="1"/>
 <wire x1="41" y1="28" x2="37.895" y2="28" width="0.6096" layer="16"/>
 <wire x1="37.895" y1="28" x2="37.75" y2="28.145" width="0.6096" layer="16"/>
-<via x="23" y="57.5" extent="1-16" drill="0.6"/>
-<wire x1="23" y1="57.5" x2="23" y2="64.5" width="0.6096" layer="16"/>
-<wire x1="23" y1="64.5" x2="24.125" y2="65.625" width="0.6096" layer="16"/>
-<wire x1="24.125" y1="65.625" x2="35.375" y2="65.625" width="0.6096" layer="16"/>
-<wire x1="35.375" y1="65.625" x2="36.75" y2="67" width="0.6096" layer="16"/>
-<wire x1="36.75" y1="67" x2="36.75" y2="71" width="0.6096" layer="16"/>
-<wire x1="36.75" y1="71" x2="37.875" y2="72.125" width="0.6096" layer="16"/>
-<via x="37.875" y="72.125" extent="1-16" drill="0.6"/>
-<wire x1="37.875" y1="72.125" x2="37.875" y2="70.175" width="0.6096" layer="1"/>
-<wire x1="37.875" y1="70.175" x2="38" y2="70.05" width="0.6096" layer="1"/>
+<contactref element="R9" pad="2"/>
+<wire x1="34.5" y1="60.05" x2="34.5" y2="58.625" width="0.6096" layer="1"/>
+<via x="34.5" y="58.625" extent="1-16" drill="0.3"/>
+<via x="22.75" y="57.5" extent="1-16" drill="0.3"/>
+<wire x1="22.75" y1="57.5" x2="33.875" y2="57.5" width="0.6096" layer="16"/>
+<wire x1="33.875" y1="57.5" x2="34.5" y2="58.125" width="0.6096" layer="16"/>
+<wire x1="34.5" y1="58.125" x2="34.5" y2="58.625" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$37">
 <contactref element="IC2" pad="10"/>
@@ -5120,8 +5056,9 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="13.6" y1="54" x2="13" y2="54" width="0.2032" layer="1"/>
 <wire x1="13" y1="54" x2="4.54" y2="54" width="0.2032" layer="1"/>
 <wire x1="4.54" y1="54" x2="4" y2="53.46" width="0.2032" layer="1"/>
-<wire x1="12.485" y1="50.29" x2="12.485" y2="53.485" width="0.2032" layer="1"/>
 <wire x1="12.485" y1="53.485" x2="13" y2="54" width="0.2032" layer="1"/>
+<wire x1="4.05" y1="47.875" x2="4.05" y2="53.41" width="0.2032" layer="1"/>
+<wire x1="4.05" y1="53.41" x2="4" y2="53.46" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$104">
 <contactref element="R75" pad="1"/>
@@ -6318,38 +6255,29 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <signal name="DMX_IN_A">
 <contactref element="X3" pad="L3"/>
 <contactref element="L1" pad="2"/>
-<wire x1="15.28" y1="80.47" x2="15.28" y2="77.405" width="0.2032" layer="1"/>
-<wire x1="15.28" y1="77.405" x2="14.375" y2="76.5" width="0.2032" layer="1"/>
-<wire x1="14.375" y1="76.5" x2="10" y2="76.5" width="0.2032" layer="1"/>
-<wire x1="10" y1="76.5" x2="1.375" y2="67.875" width="0.2032" layer="1"/>
-<wire x1="1.375" y1="67.875" x2="1.375" y2="57.625" width="0.2032" layer="1"/>
-<wire x1="15.5" y1="56.25" x2="23.125" y2="56.25" width="0.2032" layer="1"/>
-<wire x1="23.125" y1="56.25" x2="25.375" y2="54" width="0.2032" layer="1"/>
-<wire x1="25.375" y1="54" x2="26.075" y2="54" width="0.2032" layer="1"/>
-<wire x1="26.075" y1="54" x2="26.325" y2="53.75" width="0.2032" layer="1"/>
-<wire x1="15.5" y1="56.25" x2="14.75" y2="57" width="0.2032" layer="1"/>
-<wire x1="14.75" y1="57" x2="2" y2="57" width="0.2032" layer="1"/>
-<wire x1="2" y1="57" x2="1.375" y2="57.625" width="0.2032" layer="1"/>
+<wire x1="26.325" y1="53.75" x2="26.25" y2="53.75" width="0.2032" layer="1"/>
+<wire x1="26.25" y1="53.75" x2="24" y2="56" width="0.2032" layer="1"/>
+<via x="24" y="56" extent="1-16" drill="0.3"/>
+<wire x1="15.28" y1="80.47" x2="15.28" y2="61.72" width="0.2032" layer="16"/>
+<wire x1="15.28" y1="61.72" x2="21" y2="56" width="0.2032" layer="16"/>
+<wire x1="21" y1="56" x2="24" y2="56" width="0.2032" layer="16"/>
 </signal>
 <signal name="DMX_IN_B">
 <contactref element="X3" pad="L2"/>
 <contactref element="L1" pad="4"/>
-<wire x1="17.78" y1="80.47" x2="17.78" y2="77.28" width="0.2032" layer="1"/>
-<wire x1="17.78" y1="77.28" x2="16.5" y2="76" width="0.2032" layer="1"/>
-<wire x1="16.5" y1="76" x2="10.375" y2="76" width="0.2032" layer="1"/>
-<wire x1="10.375" y1="76" x2="2" y2="67.625" width="0.2032" layer="1"/>
-<wire x1="2" y1="67.625" x2="2" y2="58.125" width="0.2032" layer="1"/>
-<wire x1="2" y1="58.125" x2="2.75" y2="57.375" width="0.2032" layer="1"/>
-<wire x1="2.75" y1="57.375" x2="15" y2="57.375" width="0.2032" layer="1"/>
-<wire x1="15" y1="57.375" x2="15.75" y2="56.625" width="0.2032" layer="1"/>
-<wire x1="15.75" y1="56.625" x2="23.375" y2="56.625" width="0.2032" layer="1"/>
-<wire x1="23.375" y1="56.625" x2="24.625" y2="55.375" width="0.2032" layer="1"/>
-<wire x1="24.625" y1="55.375" x2="27.75" y2="55.375" width="0.2032" layer="1"/>
-<wire x1="27.75" y1="55.375" x2="29" y2="54.125" width="0.2032" layer="1"/>
-<wire x1="29" y1="54.125" x2="29" y2="52.125" width="0.2032" layer="1"/>
-<wire x1="29" y1="52.125" x2="28.25" y2="51.375" width="0.2032" layer="1"/>
-<wire x1="28.25" y1="51.375" x2="26.45" y2="51.375" width="0.2032" layer="1"/>
-<wire x1="26.45" y1="51.375" x2="26.325" y2="51.25" width="0.2032" layer="1"/>
+<wire x1="17.78" y1="80.47" x2="17.78" y2="61.28" width="0.2032" layer="16"/>
+<wire x1="17.78" y1="61.28" x2="17.75" y2="61.25" width="0.2032" layer="16"/>
+<wire x1="26.325" y1="51.25" x2="25.375" y2="51.25" width="0.2032" layer="1"/>
+<wire x1="25.375" y1="51.25" x2="24.375" y2="52.25" width="0.2032" layer="1"/>
+<wire x1="24.375" y1="52.25" x2="24.375" y2="54.625" width="0.2032" layer="1"/>
+<wire x1="24.375" y1="54.625" x2="23.25" y2="55.75" width="0.2032" layer="1"/>
+<wire x1="23.25" y1="55.75" x2="23.25" y2="56.375" width="0.2032" layer="1"/>
+<wire x1="23.25" y1="56.375" x2="23" y2="56.625" width="0.2032" layer="1"/>
+<wire x1="23" y1="56.625" x2="21.375" y2="56.625" width="0.2032" layer="1"/>
+<via x="21.375" y="56.625" extent="1-16" drill="0.3"/>
+<wire x1="21.375" y1="56.625" x2="21.125" y2="56.625" width="0.2032" layer="16"/>
+<wire x1="21.125" y1="56.625" x2="17.75" y2="60" width="0.2032" layer="16"/>
+<wire x1="17.75" y1="60" x2="17.75" y2="61.25" width="0.2032" layer="16"/>
 </signal>
 <signal name="RE/DE1">
 <contactref element="IC11" pad="6"/>
@@ -6390,17 +6318,14 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <contactref element="X6" pad="L3"/>
 <contactref element="X6" pad="L4"/>
 <contactref element="F2" pad="P$2"/>
-<wire x1="20.4" y1="60" x2="20.4" y2="63.85" width="0.6096" layer="1"/>
-<wire x1="20.4" y1="63.85" x2="18.875" y2="65.375" width="0.6096" layer="1"/>
-<wire x1="18.875" y1="65.375" x2="11.75" y2="65.375" width="0.6096" layer="1"/>
-<wire x1="11.75" y1="65.375" x2="9.5" y2="67.625" width="0.6096" layer="1"/>
-<wire x1="9.5" y1="67.625" x2="9.5" y2="72.625" width="0.6096" layer="1"/>
-<wire x1="9.5" y1="72.625" x2="11.375" y2="74.5" width="0.6096" layer="1"/>
-<wire x1="11.375" y1="74.5" x2="35.875" y2="74.5" width="0.6096" layer="1"/>
-<wire x1="35.875" y1="74.5" x2="38.125" y2="76.75" width="0.6096" layer="1"/>
-<wire x1="38.125" y1="76.75" x2="38.125" y2="80.435" width="0.6096" layer="1"/>
-<wire x1="38.125" y1="80.435" x2="38.16" y2="80.47" width="0.6096" layer="1"/>
+<wire x1="20.4" y1="60" x2="20.4" y2="64.275" width="0.6096" layer="1"/>
 <wire x1="38.16" y1="80.47" x2="40.66" y2="80.47" width="0.6096" layer="1"/>
+<wire x1="20.4" y1="64.275" x2="21.125" y2="65" width="0.6096" layer="1"/>
+<wire x1="38.16" y1="80.47" x2="36.72" y2="80.47" width="0.6096" layer="1"/>
+<wire x1="36.72" y1="80.47" x2="35.625" y2="79.375" width="0.6096" layer="1"/>
+<wire x1="35.625" y1="79.375" x2="35.625" y2="67.625" width="0.6096" layer="1"/>
+<wire x1="35.625" y1="67.625" x2="33" y2="65" width="0.6096" layer="1"/>
+<wire x1="33" y1="65" x2="21.125" y2="65" width="0.6096" layer="1"/>
 </signal>
 <signal name="VCCIO1">
 <contactref element="DC1" pad="4"/>
@@ -6413,7 +6338,7 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <contactref element="C24" pad="1"/>
 <contactref element="OK31" pad="6"/>
 <contactref element="R35" pad="2"/>
-<contactref element="SJ1" pad="1"/>
+<contactref element="J2" pad="1"/>
 <wire x1="50.75" y1="54.975" x2="50.75" y2="57.65" width="0.2032" layer="1"/>
 <wire x1="53" y1="60.05" x2="53" y2="59.125" width="0.2032" layer="1"/>
 <wire x1="53" y1="59.125" x2="51.5" y2="57.625" width="0.2032" layer="1"/>
@@ -6444,9 +6369,9 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="42" y1="51" x2="43" y2="52" width="0.2032" layer="1"/>
 <wire x1="43" y1="52" x2="46" y2="52" width="0.2032" layer="1"/>
 <via x="46" y="52" extent="1-16" drill="0.3"/>
-<wire x1="46" y1="52" x2="47.5" y2="52" width="0.2032" layer="16"/>
-<via x="47.5" y="52" extent="1-16" drill="0.3"/>
-<wire x1="47.5" y1="52" x2="48.75" y2="52" width="0.2032" layer="1"/>
+<wire x1="46" y1="52" x2="48.125" y2="52" width="0.2032" layer="16"/>
+<via x="48.125" y="52" extent="1-16" drill="0.3"/>
+<wire x1="48.125" y1="52" x2="48.75" y2="52" width="0.2032" layer="1"/>
 <wire x1="48.75" y1="52" x2="49.375" y2="52.625" width="0.2032" layer="1"/>
 <via x="49.375" y="52.625" extent="1-16" drill="0.3"/>
 <wire x1="49.375" y1="52.625" x2="49.375" y2="54.75" width="0.2032" layer="16"/>
@@ -6484,7 +6409,7 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <contactref element="OK30" pad="3"/>
 <contactref element="C24" pad="2"/>
 <contactref element="C27" pad="2"/>
-<contactref element="SJ3" pad="1"/>
+<contactref element="J1" pad="1"/>
 <wire x1="39.375" y1="61.95" x2="42.205" y2="61.95" width="0.2032" layer="1"/>
 <wire x1="42.205" y1="61.95" x2="42.25" y2="61.905" width="0.2032" layer="1"/>
 <wire x1="42.25" y1="61.905" x2="43.905" y2="61.905" width="0.2032" layer="1"/>
@@ -6516,8 +6441,7 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="97.125" y1="58.595" x2="97.12" y2="58.59" width="0.2032" layer="1"/>
 <wire x1="39.375" y1="61.95" x2="38.575" y2="61.95" width="0.2032" layer="1"/>
 <wire x1="38.575" y1="61.95" x2="38.25" y2="61.625" width="0.2032" layer="1"/>
-<wire x1="38.25" y1="61.625" x2="38.25" y2="54.02" width="0.2032" layer="1"/>
-<wire x1="38.25" y1="54.02" x2="39" y2="53.27" width="0.2032" layer="1"/>
+<wire x1="38.25" y1="61.625" x2="38.25" y2="53.645" width="0.2032" layer="1"/>
 <wire x1="20.28" y1="80.47" x2="20.28" y2="81.905" width="0.2032" layer="1"/>
 <wire x1="20.28" y1="81.905" x2="21.75" y2="83.375" width="0.2032" layer="1"/>
 <wire x1="21.75" y1="83.375" x2="46.625" y2="83.375" width="0.2032" layer="1"/>
@@ -6525,6 +6449,7 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="47.75" y1="82.25" x2="47.75" y2="63" width="0.2032" layer="1"/>
 <wire x1="58.765" y1="62.25" x2="53.3" y2="62.25" width="0.2032" layer="1"/>
 <wire x1="53.3" y1="62.25" x2="53" y2="61.95" width="0.2032" layer="1"/>
+<wire x1="38.25" y1="53.645" x2="38.625" y2="53.27" width="0.2032" layer="1"/>
 </signal>
 <signal name="AUXCON_1">
 <contactref element="IC11" pad="61"/>
@@ -6538,8 +6463,10 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="54.5" y1="50" x2="48" y2="50" width="0.2032" layer="1"/>
 <wire x1="48" y1="50" x2="46.875" y2="48.875" width="0.2032" layer="1"/>
 <wire x1="46.875" y1="48.875" x2="46.875" y2="46.25" width="0.2032" layer="1"/>
-<wire x1="46.875" y1="46.25" x2="46.25" y2="45.625" width="0.2032" layer="1"/>
-<wire x1="46.25" y1="45.625" x2="32.48" y2="45.625" width="0.2032" layer="1"/>
+<wire x1="46.875" y1="46.25" x2="45.5" y2="44.875" width="0.2032" layer="1"/>
+<wire x1="45.5" y1="44.875" x2="35.75" y2="44.875" width="0.2032" layer="1"/>
+<wire x1="35.75" y1="44.875" x2="35" y2="45.625" width="0.2032" layer="1"/>
+<wire x1="35" y1="45.625" x2="32.48" y2="45.625" width="0.2032" layer="1"/>
 <wire x1="32.48" y1="45.625" x2="31.115" y2="46.99" width="0.2032" layer="1"/>
 </signal>
 <signal name="AUXCON_2">
@@ -6549,12 +6476,13 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="55.79821875" y1="45.42321875" x2="56.375" y2="46" width="0.2032" layer="1"/>
 <wire x1="56.375" y1="46" x2="56.375" y2="48.75" width="0.2032" layer="1"/>
 <wire x1="56.375" y1="48.75" x2="54.75" y2="50.375" width="0.2032" layer="1"/>
-<wire x1="54.75" y1="50.375" x2="50.375" y2="50.375" width="0.2032" layer="1"/>
-<wire x1="50.375" y1="50.375" x2="47.75" y2="50.375" width="0.2032" layer="1"/>
+<wire x1="54.75" y1="50.375" x2="47.75" y2="50.375" width="0.2032" layer="1"/>
 <wire x1="47.75" y1="50.375" x2="46.5" y2="49.125" width="0.2032" layer="1"/>
 <wire x1="46.5" y1="49.125" x2="46.5" y2="46.5" width="0.2032" layer="1"/>
-<wire x1="46.5" y1="46.5" x2="46" y2="46" width="0.2032" layer="1"/>
-<wire x1="46" y1="46" x2="34.645" y2="46" width="0.2032" layer="1"/>
+<wire x1="46.5" y1="46.5" x2="45.25" y2="45.25" width="0.2032" layer="1"/>
+<wire x1="45.25" y1="45.25" x2="36" y2="45.25" width="0.2032" layer="1"/>
+<wire x1="36" y1="45.25" x2="35.25" y2="46" width="0.2032" layer="1"/>
+<wire x1="35.25" y1="46" x2="34.645" y2="46" width="0.2032" layer="1"/>
 <wire x1="34.645" y1="46" x2="33.655" y2="46.99" width="0.2032" layer="1"/>
 </signal>
 <signal name="AUXCON_3">
@@ -6905,20 +6833,6 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="50.75" y1="44" x2="50.75" y2="44.450978125" width="0.2032" layer="1"/>
 <wire x1="50.75" y1="44.450978125" x2="49.278553125" y2="45.922425" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$80">
-<contactref element="LED1" pad="C"/>
-<contactref element="R9" pad="2"/>
-<wire x1="34.5" y1="61.95" x2="34.5" y2="63.375" width="0.2032" layer="1"/>
-<wire x1="34.5" y1="63.375" x2="38" y2="66.875" width="0.2032" layer="1"/>
-<wire x1="38" y1="66.875" x2="38" y2="67.95" width="0.2032" layer="1"/>
-</signal>
-<signal name="N$82">
-<contactref element="LED2" pad="C"/>
-<contactref element="R10" pad="2"/>
-<wire x1="37" y1="61.95" x2="37" y2="62.375" width="0.2032" layer="1"/>
-<wire x1="37" y1="62.375" x2="41" y2="66.375" width="0.2032" layer="1"/>
-<wire x1="41" y1="66.375" x2="41" y2="67.95" width="0.2032" layer="1"/>
-</signal>
 <signal name="OE">
 <contactref element="IC1" pad="13"/>
 <contactref element="IC2" pad="13"/>
@@ -6982,26 +6896,28 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <contactref element="L1" pad="3"/>
 <contactref element="R12" pad="2"/>
 <wire x1="33.675" y1="51.25" x2="33.8" y2="51.25" width="0.2032" layer="1"/>
-<wire x1="33.8" y1="51.25" x2="37.05" y2="48" width="0.2032" layer="1"/>
-<wire x1="37.05" y1="48" x2="37.05" y2="47.45" width="0.2032" layer="1"/>
-<wire x1="37.05" y1="47.45" x2="37.625" y2="46.875" width="0.2032" layer="1"/>
-<wire x1="37.625" y1="46.875" x2="40.25" y2="46.875" width="0.2032" layer="1"/>
-<wire x1="40.25" y1="46.875" x2="41.375" y2="48" width="0.2032" layer="1"/>
-<wire x1="41.375" y1="48" x2="43.175" y2="48" width="0.2032" layer="1"/>
 <wire x1="42.25" y1="59.365" x2="41.365" y2="59.365" width="0.2032" layer="1"/>
 <wire x1="41.365" y1="59.365" x2="41.125" y2="59.125" width="0.2032" layer="1"/>
 <wire x1="41.125" y1="59.125" x2="41.125" y2="57.25" width="0.2032" layer="1"/>
 <wire x1="41.125" y1="57.25" x2="41.75" y2="56.625" width="0.2032" layer="1"/>
 <wire x1="41.75" y1="56.625" x2="44.25" y2="56.625" width="0.2032" layer="1"/>
-<wire x1="44.25" y1="56.625" x2="46.875" y2="54" width="0.2032" layer="1"/>
-<wire x1="46" y1="46.875" x2="43.375" y2="46.875" width="0.2032" layer="1"/>
-<wire x1="43.375" y1="46.875" x2="43.125" y2="47.125" width="0.2032" layer="1"/>
-<wire x1="43.125" y1="47.125" x2="43.125" y2="47.95" width="0.2032" layer="1"/>
-<wire x1="43.125" y1="47.95" x2="43.175" y2="48" width="0.2032" layer="1"/>
-<wire x1="46.875" y1="54" x2="46.875" y2="50.125" width="0.2032" layer="1"/>
-<wire x1="46.875" y1="50.125" x2="46.125" y2="49.375" width="0.2032" layer="1"/>
-<wire x1="46.125" y1="49.375" x2="46.125" y2="47" width="0.2032" layer="1"/>
-<wire x1="46.125" y1="47" x2="46" y2="46.875" width="0.2032" layer="1"/>
+<wire x1="44.25" y1="56.625" x2="47.25" y2="53.625" width="0.2032" layer="1"/>
+<wire x1="47.25" y1="53.625" x2="47.25" y2="50.5" width="0.2032" layer="1"/>
+<wire x1="47.25" y1="50.5" x2="46.125" y2="49.375" width="0.2032" layer="1"/>
+<wire x1="46.125" y1="49.375" x2="46.125" y2="46.75" width="0.2032" layer="1"/>
+<wire x1="33.8" y1="51.25" x2="33.8" y2="50.125" width="0.2032" layer="1"/>
+<wire x1="33.8" y1="50.125" x2="36.8" y2="47.125" width="0.2032" layer="1"/>
+<wire x1="46.125" y1="46.75" x2="45" y2="45.625" width="0.2032" layer="1"/>
+<wire x1="45" y1="45.625" x2="43" y2="45.625" width="0.2032" layer="1"/>
+<wire x1="43" y1="45.625" x2="42.625" y2="46" width="0.2032" layer="1"/>
+<wire x1="42.625" y1="46" x2="42.625" y2="47.05" width="0.2032" layer="1"/>
+<wire x1="42.625" y1="47.05" x2="42.55" y2="47.125" width="0.2032" layer="1"/>
+<wire x1="37.05" y1="47.45" x2="37.05" y2="47" width="0.2032" layer="1"/>
+<wire x1="37.05" y1="47" x2="37.05" y2="46.2" width="0.2032" layer="1"/>
+<wire x1="37.05" y1="46.2" x2="37.25" y2="46" width="0.2032" layer="1"/>
+<wire x1="37.25" y1="46" x2="42.625" y2="46" width="0.2032" layer="1"/>
+<wire x1="36.8" y1="47.125" x2="36.925" y2="47.125" width="0.2032" layer="1"/>
+<wire x1="36.925" y1="47.125" x2="37.05" y2="47" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$40">
 <contactref element="IC13" pad="3"/>
@@ -7022,9 +6938,8 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <contactref element="IC12" pad="6"/>
 <contactref element="L1" pad="1"/>
 <contactref element="R13" pad="1"/>
-<contactref element="SJ2" pad="1"/>
-<wire x1="45" y1="53.27" x2="45" y2="55" width="0.2032" layer="1"/>
-<wire x1="45" y1="55" x2="43.75" y2="56.25" width="0.2032" layer="1"/>
+<contactref element="J3" pad="1"/>
+<wire x1="45.375" y1="54.625" x2="43.75" y2="56.25" width="0.2032" layer="1"/>
 <wire x1="43.75" y1="56.25" x2="41.25" y2="56.25" width="0.2032" layer="1"/>
 <wire x1="41.25" y1="56.25" x2="40.75" y2="56.75" width="0.2032" layer="1"/>
 <wire x1="40.75" y1="56.75" x2="40.75" y2="59.75" width="0.2032" layer="1"/>
@@ -7033,17 +6948,19 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="42.115" y1="60.5" x2="42.25" y2="60.635" width="0.2032" layer="1"/>
 <wire x1="33.7" y1="57" x2="33.7" y2="53.775" width="0.2032" layer="1"/>
 <wire x1="33.7" y1="53.775" x2="33.675" y2="53.75" width="0.2032" layer="1"/>
-<wire x1="33.7" y1="57" x2="36.875" y2="57" width="0.2032" layer="1"/>
-<wire x1="36.875" y1="57" x2="37.625" y2="56.25" width="0.2032" layer="1"/>
-<via x="37.625" y="56.25" extent="1-16" drill="0.3"/>
-<wire x1="37.625" y1="56.25" x2="38.875" y2="56.25" width="0.2032" layer="16"/>
-<via x="38.875" y="56.25" extent="1-16" drill="0.3"/>
-<wire x1="38.875" y1="56.25" x2="40.25" y2="56.25" width="0.2032" layer="1"/>
+<wire x1="33.7" y1="57" x2="37.625" y2="57" width="0.2032" layer="1"/>
+<via x="37.625" y="57" extent="1-16" drill="0.3"/>
+<wire x1="37.625" y1="57" x2="39" y2="57" width="0.2032" layer="16"/>
+<via x="39" y="57" extent="1-16" drill="0.3"/>
+<wire x1="39" y1="57" x2="39" y2="56.75" width="0.2032" layer="1"/>
+<wire x1="39" y1="56.75" x2="39.5" y2="56.25" width="0.2032" layer="1"/>
+<wire x1="39.5" y1="56.25" x2="40.25" y2="56.25" width="0.2032" layer="1"/>
 <wire x1="40.25" y1="56.25" x2="40.75" y2="56.75" width="0.2032" layer="1"/>
+<wire x1="45.375" y1="53.27" x2="45.375" y2="54.625" width="0.2032" layer="1"/>
 </signal>
 <signal name="TERM_HI1">
 <contactref element="R13" pad="2"/>
-<contactref element="SJ1" pad="2"/>
+<contactref element="J2" pad="2"/>
 <wire x1="31.8" y1="57" x2="31.8" y2="55.95" width="0.2032" layer="1"/>
 <wire x1="31.8" y1="55.95" x2="32.375" y2="55.375" width="0.2032" layer="1"/>
 <via x="32.375" y="55.375" extent="1-16" drill="0.3"/>
@@ -7054,15 +6971,16 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 </signal>
 <signal name="TERM_LO1">
 <contactref element="R14" pad="1"/>
-<contactref element="SJ3" pad="2"/>
-<wire x1="38.95" y1="48" x2="38.95" y2="50.68" width="0.2032" layer="1"/>
-<wire x1="38.95" y1="50.68" x2="39" y2="50.73" width="0.2032" layer="1"/>
+<contactref element="J1" pad="2"/>
+<wire x1="38.7" y1="47.125" x2="38.7" y2="50.655" width="0.2032" layer="1"/>
+<wire x1="38.7" y1="50.655" x2="38.625" y2="50.73" width="0.2032" layer="1"/>
 </signal>
 <signal name="TERM_B1">
-<contactref element="SJ2" pad="2"/>
+<contactref element="J3" pad="2"/>
 <contactref element="R12" pad="1"/>
-<wire x1="45.075" y1="48" x2="45.075" y2="50.655" width="0.2032" layer="1"/>
-<wire x1="45.075" y1="50.655" x2="45" y2="50.73" width="0.2032" layer="1"/>
+<wire x1="45.375" y1="50.73" x2="45.375" y2="48.3" width="0.2032" layer="1"/>
+<wire x1="44.45" y1="47.125" x2="44.45" y2="47.375" width="0.2032" layer="1"/>
+<wire x1="44.45" y1="47.375" x2="45.375" y2="48.3" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$46">
 <contactref element="F5" pad="P$1"/>
@@ -7188,32 +7106,62 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 </signal>
 <signal name="N$45">
 <contactref element="R8" pad="1"/>
-<contactref element="LED7" pad="A"/>
-<wire x1="15" y1="67.95" x2="15" y2="67.375" width="0.2032" layer="1"/>
-<wire x1="15" y1="67.375" x2="16" y2="66.375" width="0.2032" layer="1"/>
-<wire x1="16" y1="66.375" x2="20.75" y2="66.375" width="0.2032" layer="1"/>
-<wire x1="20.75" y1="66.375" x2="24.5" y2="62.625" width="0.2032" layer="1"/>
-<wire x1="24.5" y1="62.625" x2="24.5" y2="61.95" width="0.2032" layer="1"/>
+<contactref element="LED6" pad="A"/>
+<via x="24.5" y="63.375" extent="1-16" drill="0.3"/>
+<wire x1="24.5" y1="61.95" x2="24.5" y2="63.375" width="0.2032" layer="1"/>
+<wire x1="24.5" y1="63.375" x2="24.5" y2="66.375" width="0.2032" layer="16"/>
+<via x="24.5" y="66.375" extent="1-16" drill="0.3"/>
+<wire x1="24.5" y1="66.375" x2="23.5" y2="66.375" width="0.2032" layer="1"/>
+<wire x1="23.5" y1="66.375" x2="23.125" y2="66.75" width="0.2032" layer="1"/>
+<wire x1="23.125" y1="66.75" x2="4" y2="66.75" width="0.2032" layer="1"/>
+<wire x1="4" y1="66.75" x2="2.25" y2="68.5" width="0.2032" layer="1"/>
+<wire x1="1.25" y1="80.95" x2="1.55" y2="80.95" width="0.2032" layer="1"/>
+<wire x1="1.55" y1="80.95" x2="2.25" y2="80.25" width="0.2032" layer="1"/>
+<wire x1="2.25" y1="80.25" x2="2.25" y2="68.5" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$48">
 <contactref element="R7" pad="1"/>
-<contactref element="LED6" pad="A"/>
-<wire x1="18" y1="67.95" x2="21" y2="67.95" width="0.2032" layer="1"/>
-<wire x1="21" y1="67.95" x2="27" y2="61.95" width="0.2032" layer="1"/>
+<contactref element="LED5" pad="A"/>
+<via x="27" y="63.375" extent="1-16" drill="0.3"/>
+<wire x1="27" y1="61.95" x2="27" y2="63.375" width="0.2032" layer="1"/>
+<wire x1="27" y1="63.375" x2="27" y2="66.375" width="0.2032" layer="16"/>
+<via x="27" y="66.375" extent="1-16" drill="0.3"/>
+<wire x1="27" y1="66.375" x2="27" y2="66.625" width="0.2032" layer="1"/>
+<wire x1="27" y1="66.625" x2="26.5" y2="67.125" width="0.2032" layer="1"/>
+<wire x1="26.5" y1="67.125" x2="5.625" y2="67.125" width="0.2032" layer="1"/>
+<wire x1="3.25" y1="80.95" x2="3.55" y2="80.95" width="0.2032" layer="1"/>
+<wire x1="3.55" y1="80.95" x2="4.25" y2="80.25" width="0.2032" layer="1"/>
+<wire x1="4.25" y1="80.25" x2="4.25" y2="68.5" width="0.2032" layer="1"/>
+<wire x1="4.25" y1="68.5" x2="5.625" y2="67.125" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$53">
 <contactref element="R5" pad="1"/>
-<contactref element="LED4" pad="A"/>
-<wire x1="31" y1="67.95" x2="31" y2="64.75" width="0.2032" layer="1"/>
-<wire x1="31" y1="64.75" x2="32" y2="63.75" width="0.2032" layer="1"/>
-<wire x1="32" y1="63.75" x2="32" y2="61.95" width="0.2032" layer="1"/>
+<contactref element="LED3" pad="A"/>
+<via x="32" y="63.375" extent="1-16" drill="0.3"/>
+<wire x1="32" y1="61.95" x2="32" y2="63.375" width="0.2032" layer="1"/>
+<wire x1="32" y1="63.375" x2="32" y2="66.25" width="0.2032" layer="16"/>
+<via x="32" y="66.25" extent="1-16" drill="0.3"/>
+<wire x1="32" y1="66.25" x2="32" y2="66.625" width="0.2032" layer="1"/>
+<wire x1="32" y1="66.625" x2="30.75" y2="67.875" width="0.2032" layer="1"/>
+<wire x1="30.75" y1="67.875" x2="9" y2="67.875" width="0.2032" layer="1"/>
+<wire x1="7.25" y1="80.95" x2="7.55" y2="80.95" width="0.2032" layer="1"/>
+<wire x1="7.55" y1="80.95" x2="8.25" y2="80.25" width="0.2032" layer="1"/>
+<wire x1="8.25" y1="80.25" x2="8.25" y2="68.625" width="0.2032" layer="1"/>
+<wire x1="8.25" y1="68.625" x2="9" y2="67.875" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$73">
 <contactref element="R6" pad="1"/>
-<contactref element="LED5" pad="A"/>
-<wire x1="27" y1="67.95" x2="27" y2="65.375" width="0.2032" layer="1"/>
-<wire x1="27" y1="65.375" x2="29.5" y2="62.875" width="0.2032" layer="1"/>
-<wire x1="29.5" y1="62.875" x2="29.5" y2="61.95" width="0.2032" layer="1"/>
+<contactref element="LED4" pad="A"/>
+<via x="29.5" y="63.375" extent="1-16" drill="0.3"/>
+<wire x1="29.5" y1="61.95" x2="29.5" y2="63.375" width="0.2032" layer="1"/>
+<wire x1="29.5" y1="63.375" x2="29.5" y2="66.375" width="0.2032" layer="16"/>
+<wire x1="29.5" y1="66.375" x2="28.375" y2="67.5" width="0.2032" layer="1"/>
+<wire x1="28.375" y1="67.5" x2="7.375" y2="67.5" width="0.2032" layer="1"/>
+<wire x1="5.25" y1="80.95" x2="5.55" y2="80.95" width="0.2032" layer="1"/>
+<wire x1="5.55" y1="80.95" x2="6.25" y2="80.25" width="0.2032" layer="1"/>
+<wire x1="6.25" y1="80.25" x2="6.25" y2="68.625" width="0.2032" layer="1"/>
+<wire x1="6.25" y1="68.625" x2="7.375" y2="67.5" width="0.2032" layer="1"/>
+<via x="29.5" y="66.375" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="N$74">
 <contactref element="F4" pad="P$1"/>
@@ -7231,7 +7179,43 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <wire x1="41.375" y1="27.875" x2="41.375" y2="29.035" width="0.6096" layer="1"/>
 <wire x1="41.375" y1="29.035" x2="41.5" y2="29.16" width="0.6096" layer="1"/>
 </signal>
+<signal name="N$77">
+<contactref element="R10" pad="1"/>
+<contactref element="LED1" pad="A"/>
+<via x="37" y="63.375" extent="1-16" drill="0.3"/>
+<wire x1="37" y1="61.95" x2="37" y2="63.375" width="0.2032" layer="1"/>
+<wire x1="37" y1="63.375" x2="37" y2="65.5" width="0.2032" layer="16"/>
+<wire x1="37" y1="65.5" x2="33.5" y2="69" width="0.2032" layer="16"/>
+<via x="33.5" y="69" extent="1-16" drill="0.3"/>
+<wire x1="33.5" y1="69" x2="31.875" y2="69" width="0.2032" layer="1"/>
+<wire x1="31.875" y1="69" x2="31.5" y2="68.625" width="0.2032" layer="1"/>
+<wire x1="31.5" y1="68.625" x2="12.5" y2="68.625" width="0.2032" layer="1"/>
+<wire x1="11.25" y1="80.95" x2="11.55" y2="80.95" width="0.2032" layer="1"/>
+<wire x1="11.55" y1="80.95" x2="12.25" y2="80.25" width="0.2032" layer="1"/>
+<wire x1="12.25" y1="80.25" x2="12.25" y2="68.875" width="0.2032" layer="1"/>
+<wire x1="12.25" y1="68.875" x2="12.5" y2="68.625" width="0.2032" layer="1"/>
+</signal>
+<signal name="N$79">
+<contactref element="R9" pad="1"/>
+<contactref element="LED2" pad="A"/>
+<via x="34.5" y="63.375" extent="1-16" drill="0.3"/>
+<wire x1="34.5" y1="61.95" x2="34.5" y2="63.375" width="0.2032" layer="1"/>
+<wire x1="34.5" y1="63.375" x2="34.5" y2="66" width="0.2032" layer="16"/>
+<wire x1="34.5" y1="66" x2="32.25" y2="68.25" width="0.2032" layer="16"/>
+<via x="32.25" y="68.25" extent="1-16" drill="0.3"/>
+<wire x1="32.25" y1="68.25" x2="10.75" y2="68.25" width="0.2032" layer="1"/>
+<wire x1="9.25" y1="80.95" x2="9.55" y2="80.95" width="0.2032" layer="1"/>
+<wire x1="9.55" y1="80.95" x2="10.25" y2="80.25" width="0.2032" layer="1"/>
+<wire x1="10.25" y1="80.25" x2="10.25" y2="68.75" width="0.2032" layer="1"/>
+<wire x1="10.25" y1="68.75" x2="10.75" y2="68.25" width="0.2032" layer="1"/>
+</signal>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

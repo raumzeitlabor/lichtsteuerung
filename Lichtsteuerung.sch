@@ -29096,10 +29096,10 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <part name="JP4" library="pinhead" deviceset="PINHD-2X3" device="">
 <attribute name="OC_REICHELT" value="MPE 087-2-006"/>
 </part>
-<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="24V">
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="24V">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 RT"/>
 </part>
-<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="5V">
+<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="5V">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE"/>
 </part>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="1,5k">
@@ -29219,15 +29219,15 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <part name="C31" library="rcl" deviceset="C-EU" device="C0805" value="100n">
 <attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
 </part>
-<part name="SJ1" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="SJ2" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="SJ3" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="J2" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="J3" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="J1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="X4" library="con-wago_2.5mm" deviceset="733-332" device=""/>
-<part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805" value="ACT">
+<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="ACT">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE"/>
 </part>
-<part name="LED5" library="led" deviceset="LED" device="CHIP-LED0805" value="RES">
+<part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805" value="RES">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE"/>
 </part>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="220">
@@ -29236,10 +29236,10 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="220">
 <attribute name="OC_REICHELT" value="SMD-0805 220"/>
 </part>
-<part name="LED6" library="led" deviceset="LED" device="CHIP-LED0805" value="TX">
+<part name="LED5" library="led" deviceset="LED" device="CHIP-LED0805" value="TX">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE"/>
 </part>
-<part name="LED7" library="led" deviceset="LED" device="CHIP-LED0805" value="RX">
+<part name="LED6" library="led" deviceset="LED" device="CHIP-LED0805" value="RX">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE"/>
 </part>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="220">
@@ -31789,17 +31789,17 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <instance part="JP4" gate="A" x="261.62" y="25.4">
 <attribute name="OC_REICHELT" x="261.62" y="25.4" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED1" gate="G$1" x="25.4" y="33.02" rot="R90">
-<attribute name="OC_REICHELT" x="25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="LED2" gate="G$1" x="38.1" y="33.02" rot="R90">
+<attribute name="OC_REICHELT" x="38.1" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="LED2" gate="G$1" x="25.4" y="22.86" rot="R90">
-<attribute name="OC_REICHELT" x="25.4" y="22.86" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="LED1" gate="G$1" x="38.1" y="22.86" rot="R90">
+<attribute name="OC_REICHELT" x="38.1" y="22.86" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="R9" gate="G$1" x="38.1" y="33.02" rot="R180">
-<attribute name="OC_REICHELT" x="38.1" y="33.02" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="R9" gate="G$1" x="27.94" y="33.02" rot="R180">
+<attribute name="OC_REICHELT" x="27.94" y="33.02" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="R10" gate="G$1" x="38.1" y="22.86" rot="R180">
-<attribute name="OC_REICHELT" x="38.1" y="22.86" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="R10" gate="G$1" x="27.94" y="22.86" rot="R180">
+<attribute name="OC_REICHELT" x="27.94" y="22.86" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="P+28" gate="1" x="17.78" y="33.02" rot="R90"/>
 <instance part="P+29" gate="1" x="17.78" y="22.86" rot="R90"/>
@@ -31862,13 +31862,13 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <attribute name="VALUE" x="212.471" y="232.41" size="1.778" layer="96" rot="MR270"/>
 <attribute name="OC_REICHELT" x="213.36" y="238.76" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="SJ1" gate="G$1" x="378.46" y="241.3"/>
-<instance part="SJ2" gate="G$1" x="378.46" y="220.98"/>
-<instance part="SJ3" gate="G$1" x="378.46" y="231.14"/>
-<instance part="LED4" gate="G$1" x="165.1" y="162.56" rot="R90">
+<instance part="J2" gate="G$1" x="378.46" y="238.76"/>
+<instance part="J3" gate="G$1" x="378.46" y="213.36"/>
+<instance part="J1" gate="G$1" x="378.46" y="226.06"/>
+<instance part="LED3" gate="G$1" x="165.1" y="162.56" rot="R90">
 <attribute name="OC_REICHELT" x="165.1" y="162.56" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="LED5" gate="G$1" x="165.1" y="152.4" rot="R90">
+<instance part="LED4" gate="G$1" x="165.1" y="152.4" rot="R90">
 <attribute name="OC_REICHELT" x="165.1" y="152.4" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R5" gate="G$1" x="154.94" y="162.56" rot="R180">
@@ -31877,10 +31877,10 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <instance part="R6" gate="G$1" x="154.94" y="152.4" rot="R180">
 <attribute name="OC_REICHELT" x="154.94" y="152.4" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="LED6" gate="G$1" x="165.1" y="172.72" rot="R90">
+<instance part="LED5" gate="G$1" x="165.1" y="172.72" rot="R90">
 <attribute name="OC_REICHELT" x="165.1" y="172.72" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="LED7" gate="G$1" x="165.1" y="182.88" rot="R90">
+<instance part="LED6" gate="G$1" x="165.1" y="182.88" rot="R90">
 <attribute name="OC_REICHELT" x="165.1" y="182.88" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R7" gate="G$1" x="154.94" y="172.72" rot="R180">
@@ -32060,11 +32060,6 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <label x="254" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="22.86" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="P+29" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="P+30" gate="1" pin="+5V"/>
 <wire x1="195.58" y1="104.14" x2="198.12" y2="104.14" width="0.1524" layer="91"/>
@@ -32073,6 +32068,11 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <pinref part="IC9" gate="G$1" pin="A2"/>
 <wire x1="33.02" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
 <label x="30.48" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="P+29" gate="1" pin="+5V"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
@@ -32249,14 +32249,13 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <label x="340.36" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND32" gate="1" pin="GND"/>
 <wire x1="45.72" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="33.02" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="43.18" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="33.02" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="30.48" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="43.18" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
 <junction x="45.72" y="22.86"/>
 </segment>
 <segment>
@@ -32268,17 +32267,17 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <junction x="213.36" y="233.68"/>
 </segment>
 <segment>
-<pinref part="LED7" gate="G$1" pin="C"/>
+<pinref part="LED6" gate="G$1" pin="C"/>
 <wire x1="170.18" y1="182.88" x2="172.72" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="182.88" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
 <wire x1="172.72" y1="172.72" x2="172.72" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="162.56" x2="172.72" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 <wire x1="170.18" y1="162.56" x2="172.72" y2="162.56" width="0.1524" layer="91"/>
 <junction x="172.72" y="162.56"/>
-<pinref part="LED6" gate="G$1" pin="C"/>
+<pinref part="LED5" gate="G$1" pin="C"/>
 <wire x1="170.18" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
 <junction x="172.72" y="172.72"/>
 <wire x1="172.72" y1="162.56" x2="175.26" y2="162.56" width="0.1524" layer="91"/>
@@ -32301,9 +32300,9 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <pinref part="F2" gate="F1" pin="1"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="22.86" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="P+28" gate="1" pin="+24V"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -32780,9 +32779,9 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <junction x="236.22" y="218.44"/>
 </segment>
 <segment>
-<wire x1="375.92" y1="243.84" x2="368.3" y2="243.84" width="0.1524" layer="91"/>
-<label x="368.3" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="SJ1" gate="G$1" pin="1"/>
+<wire x1="375.92" y1="241.3" x2="368.3" y2="241.3" width="0.1524" layer="91"/>
+<label x="368.3" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GNDI1" class="0">
@@ -32837,9 +32836,9 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <label x="236.22" y="233.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="375.92" y1="233.68" x2="370.84" y2="233.68" width="0.1524" layer="91"/>
-<label x="370.84" y="233.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="SJ3" gate="G$1" pin="1"/>
+<wire x1="375.92" y1="228.6" x2="370.84" y2="228.6" width="0.1524" layer="91"/>
+<label x="370.84" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AUXCON_1" class="0">
@@ -33072,20 +33071,6 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <label x="271.78" y="22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$80" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$82" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="22.86" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$101" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
@@ -33112,9 +33097,9 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 </net>
 <net name="TERM_A1" class="0">
 <segment>
-<wire x1="375.92" y1="223.52" x2="370.84" y2="223.52" width="0.1524" layer="91"/>
-<label x="370.84" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="SJ2" gate="G$1" pin="1"/>
+<wire x1="375.92" y1="215.9" x2="370.84" y2="215.9" width="0.1524" layer="91"/>
+<label x="370.84" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="IC12" gate="G$1" pin="A"/>
@@ -33132,9 +33117,9 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 </net>
 <net name="TERM_HI1" class="0">
 <segment>
-<wire x1="375.92" y1="241.3" x2="368.3" y2="241.3" width="0.1524" layer="91"/>
-<label x="368.3" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="SJ1" gate="G$1" pin="2"/>
+<wire x1="375.92" y1="238.76" x2="368.3" y2="238.76" width="0.1524" layer="91"/>
+<label x="368.3" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
@@ -33144,9 +33129,9 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 </net>
 <net name="TERM_B1" class="0">
 <segment>
-<wire x1="375.92" y1="220.98" x2="370.84" y2="220.98" width="0.1524" layer="91"/>
-<label x="370.84" y="220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="SJ2" gate="G$1" pin="2"/>
+<wire x1="375.92" y1="213.36" x2="370.84" y2="213.36" width="0.1524" layer="91"/>
+<label x="370.84" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J3" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
@@ -33156,9 +33141,9 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 </net>
 <net name="TERM_LO1" class="0">
 <segment>
-<wire x1="375.92" y1="231.14" x2="370.84" y2="231.14" width="0.1524" layer="91"/>
-<label x="370.84" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="SJ3" gate="G$1" pin="2"/>
+<wire x1="375.92" y1="226.06" x2="370.84" y2="226.06" width="0.1524" layer="91"/>
+<label x="370.84" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="297.18" y1="208.28" x2="297.18" y2="210.82" width="0.1524" layer="91"/>
@@ -33218,29 +33203,43 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 <net name="N$45" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="LED7" gate="G$1" pin="A"/>
+<pinref part="LED6" gate="G$1" pin="A"/>
 <wire x1="160.02" y1="182.88" x2="162.56" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
 <wire x1="160.02" y1="172.72" x2="162.56" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$53" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="160.02" y1="162.56" x2="162.56" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$73" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="LED5" gate="G$1" pin="A"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="160.02" y1="152.4" x2="162.56" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$77" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="33.02" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$79" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="33.02" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
