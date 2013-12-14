@@ -83,23 +83,23 @@
 <layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
@@ -129,8 +129,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
@@ -7788,7 +7788,7 @@ NS Package M08A</description>
 <element name="LED7" library="led" package="CHIP-LED0805" value="PWROK" x="46.5" y="12.625" smashed="yes" rot="R180">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 RT" x="53.5" y="6.625" size="0.6096" layer="27" ratio="16" rot="R180" display="off"/>
 <attribute name="NAME" x="47.875" y="11.25" size="0.6096" layer="25" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="46.5" y="10.5" size="0.6096" layer="27" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="46.5" y="10.5" size="0.8128" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="IC5" library="linear" package="SO08" value="LM317LD" x="101" y="38" smashed="yes">
 <attribute name="NAME" x="98.333" y="36.095" size="0.6096" layer="25" rot="R90"/>
@@ -7799,7 +7799,7 @@ NS Package M08A</description>
 <element name="LED8" library="led" package="CHIP-LED0805" value="PWROK" x="99.5" y="12.5" smashed="yes" rot="R180">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 RT" x="115.5" y="1.5" size="0.6096" layer="27" ratio="16" rot="R180" display="off"/>
 <attribute name="NAME" x="99.48" y="14.605" size="0.6096" layer="25" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="99.5" y="10.125" size="0.6096" layer="27" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="99.5" y="10.125" size="0.8128" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="IC7" library="linear" package="SO08" value="LM317LD" x="153" y="52" smashed="yes">
 <attribute name="NAME" x="156.333" y="50.095" size="0.6096" layer="25" rot="R90"/>
@@ -7810,7 +7810,7 @@ NS Package M08A</description>
 <element name="LED9" library="led" package="CHIP-LED0805" value="PWROK" x="156" y="12.75" smashed="yes" rot="R180">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 RT" x="172" y="1.75" size="0.6096" layer="27" ratio="16" rot="R180" display="off"/>
 <attribute name="NAME" x="156.73" y="14.855" size="0.6096" layer="25" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="156" y="10.5" size="1.016" layer="27" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="156" y="10.5" size="0.8128" layer="25" rot="R270" align="center-left"/>
 </element>
 <element name="JP7" library="pinhead" package="1X02" value="" x="106" y="36" smashed="yes" rot="R90">
 <attribute name="NAME" x="108.1712" y="33.6338" size="0.6096" layer="25" rot="R90"/>
