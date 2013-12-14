@@ -3,6 +3,7 @@
 #include <DMXSerial2.h>
 #include <Bounce.h>
 #include <bitlash.h>
+#include <Wire.h>
 
 #define DmxModePin 36
 #define DmxModeOut LOW
@@ -54,11 +55,13 @@ void initOutputs () {
     pinMode(SR_SCK, OUTPUT);
     pinMode(SR_RCK, OUTPUT);
     pinMode(SR_OE, OUTPUT);
-    digitalWrite(SR_OE, LOW);
     
+    digitalWrite(SR_OE, LOW);
     for (int i=0;i<NUM_OUTPUTS;i++) {
        outputs[i] = LOW; 
     }
+    
+    sendOutputs();
 }
 
 /**
@@ -84,7 +87,7 @@ void setup (void) {
   
   initOutputs();
   
-  initBitlash(57600);
+  initBitlash(115200);
   DMXSerial2.init(&rdmInit, processCommand, DmxModePin, HIGH, LOW);
 
   for (i=0;i<sizeof(inputPins);i++) {
@@ -97,14 +100,66 @@ void setup (void) {
   addBitlashFunction("setoutputstate", (bitlash_function) bl_setOutputState);
   addBitlashFunction("getdevicename", (bitlash_function) bl_getDeviceName);
   addBitlashFunction("setdevicename", (bitlash_function) bl_setDeviceName);
+  addBitlashFunction("getdmxstartaddress", (bitlash_function) bl_getDMXStartAddress);
+  addBitlashFunction("getrdmuid", (bitlash_function) bl_getRDMUID);
+  addBitlashFunction("setoutputname", (bitlash_function) bl_setOutputName);
+  addBitlashFunction("getoutputname", (bitlash_function) bl_getOutputName);
+  addBitlashFunction("getoutputstate", (bitlash_function) bl_getOutputState);
+  addBitlashFunction("toggleoutputstate", (bitlash_function) bl_toggleOutputState);
+  addBitlashFunction("setinputname", (bitlash_function) bl_setInputName);
+  addBitlashFunction("getinputname", (bitlash_function) bl_getInputName);
   
+  Wire.begin();
+  delay(10);
+/*  byte b = i2c_eeprom_read_byte(0x68, 0);
+  
+  Serial1.println(b);
+  
+  i2c_eeprom_write_byte(0x68, 0, 127);*/
+  
+  byte error, address;
+    int nDevices;
+  Serial1.println("Scanning...");
+
+    nDevices = 0;
+    for(address = 1; address < 127; address++ ) 
+    {
+      // The i2c_scanner uses the return value of
+      // the Write.endTransmisstion to see if
+      // a device did acknowledge to the address.
+      Wire.beginTransmission(address);
+      error = Wire.endTransmission();
+
+      if (error == 0)
+      {
+        Serial1.print("I2C device found at address 0x");
+        if (address<16) 
+          Serial1.print("0");
+        Serial1.print(address,HEX);
+        Serial1.println("  !");
+
+        nDevices++;
+      }
+      else if (error==4) 
+      {
+        Serial1.print("Unknow error at address 0x");
+        if (address<16) 
+          Serial1.print("0");
+        Serial1.println(address,HEX);
+      } 
+    }
+    if (nDevices == 0)
+      Serial1.println("No I2C devices found\n");
+    else
+      Serial1.println("done\n");
+
 }
 
 void loop (void) {
 	int i;
 	runBitlash();
 	DMXSerial2.tick();
-  
+	return;
 	for (i=0;i<sizeof(inputPins);i++) {
 		debouncers[i].update();
 		
@@ -123,7 +178,7 @@ void loop (void) {
 		}
 	}
 	
-	delay(100);
+	//delay(100);
 }
 
 boolean processCommand(struct RDMDATA *rdm)
