@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -3038,6 +3038,7 @@ Id: 9eeeda9b754040e0a4dd75d4d04b5239
 </element>
 <element name="C4" library="rcl" package="C0805" value="100n" x="98.5" y="26.5" smashed="yes" rot="R90">
 <attribute name="OC_REICHELT" value="X7R-G0805 100N" x="98.5" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="97.98" y="28.77" size="0.6096" layer="25"/>
 </element>
 <element name="OK101" library="optocoupler" package="SMD4" value="LTV356T" x="112" y="33" smashed="yes">
 <attribute name="MF" value="" x="101.84" y="44.43" size="1.778" layer="27" display="off"/>
