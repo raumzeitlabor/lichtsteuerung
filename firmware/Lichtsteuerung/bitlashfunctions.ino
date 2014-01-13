@@ -1,6 +1,8 @@
 #include <avr/pgmspace.h>
 
-#define SETOUTPUTSTATE 1
+#define MODE_TOGGLE 1
+#define MODE_MOMENTARY 2
+#define MODE_INVALID 99
 
 char buffer[120];
 
@@ -12,7 +14,13 @@ const char usage_getOutputState[] PROGMEM = "Usage: getOutputState(port)\n\rport
 const char usage_toggleOutputState[] PROGMEM = "Usage: toggleOutputState(port)\n\rport: Output Number (1-32)\n\r";
 const char usage_setInputName[] PROGMEM = "Usage: setInputName(port, portName)\n\rport: Input Number (1-16)\n\rportName: ASCII String, 32 chars max\n\r";
 const char usage_getInputName[] PROGMEM = "Usage: getInputName(port)\n\rport: Input Number (1-16)\n\r";
+const char usage_setInputMode[] PROGMEM = "Usage: setInputMode(port,mode)\n\rport: Input Number (1-16)\n\rmode: MODE_TOGGLE or MODE_MOMENTARY\n\rExample: setInputMode(1, \"MODE_MOMENTARY\");\n\r";
+const char usage_getInputMode[] PROGMEM = "Usage: getInputMode(port)\n\rport: Input Number (1-16)\n\Prints either MODE_TOGGLE or MODE_MOMENTARY\n\r";
 
+
+uint8_t inputModes[NUM_INPUTS];
+
+                   
 PGM_P const usage[] PROGMEM = {
 	usage_setOutputState,
 	usage_setDeviceName,
@@ -21,17 +29,21 @@ PGM_P const usage[] PROGMEM = {
 	usage_getOutputState,
 	usage_toggleOutputState,
 	usage_setInputName,
-	usage_getInputName
+	usage_getInputName,
+	usage_setInputMode,
+	usage_getInputMode
 };
 
 const char messages_setDeviceName[] PROGMEM = "New device name: ";
 const char messages_invalidOutputPortNumber[] PROGMEM = "Invalid Output Port Number. Valid values are: 1-32.";
 const char messages_invalidInputPortNumber[] PROGMEM = "Invalid Input Port Number. Valid values are: 1-16.";
+const char messages_invalidInputMode[] PROGMEM = "Invalid port mode. Valid values are: MODE_TOGGLE or MODE_MOMENTARY.";
 
 PGM_P const messages[] PROGMEM = {
 	messages_setDeviceName,
 	messages_invalidOutputPortNumber,
-	messages_invalidInputPortNumber
+	messages_invalidInputPortNumber,
+	messages_invalidInputMode
 };
 
 /**
@@ -50,7 +62,7 @@ numvar bl_setOutputState(void) {
 	}
 
 	int i = getarg(1);
-	if (i < 1 || i > 32) {
+	if (i < 1 || i > NUM_OUTPUTS) {
 		// Output out of range error message
 		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[1])));
 		Serial1.print(buffer);
@@ -75,7 +87,7 @@ numvar bl_getOutputState(void) {
 	}
 
 	int i = getarg(1);
-	if (i < 1 || i > 32) {
+	if (i < 1 || i > NUM_OUTPUTS) {
 		// Output out of range error message
 		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[1])));
 		Serial1.print(buffer);
@@ -100,7 +112,7 @@ numvar bl_toggleOutputState(void) {
 	}
 
 	int i = getarg(1);
-	if (i < 1 || i > 32) {
+	if (i < 1 || i > NUM_OUTPUTS) {
 		// Output out of range error message
 		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[1])));
 		Serial1.print(buffer);
@@ -176,7 +188,7 @@ numvar bl_setOutputName(void) {
 	}
 
 	int i = getarg(1);
-	if (i < 1 || i > 32) {
+	if (i < 1 || i > NUM_OUTPUTS) {
 		// Output out of range error message
 		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[1])));
 		Serial1.print(buffer);
@@ -184,7 +196,7 @@ numvar bl_setOutputName(void) {
 	}
 	
 	Serial1.println("NOT IMPLEMENTED YET");
-	// Copy the name to the device label and save the EEPROM.
+	// @todo Copy the name to the device label and save the EEPROM.
 	//strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
 }
 
@@ -201,7 +213,7 @@ numvar bl_getOutputName(void) {
 	}
 
 	int i = getarg(1);
-	if (i < 1 || i > 32) {
+	if (i < 1 || i > NUM_OUTPUTS) {
 		// Output out of range error message
 		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[1])));
 		Serial1.print(buffer);
@@ -210,7 +222,7 @@ numvar bl_getOutputName(void) {
 	
 	Serial1.println("NOT IMPLEMENTED YET");
 	// Copy the name to the device label and save the EEPROM.
-	//strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
+	// @todo strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
 }
 
 /**
@@ -226,7 +238,7 @@ numvar bl_setInputName(void) {
 	}
 
 	int i = getarg(1);
-	if (i < 1 || i > 16) {
+	if (i < 1 || i > NUM_INPUTS) {
 		// Output out of range error message
 		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[1])));
 		Serial1.print(buffer);
@@ -235,7 +247,7 @@ numvar bl_setInputName(void) {
 	
 	Serial1.println("NOT IMPLEMENTED YET");
 	// Copy the name to the device label and save the EEPROM.
-	//strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
+	// @todo strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
 }
 
 /**
@@ -251,7 +263,7 @@ numvar bl_getInputName(void) {
 	}
 
 	int i = getarg(1);
-	if (i < 1 || i > 16) {
+	if (i < 1 || i > NUM_INPUTS) {
 		// Output out of range error message
 		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[2])));
 		Serial1.print(buffer);
@@ -259,8 +271,106 @@ numvar bl_getInputName(void) {
 	}
 	
 	Serial1.println("NOT IMPLEMENTED YET");
-	// Copy the name to the device label and save the EEPROM.
+	//@todo Copy the name to the device label and save the EEPROM.
 	//strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
 }
 
-// @todo: setInputMode, getInputMode, listOutputs, listInputs, anyOutputOn, onInput(N)
+numvar bl_setInputMode(void) {
+	uint8_t mode = MODE_INVALID;
+	
+	if (getarg(0) != 2) {
+		strcpy_P(buffer, (PGM_P) pgm_read_word(&(usage[8])));
+		Serial1.println((char *) buffer);
+		return 0;
+	}
+	
+	int i = getarg(1);
+	if (i < 1 || i > NUM_INPUTS) {
+		// Output out of range error message
+		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[2])));
+		Serial1.print(buffer);
+		return 0;
+	}
+	
+	if (strcmp((char*)getarg(2), "MODE_TOGGLE") == 0) {
+		mode = MODE_TOGGLE;
+		// Mode will be toggle
+	}
+	
+	if (strcmp((char*)getarg(2), "MODE_MOMENTARY") == 0) {
+		mode = MODE_MOMENTARY;
+	}
+	
+	if (mode == MODE_INVALID) {
+		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[3])));
+		Serial1.print(buffer);
+		return 0;
+	}
+	
+	inputModes[i] = mode;
+	//@todo save to flash
+}
+
+numvar bl_getInputMode(void) {
+	if (getarg(0) != 1) {
+		strcpy_P(buffer, (PGM_P) pgm_read_word(&(usage[9])));
+		Serial1.println((char *) buffer);
+		return 0;
+	}
+	
+	int i = getarg(1);
+	if (i < 1 || i > NUM_INPUTS) {
+		// Output out of range error message
+		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[2])));
+		Serial1.print(buffer);
+		return 0;
+	}
+	
+	if (inputModes[i] == MODE_MOMENTARY) {
+		Serial1.println("MODE_MOMENTARY");
+	} else if (inputModes[i] == MODE_TOGGLE) {
+		Serial1.println("MODE_TOGGLE");
+	} else {
+		Serial1.println("Unknown mode");
+	}
+}
+
+
+numvar bl_anyOutputOn (void) {
+	uint8_t i;
+	
+	for (i=0; i<getarg(0);i++) {
+		if (getarg(i+1) < 1 || getarg(i+1) > NUM_INPUTS) {
+			// Output out of range error message
+			strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[2])));
+			Serial1.print(buffer);
+			return 0;
+		}
+	}
+
+	for (i=0; i<getarg(0);i++) {
+		if (getOutputState(getarg(i+1)) == 1) {
+			return true;
+		}
+	}
+	
+	return false;
+}
+
+numvar bl_listOutputs (void) {
+	uint8_t i;
+	
+	for (i=1;i<NUM_OUTPUTS+1;i++) {
+		Serial1.print("#");
+		Serial1.print(i);
+		Serial1.print(": ");
+		if (getOutputState(i) == 1) {
+			Serial1.print("ON");
+		} else {
+			Serial1.print("OFF");
+		}
+		
+		Serial1.println("  UNKNOWN NAME"); // @todo retrieve the name
+	}
+}
+// @todo: listOutputs, listInputs, onInput(N)

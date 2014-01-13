@@ -18,12 +18,15 @@
 #define NUM_INPUTS 16
 
 bool outputs[NUM_OUTPUTS];
+bool dmxInputBlocked = false;
+
+uint8_t looper = 0;
 
 struct RDMINIT rdmInit = {
   "raumzeitlabor.de",
   "Lichtsteuerung",
   32, // footprint
-  2, (uint16_t[]){SWAPINT(E120_DEVICE_HOURS), SWAPINT(E120_LAMP_HOURS)}
+  3, (uint16_t[]){SWAPINT(E120_DEVICE_HOURS), SWAPINT(E120_LAMP_HOURS),SWAPINT(E120_DEFAULT_SLOT_VALUE)}
 };
 
 PROGMEM const prog_uchar inputPins[] = {
@@ -98,6 +101,8 @@ void setup (void) {
   }
 
   addBitlashFunction("setoutputstate", (bitlash_function) bl_setOutputState);
+  addBitlashFunction("sos", (bitlash_function) bl_setOutputState);
+  
   addBitlashFunction("getdevicename", (bitlash_function) bl_getDeviceName);
   addBitlashFunction("setdevicename", (bitlash_function) bl_setDeviceName);
   addBitlashFunction("getdmxstartaddress", (bitlash_function) bl_getDMXStartAddress);
@@ -105,10 +110,20 @@ void setup (void) {
   addBitlashFunction("setoutputname", (bitlash_function) bl_setOutputName);
   addBitlashFunction("getoutputname", (bitlash_function) bl_getOutputName);
   addBitlashFunction("getoutputstate", (bitlash_function) bl_getOutputState);
-  addBitlashFunction("toggleoutputstate", (bitlash_function) bl_toggleOutputState);
   addBitlashFunction("setinputname", (bitlash_function) bl_setInputName);
   addBitlashFunction("getinputname", (bitlash_function) bl_getInputName);
+  addBitlashFunction("setinputmode", (bitlash_function) bl_setInputMode);
+  addBitlashFunction("getinputmode", (bitlash_function) bl_getInputMode);
+  addBitlashFunction("listoutputs", (bitlash_function) bl_listOutputs);
   
+  
+  addBitlashFunction("toggleoutputstate", (bitlash_function) bl_toggleOutputState);
+  addBitlashFunction("tos", (bitlash_function) bl_toggleOutputState);
+  
+  addBitlashFunction("anyoutputon", (bitlash_function) bl_anyOutputOn);
+  addBitlashFunction("aoo", (bitlash_function) bl_anyOutputOn);
+  
+
   Wire.begin();
   delay(10);
 /*  byte b = i2c_eeprom_read_byte(0x68, 0);
@@ -156,29 +171,51 @@ void setup (void) {
 }
 
 void loop (void) {
-	int i;
+	uint16_t i;
+	bool outputMode;
+	bool removeBlock = true;
+	
 	runBitlash();
 	DMXSerial2.tick();
-	return;
-	for (i=0;i<sizeof(inputPins);i++) {
-		debouncers[i].update();
-		
-		if (debouncers[i].fallingEdge()) {
-			
-			if (debouncers[i].previousDuration() > 500) {
-				Serial1.println("LONG");
-				
-			}
-			Serial1.print("INPUT ");
-			Serial1.print(i);
-			Serial1.print(" (");
-			Serial1.print(pgm_read_byte(&inputPins[i]));
-			Serial1.print(") ");
-			Serial1.println("HIGH");
-		}
-	}
 	
-	//delay(100);
+	looper++;
+	
+	// Only run every 255 ticks, this isn't critical
+	if (looper == 255) {
+		for (i=DMXSerial2.getStartAddress();i<DMXSerial2.getStartAddress()+32;i++) {
+			if (DMXSerial2.read(i) > 127) {
+				outputMode = true;
+			} else {
+				outputMode = false;
+			}
+			
+			if (outputMode != getOutputState(i)) {
+				removeBlock = false;
+			}
+			
+		}
+		
+		if (removeBlock == true) {
+			dmxInputBlocked = false;
+		}
+		
+		if (!dmxInputBlocked) {
+			for (i=DMXSerial2.getStartAddress();i<DMXSerial2.getStartAddress()+32;i++) {
+				// Check if the received DMX data 
+				if (DMXSerial2.read(i) > 127) {
+					if (getOutputState(i) == 0) {
+						setOutputState(i, 1);
+					}
+				} else {
+					if (getOutputState(i) == 1) {
+						setOutputState(i, 0);
+					}
+				}
+			}
+		}
+		
+		looper = 0;
+	}
 }
 
 boolean processCommand(struct RDMDATA *rdm)
@@ -203,7 +240,17 @@ boolean processCommand(struct RDMDATA *rdm)
     rdm->Data[2] = 0;
     rdm->Data[3] = 1;
     handled = true;
-  } // if
+  } else if ((CmdClass == E120_GET_COMMAND) && (Parameter == SWAPINT(E120_DEFAULT_SLOT_VALUE))) {
+	  int i;
+	  rdm->DataLength = 3 * NUM_OUTPUTS;
+	  for (i=0;i<32;i++) {
+		  rdm->Data[i*3] = 0;
+		  rdm->Data[(i*3)+1] = i;
+		  rdm->Data[(i*3)+2] = getOutputState(i+1);
+	  }
+	  
+	  handled = true;
+  }
 
   return(handled);
 } // processCommand
