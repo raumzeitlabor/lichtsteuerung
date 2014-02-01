@@ -222,6 +222,7 @@ boolean processCommand(struct RDMDATA *rdm)
 {
   byte CmdClass       = rdm->CmdClass;     // command class
   uint16_t Parameter  = rdm->Parameter;    // parameter ID
+  int i;
   boolean handled = false;
 
 // This is a sample of how to return some device specific data
@@ -241,7 +242,6 @@ boolean processCommand(struct RDMDATA *rdm)
     rdm->Data[3] = 1;
     handled = true;
   } else if ((CmdClass == E120_GET_COMMAND) && (Parameter == SWAPINT(E120_DEFAULT_SLOT_VALUE))) {
-	  int i;
 	  rdm->DataLength = 3 * NUM_OUTPUTS;
 	  for (i=0;i<32;i++) {
 		  rdm->Data[i*3] = 0;
@@ -249,6 +249,16 @@ boolean processCommand(struct RDMDATA *rdm)
 		  rdm->Data[(i*3)+2] = getOutputState(i+1);
 	  }
 	  
+	  handled = true;
+  } else if ((CmdClass == E120_GET_COMMAND) && (Parameter == SWAPINT(E120_SLOT_DESCRIPTION))) {
+          // Return the requested slot
+          i = READINT(rdm->Data);
+          rdm->DataLength = 32;
+
+          // Copy the slot description
+          // @todo stub
+          WRITEINT(rdm->Data, i);
+          memcpy(rdm->Data+2, "DummySlot", 9);
 	  handled = true;
   }
 
