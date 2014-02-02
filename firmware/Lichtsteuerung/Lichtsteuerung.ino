@@ -246,7 +246,13 @@ boolean processCommand(struct RDMDATA *rdm)
 	  for (i=0;i<32;i++) {
 		  rdm->Data[i*3] = 0;
 		  rdm->Data[(i*3)+1] = i;
-		  rdm->Data[(i*3)+2] = getOutputState(i+1);
+
+                  if (getOutputState(i+1) == 1) {
+                        rdm->Data[(i*3)+2] = 255;
+                  } else {
+                        rdm->Data[(i*3)+2] = 0;
+                  }
+
 	  }
 	  
 	  handled = true;
@@ -258,7 +264,7 @@ boolean processCommand(struct RDMDATA *rdm)
           // Copy the slot description
           // @todo stub
           WRITEINT(rdm->Data, i);
-          memcpy(rdm->Data+2, "DummySlot", 9);
+          memcpy(rdm->Data+2, "DummySlot", 10);
 	  handled = true;
   }
 
