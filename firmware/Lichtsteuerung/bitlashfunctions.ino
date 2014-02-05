@@ -168,7 +168,7 @@ numvar bl_getDMXStartAddress(void) {
  */
 numvar bl_getRDMUID(void) {
 	byte uid[6];
-	DMXSerial2.getDeviceUID(uid);
+	DMXSerial2.getDeviceID(uid);
 	PrintHex8(uid, 2);
 	Serial1.print(":");
 	PrintHex8(uid + 2, 4);
