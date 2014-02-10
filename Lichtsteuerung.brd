@@ -555,7 +555,7 @@ GNDINT</text>
 <text x="152" y="70" size="1.016" layer="25" align="center">GNDI1</text>
 <wire x1="131.25" y1="72" x2="132.75" y2="72" width="0.2032" layer="25"/>
 <wire x1="138.25" y1="72" x2="139.75" y2="72" width="0.2032" layer="25"/>
-<wire x1="151.25" y1="72" x2="152.625" y2="72" width="0.2032" layer="25"/>
+<wire x1="150.25" y1="72" x2="151.625" y2="72" width="0.2032" layer="25"/>
 </plain>
 <libraries>
 <library name="74xx-eu">
@@ -10841,8 +10841,8 @@ NS Package M08A</description>
 <wire x1="38.25" y1="53.645" x2="38.625" y2="53.27" width="0.2032" layer="1"/>
 <contactref element="JP10" pad="10"/>
 <wire x1="155.43" y1="82" x2="155.43" y2="72.43" width="0.2032" layer="1"/>
-<via x="150" y="67" extent="1-16" drill="0.3"/>
-<wire x1="150" y1="67" x2="123" y2="67" width="0.2032" layer="16"/>
+<via x="149" y="67" extent="1-16" drill="0.3"/>
+<wire x1="149" y1="67" x2="123" y2="67" width="0.2032" layer="16"/>
 <wire x1="123" y1="67" x2="121.625" y2="65.625" width="0.2032" layer="16"/>
 <wire x1="121.625" y1="65.625" x2="100.625" y2="65.625" width="0.2032" layer="16"/>
 <wire x1="100.625" y1="65.625" x2="99.75" y2="64.75" width="0.2032" layer="16"/>
@@ -10850,12 +10850,12 @@ NS Package M08A</description>
 <wire x1="96.375" y1="64.75" x2="96" y2="64.375" width="0.2032" layer="16"/>
 <via x="96" y="64.375" extent="1-16" drill="0.3"/>
 <wire x1="96" y1="64.375" x2="96" y2="61.125" width="0.2032" layer="1"/>
-<via x="154" y="72" extent="1-16" drill="0.8" diameter="1.778"/>
-<via x="150" y="72" extent="1-16" drill="0.8" diameter="1.778"/>
-<wire x1="150" y1="72" x2="154" y2="72" width="0.2032" layer="1"/>
-<wire x1="154" y1="72" x2="155" y2="72" width="0.2032" layer="1"/>
+<via x="153" y="72" extent="1-16" drill="0.8" diameter="1.778"/>
+<via x="149" y="72" extent="1-16" drill="0.8" diameter="1.778"/>
+<wire x1="149" y1="72" x2="153" y2="72" width="0.2032" layer="1"/>
+<wire x1="153" y1="72" x2="155" y2="72" width="0.2032" layer="1"/>
 <wire x1="155" y1="72" x2="155.43" y2="72.43" width="0.2032" layer="1"/>
-<wire x1="150" y1="67" x2="150" y2="72" width="0.2032" layer="1"/>
+<wire x1="149" y1="67" x2="149" y2="72" width="0.2032" layer="1"/>
 </signal>
 <signal name="AUXCON_1">
 <contactref element="IC11" pad="61"/>
