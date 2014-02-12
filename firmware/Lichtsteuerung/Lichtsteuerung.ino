@@ -26,22 +26,25 @@
 
 #define MAX_LABEL_LENGTH 32
 
+const char privateChannelsMessage[] = "Private Channel Map";
+
+#define PID_PRIVATE_CHANNELS 0x8000
+
 bool outputs[NUM_OUTPUTS];
 bool dmxInputBlocked = false;
 
 uint8_t looper = 0;
 
 const uint16_t my_pids[] = { E120_SLOT_DESCRIPTION, E120_DEFAULT_SLOT_VALUE,
-		E120_SLOT_INFO };
+		E120_SLOT_INFO, PID_PRIVATE_CHANNELS };
 
 struct RDMINIT rdmInit = { "raumzeitlabor.de", 1, "Lichtsteuerung",
 NUM_OUTPUTS, // footprint
-		(sizeof(my_pids) / sizeof(uint16_t)), my_pids,
-		{ 0x09, 0x7F, 0x23, 0x42,
-						0x00, 0x00 }, E120_PRODUCT_CATEGORY_POWER, // Product category
-				0x00000001UL // Software Version
+		(sizeof(my_pids) / sizeof(uint16_t)), my_pids, { 0x09, 0x7F, 0x23, 0x42,
+				0x00, 0x00 }, E120_PRODUCT_CATEGORY_POWER, // Product category
+		0x00000001UL // Software Version
 
-};
+		};
 
 PROGMEM const prog_uchar inputPins[] = { 0, 1, 2, 3, 4, 5, 6, 7, 16, 17, 18, 19,
 		20, 21, 22, 23 };
@@ -117,7 +120,6 @@ void setup(void) {
 	addBitlashFunction("listinputs", (bitlash_function) bl_listInputs);
 	addBitlashFunction("setprivateflag", (bitlash_function) bl_setPrivateFlag);
 
-	
 	addBitlashFunction("toggleoutputstate",
 			(bitlash_function) bl_toggleOutputState);
 	addBitlashFunction("tos", (bitlash_function) bl_toggleOutputState);
@@ -219,7 +221,7 @@ void loop(void) {
 boolean processCommand(struct RDMDATA *rdm, uint16_t *nackReason) {
 	byte CmdClass = rdm->CmdClass;     // command class
 	uint16_t Parameter = rdm->Parameter;    // parameter ID
-	int i,j;
+	int i, j;
 	boolean handled = false;
 
 // This is a sample of how to return some device specific data
@@ -260,18 +262,18 @@ boolean processCommand(struct RDMDATA *rdm, uint16_t *nackReason) {
 
 				if (i < NUM_OUTPUTS) {
 					// Copy the slot description
-					// @todo stub
 
 					WRITEINT(rdm->Data, i);
-					for (j=0;j<MAX_LABEL_LENGTH;j++) {
-						rdm->Data[j+2] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
-						Serial1.println(rdm->Data[j+2]);
-						if (rdm->Data[j+2] == '\0') {
+					for (j = 0; j < MAX_LABEL_LENGTH; j++) {
+						rdm->Data[j + 2] = i2c_eeprom_read_byte(
+								I2C_EEPROM_ADDRESS,
+								EEPROM_OUTPUT_NAME_OFFSET
+										+ ((i - 1) * MAX_LABEL_LENGTH) + j);
+						if (rdm->Data[j + 2] == '\0') {
 							break;
 						}
 					}
-					rdm->DataLength = j+2;
-					Serial1.println(j+2);
+					rdm->DataLength = j + 2;
 					handled = true;
 				} else {
 					*nackReason = E120_NR_FORMAT_ERROR;
@@ -298,6 +300,53 @@ boolean processCommand(struct RDMDATA *rdm, uint16_t *nackReason) {
 			}
 
 			break;
+
+		case SWAPINT(E120_PARAMETER_DESCRIPTION):
+			if (rdm->DataLength != 2) {
+				*nackReason = E120_NR_FORMAT_ERROR;
+			} else if (rdm->SubDev != 0) {
+				*nackReason = E120_NR_SUB_DEVICE_OUT_OF_RANGE;
+			} else if (READINT(rdm->Data) != PID_PRIVATE_CHANNELS) {
+				*nackReason = E120_NR_DATA_OUT_OF_RANGE;
+			} else {
+				i = READINT(rdm->Data);
+
+				if (i == PID_PRIVATE_CHANNELS) {
+					PARAMETER_DESCRIPTION_RESPONSE *parameterDescriptionResponse =
+							(PARAMETER_DESCRIPTION_RESPONSE *) (rdm->Data);
+
+					parameterDescriptionResponse->pid = SWAPINT(i);
+					parameterDescriptionResponse->pdlSize =
+							sizeof(privateChannelsMessage);
+					parameterDescriptionResponse->dataType =
+							E120_DS_UNSIGNED_BYTE;
+					parameterDescriptionResponse->commandClass = E120_CC_GET;
+					parameterDescriptionResponse->type = 0;
+					parameterDescriptionResponse->unit = E120_UNITS_NONE;
+					parameterDescriptionResponse->prefix = E120_PREFIX_NONE;
+					parameterDescriptionResponse->minValidValue = 0;
+					parameterDescriptionResponse->maxValidValue = SWAPINT32(
+							1UL);
+					parameterDescriptionResponse->defaultValue = 0;
+
+					memcpy(parameterDescriptionResponse->description,
+							privateChannelsMessage,
+							sizeof(privateChannelsMessage));
+					rdm->DataLength = sizeof(PARAMETER_DESCRIPTION_RESPONSE);
+
+					handled = true;
+				}
+			}
+			break;
+		case SWAPINT(PID_PRIVATE_CHANNELS):
+			rdm->DataLength = NUM_OUTPUTS;
+			for (i = 0; i < NUM_OUTPUTS; i++) {
+				rdm->Data[i] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_PRIVATE_FLAG_OFFSET + i);
+			}
+
+			handled = true;
+			break;
+
 		}
 	}
 
