@@ -4,6 +4,8 @@
 #define MODE_MOMENTARY 2
 #define MODE_INVALID 99
 
+#define MAX_LABEL_LENGTH 32
+
 char buffer[120];
 
 const char usage_setOutputState[] PROGMEM = "Usage: setOutputState(output,state)\n\routput: Output Number (1-32)\n\rstate: State (0 = off, 1 = on)\n\r";
@@ -17,10 +19,10 @@ const char usage_getInputName[] PROGMEM = "Usage: getInputName(port)\n\rport: In
 const char usage_setInputMode[] PROGMEM = "Usage: setInputMode(port,mode)\n\rport: Input Number (1-16)\n\rmode: MODE_TOGGLE or MODE_MOMENTARY\n\rExample: setInputMode(1, \"MODE_MOMENTARY\");\n\r";
 const char usage_getInputMode[] PROGMEM = "Usage: getInputMode(port)\n\rport: Input Number (1-16)\n\Prints either MODE_TOGGLE or MODE_MOMENTARY\n\r";
 
+#define EEPROM_OUTPUT_NAME_OFFSET 0x00000000
+#define EEPROM_INPUT_NAME_OFFSET  EEPROM_OUTPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_OUTPUTS)
+#define EEPROM_INPUT_MODE_OFFSET  EEPROM_INPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_INPUTS)
 
-uint8_t inputModes[NUM_INPUTS];
-
-                   
 PGM_P const usage[] PROGMEM = {
 	usage_setOutputState,
 	usage_setDeviceName,
@@ -143,7 +145,7 @@ numvar bl_setDeviceName(void) {
 	}
 
 	// Copy the name to the device label and save the EEPROM.
-	strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
+	strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), MAX_LABEL_LENGTH);
 	DMXSerial2._saveEEPRom();
 
 	// Output confirmation message
@@ -181,6 +183,8 @@ numvar bl_getRDMUID(void) {
  * Usage: setOutputName [port] [name]
  */
 numvar bl_setOutputName(void) {
+	uint8_t j;
+	
 	if (getarg(0) != 2) {
 		strcpy_P(buffer, (PGM_P) pgm_read_word(&(usage[2])));
 		Serial1.println((char *) buffer);
@@ -195,9 +199,10 @@ numvar bl_setOutputName(void) {
 		return 0;
 	}
 	
-	Serial1.println("NOT IMPLEMENTED YET");
-	// @todo Copy the name to the device label and save the EEPROM.
-	//strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
+	for (j=0;j<MAX_LABEL_LENGTH;j++) {
+		i2c_eeprom_write_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j, ((byte*)getarg(2))[j]);
+		delay(10);
+	}
 }
 
 /**
@@ -206,6 +211,8 @@ numvar bl_setOutputName(void) {
  * Usage: getOutputName [port]
  */
 numvar bl_getOutputName(void) {
+	int j;
+	
 	if (getarg(0) != 1) {
 		strcpy_P(buffer, (PGM_P) pgm_read_word(&(usage[3])));
 		Serial1.println((char *) buffer);
@@ -220,7 +227,11 @@ numvar bl_getOutputName(void) {
 		return 0;
 	}
 	
-	Serial1.println("NOT IMPLEMENTED YET");
+	for (j=0;j<MAX_LABEL_LENGTH;j++) {
+		buffer[j] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
+	}
+	
+	Serial1.println(buffer);
 	// Copy the name to the device label and save the EEPROM.
 	// @todo strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
 }
@@ -245,9 +256,11 @@ numvar bl_setInputName(void) {
 		return 0;
 	}
 	
-	Serial1.println("NOT IMPLEMENTED YET");
-	// Copy the name to the device label and save the EEPROM.
-	// @todo strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
+	for (int j=0;j<MAX_LABEL_LENGTH;j++) {
+		i2c_eeprom_write_byte(I2C_EEPROM_ADDRESS, EEPROM_INPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j, ((byte*)getarg(2))[j]);
+		delay(10);
+	}
+	
 }
 
 /**
@@ -270,9 +283,11 @@ numvar bl_getInputName(void) {
 		return 0;
 	}
 	
-	Serial1.println("NOT IMPLEMENTED YET");
-	//@todo Copy the name to the device label and save the EEPROM.
-	//strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
+	for (int j=0;j<MAX_LABEL_LENGTH;j++) {
+			buffer[j] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_INPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
+		}
+		
+	Serial1.println(buffer);
 }
 
 numvar bl_setInputMode(void) {
@@ -307,11 +322,12 @@ numvar bl_setInputMode(void) {
 		return 0;
 	}
 	
-	inputModes[i] = mode;
-	//@todo save to flash
+	i2c_eeprom_write_byte(I2C_EEPROM_ADDRESS, EEPROM_INPUT_MODE_OFFSET + (i-1), mode);
 }
 
 numvar bl_getInputMode(void) {
+	int mode;
+	
 	if (getarg(0) != 1) {
 		strcpy_P(buffer, (PGM_P) pgm_read_word(&(usage[9])));
 		Serial1.println((char *) buffer);
@@ -326,12 +342,18 @@ numvar bl_getInputMode(void) {
 		return 0;
 	}
 	
-	if (inputModes[i] == MODE_MOMENTARY) {
-		Serial1.println("MODE_MOMENTARY");
-	} else if (inputModes[i] == MODE_TOGGLE) {
-		Serial1.println("MODE_TOGGLE");
-	} else {
-		Serial1.println("Unknown mode");
+	mode = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_INPUT_MODE_OFFSET + (i-1));
+	
+	switch (mode) {
+		case MODE_MOMENTARY:
+			Serial1.println("MODE_MOMENTARY");
+			break;
+		case MODE_TOGGLE:
+			Serial1.println("MODE_TOGGLE");
+			break;
+		default:
+			Serial1.println("Unknown mode");
+			break;
 	}
 }
 
@@ -358,7 +380,7 @@ numvar bl_anyOutputOn (void) {
 }
 
 numvar bl_listOutputs (void) {
-	uint8_t i;
+	uint8_t i,j;
 	
 	for (i=1;i<NUM_OUTPUTS+1;i++) {
 		Serial1.print("#");
@@ -370,7 +392,40 @@ numvar bl_listOutputs (void) {
 			Serial1.print("OFF");
 		}
 		
-		Serial1.println("  UNKNOWN NAME"); // @todo retrieve the name
+		for (j=0;j<MAX_LABEL_LENGTH;j++) {
+			buffer[j] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
+		}
+		Serial1.print("  ");
+		Serial1.println(buffer);
 	}
 }
-// @todo: listOutputs, listInputs, onInput(N)
+
+numvar bl_listInputs (void) {
+	uint8_t i,j,mode;
+	
+	for (i=1;i<NUM_INPUTS+1;i++) {
+		Serial1.print("#");
+		Serial1.print(i);
+		Serial1.print(": ");
+		mode = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_INPUT_MODE_OFFSET + (i-1));
+			
+		switch (mode) {
+			case MODE_MOMENTARY:
+				Serial1.print("MODE_MOMENTARY");
+				break;
+			case MODE_TOGGLE:
+				Serial1.print("MODE_TOGGLE");
+				break;
+			default:
+				Serial1.print("Unknown mode");
+				break;
+		}
+		
+		for (j=0;j<MAX_LABEL_LENGTH;j++) {
+			buffer[j] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_INPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
+		}
+		Serial1.print("  ");
+		Serial1.println(buffer);
+	}
+}
+// @todo: onInput(N)

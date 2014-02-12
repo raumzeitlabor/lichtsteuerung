@@ -16,6 +16,7 @@
 
 #define NUM_OUTPUTS 32
 #define NUM_INPUTS 16
+#define I2C_EEPROM_ADDRESS 0x50
 
 bool outputs[NUM_OUTPUTS];
 bool dmxInputBlocked = false;
@@ -27,7 +28,10 @@ const uint16_t my_pids[] = { E120_SLOT_DESCRIPTION, E120_DEFAULT_SLOT_VALUE,
 
 struct RDMINIT rdmInit = { "raumzeitlabor.de", 1, "Lichtsteuerung",
 NUM_OUTPUTS, // footprint
-		(sizeof(my_pids) / sizeof(uint16_t)), my_pids
+		(sizeof(my_pids) / sizeof(uint16_t)), my_pids,
+		{ 0x09, 0x7F, 0x23, 0x42,
+						0x00, 0x00 }, E120_PRODUCT_CATEGORY_POWER, // Product category
+				0x00000001UL // Software Version
 
 };
 
@@ -102,6 +106,7 @@ void setup(void) {
 	addBitlashFunction("setinputmode", (bitlash_function) bl_setInputMode);
 	addBitlashFunction("getinputmode", (bitlash_function) bl_getInputMode);
 	addBitlashFunction("listoutputs", (bitlash_function) bl_listOutputs);
+	addBitlashFunction("listinputs", (bitlash_function) bl_listInputs);
 
 	addBitlashFunction("toggleoutputstate",
 			(bitlash_function) bl_toggleOutputState);
@@ -149,7 +154,6 @@ void setup(void) {
 		Serial1.println("No I2C devices found\n");
 	else
 		Serial1.println("done\n");
-
 }
 
 void loop(void) {
