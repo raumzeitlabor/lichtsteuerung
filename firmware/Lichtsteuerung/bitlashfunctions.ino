@@ -4,8 +4,6 @@
 #define MODE_MOMENTARY 2
 #define MODE_INVALID 99
 
-#define MAX_LABEL_LENGTH 32
-
 char buffer[120];
 
 const char usage_setOutputState[] PROGMEM = "Usage: setOutputState(output,state)\n\routput: Output Number (1-32)\n\rstate: State (0 = off, 1 = on)\n\r";
@@ -18,10 +16,6 @@ const char usage_setInputName[] PROGMEM = "Usage: setInputName(port, portName)\n
 const char usage_getInputName[] PROGMEM = "Usage: getInputName(port)\n\rport: Input Number (1-16)\n\r";
 const char usage_setInputMode[] PROGMEM = "Usage: setInputMode(port,mode)\n\rport: Input Number (1-16)\n\rmode: MODE_TOGGLE or MODE_MOMENTARY\n\rExample: setInputMode(1, \"MODE_MOMENTARY\");\n\r";
 const char usage_getInputMode[] PROGMEM = "Usage: getInputMode(port)\n\rport: Input Number (1-16)\n\Prints either MODE_TOGGLE or MODE_MOMENTARY\n\r";
-
-#define EEPROM_OUTPUT_NAME_OFFSET 0x00000000
-#define EEPROM_INPUT_NAME_OFFSET  EEPROM_OUTPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_OUTPUTS)
-#define EEPROM_INPUT_MODE_OFFSET  EEPROM_INPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_INPUTS)
 
 PGM_P const usage[] PROGMEM = {
 	usage_setOutputState,
@@ -284,11 +278,12 @@ numvar bl_getInputName(void) {
 	}
 	
 	for (int j=0;j<MAX_LABEL_LENGTH;j++) {
-			buffer[j] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_INPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
-		}
+		buffer[j] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_INPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
+	}
 		
 	Serial1.println(buffer);
 }
+
 
 numvar bl_setInputMode(void) {
 	uint8_t mode = MODE_INVALID;

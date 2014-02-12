@@ -16,7 +16,14 @@
 
 #define NUM_OUTPUTS 32
 #define NUM_INPUTS 16
+
 #define I2C_EEPROM_ADDRESS 0x50
+
+#define EEPROM_OUTPUT_NAME_OFFSET 0x00000000
+#define EEPROM_INPUT_NAME_OFFSET  EEPROM_OUTPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_OUTPUTS)
+#define EEPROM_INPUT_MODE_OFFSET  EEPROM_INPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_INPUTS)
+
+#define MAX_LABEL_LENGTH 32
 
 bool outputs[NUM_OUTPUTS];
 bool dmxInputBlocked = false;
@@ -209,7 +216,7 @@ void loop(void) {
 boolean processCommand(struct RDMDATA *rdm, uint16_t *nackReason) {
 	byte CmdClass = rdm->CmdClass;     // command class
 	uint16_t Parameter = rdm->Parameter;    // parameter ID
-	int i;
+	int i,j;
 	boolean handled = false;
 
 // This is a sample of how to return some device specific data
@@ -253,8 +260,15 @@ boolean processCommand(struct RDMDATA *rdm, uint16_t *nackReason) {
 					// @todo stub
 
 					WRITEINT(rdm->Data, i);
-					memcpy(rdm->Data + 2, "DummySlot", 9);
-					rdm->DataLength = 11;
+					for (j=0;j<MAX_LABEL_LENGTH;j++) {
+						rdm->Data[j+2] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
+						Serial1.println(rdm->Data[j+2]);
+						if (rdm->Data[j+2] == '\0') {
+							break;
+						}
+					}
+					rdm->DataLength = j+2;
+					Serial1.println(j+2);
 					handled = true;
 				} else {
 					*nackReason = E120_NR_FORMAT_ERROR;
