@@ -22,6 +22,7 @@
 #define EEPROM_OUTPUT_NAME_OFFSET 0x00000000
 #define EEPROM_INPUT_NAME_OFFSET  EEPROM_OUTPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_OUTPUTS)
 #define EEPROM_INPUT_MODE_OFFSET  EEPROM_INPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_INPUTS)
+#define EEPROM_OUTPUT_PRIVATE_FLAG_OFFSET EEPROM_INPUT_MODE_OFFSET+NUM_INPUTS
 
 #define MAX_LABEL_LENGTH 32
 
@@ -114,7 +115,9 @@ void setup(void) {
 	addBitlashFunction("getinputmode", (bitlash_function) bl_getInputMode);
 	addBitlashFunction("listoutputs", (bitlash_function) bl_listOutputs);
 	addBitlashFunction("listinputs", (bitlash_function) bl_listInputs);
+	addBitlashFunction("setprivateflag", (bitlash_function) bl_setPrivateFlag);
 
+	
 	addBitlashFunction("toggleoutputstate",
 			(bitlash_function) bl_toggleOutputState);
 	addBitlashFunction("tos", (bitlash_function) bl_toggleOutputState);

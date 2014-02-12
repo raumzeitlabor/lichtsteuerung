@@ -15,7 +15,8 @@ const char usage_toggleOutputState[] PROGMEM = "Usage: toggleOutputState(port)\n
 const char usage_setInputName[] PROGMEM = "Usage: setInputName(port, portName)\n\rport: Input Number (1-16)\n\rportName: ASCII String, 32 chars max\n\r";
 const char usage_getInputName[] PROGMEM = "Usage: getInputName(port)\n\rport: Input Number (1-16)\n\r";
 const char usage_setInputMode[] PROGMEM = "Usage: setInputMode(port,mode)\n\rport: Input Number (1-16)\n\rmode: MODE_TOGGLE or MODE_MOMENTARY\n\rExample: setInputMode(1, \"MODE_MOMENTARY\");\n\r";
-const char usage_getInputMode[] PROGMEM = "Usage: getInputMode(port)\n\rport: Input Number (1-16)\n\Prints either MODE_TOGGLE or MODE_MOMENTARY\n\r";
+const char usage_getInputMode[] PROGMEM = "Usage: getInputMode(port)\n\rport: Input Number (1-16)\n\rPrints either MODE_TOGGLE or MODE_MOMENTARY\n\r";
+const char usage_setPrivateFlag[] PROGMEM = "Usage: setPrivateFlag(port, private)\n\rport: Output Number (1-32)\n\rprivate: 0=public, 1=private\n\r";
 
 PGM_P const usage[] PROGMEM = {
 	usage_setOutputState,
@@ -27,7 +28,8 @@ PGM_P const usage[] PROGMEM = {
 	usage_setInputName,
 	usage_getInputName,
 	usage_setInputMode,
-	usage_getInputMode
+	usage_getInputMode,
+	usage_setPrivateFlag
 };
 
 const char messages_setDeviceName[] PROGMEM = "New device name: ";
@@ -226,8 +228,32 @@ numvar bl_getOutputName(void) {
 	}
 	
 	Serial1.println(buffer);
-	// Copy the name to the device label and save the EEPROM.
-	// @todo strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), 32);
+}
+
+/**
+ * Sets the output private flag. If an output is private, it shouldn't be listed using the spark frontend.
+ *
+ * Usage: setPrivateFlag [port] [private]
+ */
+numvar bl_setPrivateFlag(void) {
+	uint8_t j;
+	
+	if (getarg(0) != 2) {
+		strcpy_P(buffer, (PGM_P) pgm_read_word(&(usage[10])));
+		Serial1.println((char *) buffer);
+		return 0;
+	}
+
+	int i = getarg(1);
+	if (i < 1 || i > NUM_OUTPUTS) {
+		// Output out of range error message
+		strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[1])));
+		Serial1.print(buffer);
+		return 0;
+	}
+	
+	i2c_eeprom_write_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_PRIVATE_FLAG_OFFSET + (i-1), getarg(2));
+	delay(10);
 }
 
 /**
@@ -391,7 +417,13 @@ numvar bl_listOutputs (void) {
 			buffer[j] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
 		}
 		Serial1.print("  ");
-		Serial1.println(buffer);
+		Serial1.print(buffer);
+		
+		if (i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_PRIVATE_FLAG_OFFSET + (i-1))) {
+			Serial1.print("  PRIVATE");
+		}
+		
+		Serial1.println();
 	}
 }
 
