@@ -1,0 +1,21 @@
+manufacturer {
+  manufacturer_id: 2431
+  manufacturer_name: "raumzeitlabor.de"
+  pid {
+    name: "PRIVATE_CHANNELS"
+    value: 32768
+    get_request {
+    }
+    get_response {
+      field {
+	type: GROUP
+	name: "private_channels"
+	field {
+	        type: UINT8
+        	name: "mode"
+	}
+    }
+}
+}
+}
+
