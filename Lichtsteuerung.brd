@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.125" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7145,7 +7145,7 @@ NS Package M08A</description>
 <attribute name="OC_FARNELL" value="1331268" x="130.5" y="60" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="92C6793" x="130.5" y="60" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="127.98" y="62.917" size="0.6096" layer="25" align="center-left"/>
-<attribute name="OC_REICHELT" value="24FC128-I/SN" x="130.5" y="60" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_REICHELT" value="24FC1025-I/SM" x="130.5" y="60" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="IC10" library="_traco_tsr-1" package="TSR-1" value="TSR_1-2450" x="4" y="56" smashed="yes" rot="R270">
 <attribute name="NAME" x="2.158" y="62.6682" size="0.6096" layer="25" align="center-left"/>
@@ -7165,11 +7165,11 @@ NS Package M08A</description>
 </element>
 <element name="C11" library="rcl" package="C0805" value="22p" x="53.25" y="25.29" smashed="yes" rot="R270">
 <attribute name="NAME" x="54.73" y="23.5775" size="0.6096" layer="25" rot="R90" align="center-left"/>
-<attribute name="OC_REICHELT" value="X7R-G0805 22P" x="53.25" y="25.29" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_REICHELT" value="NPO-G0805 22P" x="53.25" y="25.29" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C12" library="rcl" package="C0805" value="22p" x="44.79" y="25.77" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.9925" y="28.2" size="0.6096" layer="25" align="center-left"/>
-<attribute name="OC_REICHELT" value="X7R-G0805 22P" x="44.79" y="25.77" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_REICHELT" value="NPO-G0805 22P" x="44.79" y="25.77" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="IC12" library="751xx" package="D_R-PDSO-G8" value="75176AD" x="45" y="60" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.1625" y="62.94" size="0.6096" layer="25" align="center-left"/>
@@ -7177,15 +7177,15 @@ NS Package M08A</description>
 </element>
 <element name="IC11" library="avr-7" package="TQFP64" value="MEGA64-A" x="52.26" y="37.93" smashed="yes" rot="R315">
 <attribute name="NAME" x="57.755" y="45.135" size="0.6096" layer="25" rot="R315" align="center-left"/>
-<attribute name="OC_REICHELT" value="ATMEGA 64-16 TQ" x="52.26" y="37.93" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_REICHELT" value="ATMEGA 2561-16AU" x="52.26" y="37.93" size="1.778" layer="27" rot="R315" display="off"/>
 </element>
 <element name="R72" library="resistor" package="R0805" value="10k" x="54.8" y="52.11" smashed="yes">
 <attribute name="NAME" x="55.215" y="50.59" size="0.6096" layer="25" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K" x="54.8" y="52.11" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C13" library="rcl" package="C/6032-28R" value="220µ" x="20.3" y="48.63" smashed="yes">
+<element name="C13" library="rcl" package="C/6032-28R" value="10µ" x="20.3" y="48.63" smashed="yes">
 <attribute name="NAME" x="17.625" y="46.625" size="0.6096" layer="25" align="center-left"/>
-<attribute name="OC_REICHELT" value="VF 220/6,3 K-D" x="20.3" y="48.63" size="1.778" layer="27" display="off"/>
+<attribute name="PARTKEEPR_SKU" value="2607" x="20.3" y="48.63" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C14" library="resistor" package="C0805" value="100n" x="41.5875" y="32.455" smashed="yes" rot="R225">
 <attribute name="NAME" x="41.87788125" y="34.767240625" size="0.6096" layer="25" rot="R225" align="center-left"/>
@@ -7197,19 +7197,19 @@ NS Package M08A</description>
 </element>
 <element name="C15" library="resistor" package="A/3216-18R" value="1µ" x="108.5" y="48.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="108.5" y="46.125" size="0.6096" layer="25" rot="R270" align="center-left"/>
-<attribute name="OC_REICHELT" value="VF 1,0/50 C-B" x="108.5" y="48.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PARTKEEPR_SKU" value="2609" x="108.5" y="48.75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C16" library="resistor" package="A/3216-18R" value="1µ" x="113.25" y="60.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="113.99" y="63.52" size="0.6096" layer="25" rot="R180" align="center-left"/>
-<attribute name="OC_REICHELT" value="VF 1,0/50 C-B" x="113.25" y="60.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PARTKEEPR_SKU" value="2609" x="113.25" y="60.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C17" library="resistor" package="A/3216-18R" value="1µ" x="106.25" y="48.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="106.25" y="46" size="0.6096" layer="25" rot="R270" align="center-left"/>
-<attribute name="OC_REICHELT" value="VF 1,0/50 C-B" x="106.25" y="48.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PARTKEEPR_SKU" value="2609" x="106.25" y="48.75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C18" library="resistor" package="A/3216-18R" value="1µ" x="110.5" y="60.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="109.795" y="63.27" size="0.6096" layer="25"/>
-<attribute name="OC_REICHELT" value="VF 1,0/50 C-B" x="110.5" y="60.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTKEEPR_SKU" value="2609" x="110.5" y="60.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="F1" library="f-lf-omniblok-s" package="OMNIBLOK" value="5V Rail 500mA" x="17" y="54" smashed="yes">
 <attribute name="VALUE" x="22.225" y="51.075" size="0.6096" layer="25" rot="R180" align="center-left"/>
@@ -7236,9 +7236,9 @@ NS Package M08A</description>
 <attribute name="NAME" x="68.53" y="57.915" size="0.6096" layer="25" rot="R180" align="center-left"/>
 <attribute name="OC_REICHELT" value="SMD-0805 220" x="67.75" y="55.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C19" library="rcl" package="C/6032-28R" value="220µ" x="87.78" y="59.34" smashed="yes" rot="R270">
-<attribute name="OC_REICHELT" value="VF 220/6,3 K-D" x="87.78" y="59.34" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C19" library="rcl" package="C/6032-28R" value="10µ" x="87.78" y="59.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="87.115" y="63.845" size="0.6096" layer="25" align="center-left"/>
+<attribute name="PARTKEEPR_SKU" value="2607" x="87.78" y="59.34" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C20" library="rcl" package="C0805" value="100n" x="39.375" y="61" smashed="yes" rot="R90">
 <attribute name="NAME" x="39.375" y="63.125" size="0.6096" layer="25" rot="R90" align="center-left"/>
@@ -7511,6 +7511,7 @@ NS Package M08A</description>
 <attribute name="OC_FARNELL" value="unknown" x="-110.81" y="-10.34" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-110.81" y="-10.34" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="148.79" y="38.18" size="0.6096" layer="25" ratio="10" rot="R180" align="center-left"/>
+<attribute name="OC_REICHELT" value="LTV 356T-SMD" x="147" y="43" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R116" library="resistor" package="R0805" value="1.2k" x="147.87" y="25.86" smashed="yes" rot="R270">
 <attribute name="NAME" x="147.87" y="23.955" size="0.6096" layer="25" rot="R270" align="center-left"/>
@@ -7733,6 +7734,7 @@ NS Package M08A</description>
 </element>
 <element name="X4" library="con-wago_2.5mm" package="P-733-332" value="733-332" x="112.25" y="7.375" smashed="yes" rot="R90">
 <attribute name="NAME" x="108.23" y="9.725" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="OC_REICHELT" value="WAGO 733-332" x="112.25" y="7.375" size="1.016" layer="27" rot="R90" display="off"/>
 </element>
 <element name="LED3" library="led" package="CHIP-LED0805" value="ACT" x="7.25" y="82" smashed="yes">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 GE" x="7.25" y="82" size="1.778" layer="27" display="off"/>
@@ -7781,6 +7783,7 @@ NS Package M08A</description>
 <element name="U$1" library="RaumZeitLabor" package="RAUMZEITLABOR_FILLED_16MM" value="" x="62" y="80"/>
 <element name="IC6" library="linear" package="SO08" value="LM317LD" x="67" y="30" smashed="yes">
 <attribute name="NAME" x="64.333" y="30.595" size="0.6096" layer="25" rot="R90"/>
+<attribute name="OC_REICHELT" value="LM 317 LD" x="67" y="30" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R15" library="resistor" package="R0805" value="125" x="67.5" y="24.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="68.512" y="23.609" size="0.6096" layer="25" rot="R180"/>
@@ -7792,6 +7795,7 @@ NS Package M08A</description>
 </element>
 <element name="IC5" library="linear" package="SO08" value="LM317LD" x="101" y="38" smashed="yes">
 <attribute name="NAME" x="98.333" y="36.095" size="0.6096" layer="25" rot="R90"/>
+<attribute name="OC_REICHELT" value="LM 317 LD" x="101" y="38" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R16" library="resistor" package="R0805" value="125" x="102.125" y="32.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="100.012" y="33.109" size="0.6096" layer="25" rot="R180"/>
@@ -7803,6 +7807,7 @@ NS Package M08A</description>
 </element>
 <element name="IC7" library="linear" package="SO08" value="LM317LD" x="153" y="52" smashed="yes">
 <attribute name="NAME" x="156.333" y="50.095" size="0.6096" layer="25" rot="R90"/>
+<attribute name="OC_REICHELT" value="LM 317 LD" x="153" y="52" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R17" library="resistor" package="R0805" value="125" x="154.5" y="45" smashed="yes" rot="R270">
 <attribute name="NAME" x="155.641" y="46.762" size="0.6096" layer="25" rot="R270"/>
@@ -7818,6 +7823,7 @@ NS Package M08A</description>
 </element>
 <element name="JP10" library="adafruit" package="1X10-BIG" value="PINHD-1X10" x="144" y="82" smashed="yes">
 <attribute name="NAME" x="131.3688" y="84.0788" size="1.016" layer="25" align="center-left"/>
+<attribute name="OC_REICHELT" value="BL 1X10G8 2,54" x="144" y="82" size="1.016" layer="27" display="off"/>
 </element>
 </elements>
 <signals>

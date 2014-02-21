@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="9" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="14" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="14" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,17 +53,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="14" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="14" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -28870,6 +28870,34 @@ With round pins</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="dummy">
+<packages>
+</packages>
+<symbols>
+<symbol name="DUMMY">
+<text x="-2.54" y="0.254" size="1.778" layer="94">&gt;NAME</text>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DUMMY">
+<gates>
+<gate name="G$1" symbol="DUMMY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -29085,7 +29113,9 @@ With round pins</description>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
 </part>
 <part name="GND55" library="supply1" deviceset="GNDINT" device=""/>
-<part name="OK116" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T"/>
+<part name="OK116" library="optocoupler" deviceset="LTV816" device="S" value="LTV356T">
+<attribute name="OC_REICHELT" value="LTV 356T-SMD"/>
+</part>
 <part name="R116" library="resistor" deviceset="R-EU_" device="R0805" value="1.2k">
 <attribute name="OC_REICHELT" value="SMD-0805 1,20K"/>
 </part>
@@ -29133,7 +29163,7 @@ With round pins</description>
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
 </part>
 <part name="IC9" library="microchip" deviceset="24*" device="SM" technology="AA01" value="24FC128-I/SN">
-<attribute name="OC_REICHELT" value="24FC128-I/SN"/>
+<attribute name="OC_REICHELT" value="24FC1025-I/SM"/>
 </part>
 <part name="IC10" library="_traco_tsr-1" deviceset="TSR_1-*" device="" technology="2450">
 <attribute name="OC_REICHELT" value="TSR 1-2450"/>
@@ -29156,10 +29186,10 @@ With round pins</description>
 <attribute name="OC_REICHELT" value="16,000000-MJ"/>
 </part>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="22p">
-<attribute name="OC_REICHELT" value="X7R-G0805 22P"/>
+<attribute name="OC_REICHELT" value="NPO-G0805 22P"/>
 </part>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="22p">
-<attribute name="OC_REICHELT" value="X7R-G0805 22P"/>
+<attribute name="OC_REICHELT" value="NPO-G0805 22P"/>
 </part>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="IC12" library="751xx" deviceset="75176A" device="D">
@@ -29170,14 +29200,14 @@ With round pins</description>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="P+33" library="supply1" deviceset="+5V" device=""/>
 <part name="IC11" library="avr-7" deviceset="MEGA64" device="-A">
-<attribute name="OC_REICHELT" value="ATMEGA 64-16 TQ"/>
+<attribute name="OC_REICHELT" value="ATMEGA 2561-16AU"/>
 </part>
 <part name="P+34" library="supply1" deviceset="+5V" device=""/>
 <part name="R72" library="resistor" deviceset="R-EU_" device="R0805" value="10k">
 <attribute name="OC_REICHELT" value="SMD-0805 10,0K"/>
 </part>
-<part name="C13" library="rcl" deviceset="CPOL-EU" device="C/6032-28R" value="220µ">
-<attribute name="OC_REICHELT" value="VF 220/6,3 K-D"/>
+<part name="C13" library="rcl" deviceset="CPOL-EU" device="C/6032-28R" value="10µ">
+<attribute name="PARTKEEPR_SKU" value="2607"/>
 </part>
 <part name="C14" library="resistor" deviceset="C-EU" device="C0805" value="100n">
 <attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
@@ -29188,16 +29218,16 @@ With round pins</description>
 <attribute name="OC_REICHELT" value="MAX 232 CSE SMD"/>
 </part>
 <part name="C15" library="resistor" deviceset="CPOL-EU" device="A/3216-18R" value="1µ">
-<attribute name="OC_REICHELT" value="VF 1,0/50 C-B"/>
+<attribute name="PARTKEEPR_SKU" value="2609"/>
 </part>
 <part name="C16" library="resistor" deviceset="CPOL-EU" device="A/3216-18R" value="1µ">
-<attribute name="OC_REICHELT" value="VF 1,0/50 C-B"/>
+<attribute name="PARTKEEPR_SKU" value="2609"/>
 </part>
 <part name="C17" library="resistor" deviceset="CPOL-EU" device="A/3216-18R" value="1µ">
-<attribute name="OC_REICHELT" value="VF 1,0/50 C-B"/>
+<attribute name="PARTKEEPR_SKU" value="2609"/>
 </part>
 <part name="C18" library="resistor" deviceset="CPOL-EU" device="A/3216-18R" value="1µ">
-<attribute name="OC_REICHELT" value="VF 1,0/50 C-B"/>
+<attribute name="PARTKEEPR_SKU" value="2609"/>
 </part>
 <part name="P+36" library="supply1" deviceset="+5V" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
@@ -29226,8 +29256,8 @@ With round pins</description>
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
 <part name="P+16" library="supply1" deviceset="+5V" device=""/>
-<part name="C19" library="rcl" deviceset="CPOL-EU" device="C/6032-28R" value="220µ">
-<attribute name="OC_REICHELT" value="VF 220/6,3 K-D"/>
+<part name="C19" library="rcl" deviceset="CPOL-EU" device="C/6032-28R" value="10µ">
+<attribute name="PARTKEEPR_SKU" value="2607"/>
 </part>
 <part name="C20" library="rcl" deviceset="C-EU" device="C0805" value="100n">
 <attribute name="OC_REICHELT" value="X7R-G0805 100N"/>
@@ -29422,23 +29452,59 @@ With round pins</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="JP6" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="IC6" library="linear" deviceset="LM317LD" device=""/>
+<part name="IC6" library="linear" deviceset="LM317LD" device="">
+<attribute name="OC_REICHELT" value="LM 317 LD"/>
+</part>
 <part name="R15" library="resistor" deviceset="R-EU_" device="R0805" value="125"/>
 <part name="LED7" library="led" deviceset="LED" device="CHIP-LED0805" value="PWROK">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 RT"/>
 </part>
-<part name="IC5" library="linear" deviceset="LM317LD" device=""/>
+<part name="IC5" library="linear" deviceset="LM317LD" device="">
+<attribute name="OC_REICHELT" value="LM 317 LD"/>
+</part>
 <part name="R16" library="resistor" deviceset="R-EU_" device="R0805" value="125"/>
 <part name="LED8" library="led" deviceset="LED" device="CHIP-LED0805" value="PWROK">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 RT"/>
 </part>
-<part name="IC7" library="linear" deviceset="LM317LD" device=""/>
+<part name="IC7" library="linear" deviceset="LM317LD" device="">
+<attribute name="OC_REICHELT" value="LM 317 LD"/>
+</part>
 <part name="R17" library="resistor" deviceset="R-EU_" device="R0805" value="125"/>
 <part name="LED9" library="led" deviceset="LED" device="CHIP-LED0805" value="PWROK">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 RT"/>
 </part>
 <part name="JP7" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP10" library="adafruit" deviceset="PINHD-1X10" device=""/>
+<part name="AUX$1" library="dummy" deviceset="DUMMY" device="" value="WAGO 733 102">
+<attribute name="OC_REICHELT" value="WAGO 733-102"/>
+</part>
+<part name="AUX$2" library="dummy" deviceset="DUMMY" device="" value="WAGO 733 103">
+<attribute name="OC_REICHELT" value="WAGO 733-103"/>
+</part>
+<part name="AUX$3" library="dummy" deviceset="DUMMY" device="" value="WAGO 733 103">
+<attribute name="OC_REICHELT" value="WAGO 733-103"/>
+</part>
+<part name="AUX$4" library="dummy" deviceset="DUMMY" device="" value="WAGO 733 104">
+<attribute name="OC_REICHELT" value="WAGO 733-104"/>
+</part>
+<part name="AUX$5" library="dummy" deviceset="DUMMY" device="" value="WAGO 713-1110">
+<attribute name="OC_REICHELT" value="WAGO 713-1110"/>
+</part>
+<part name="AUX$6" library="dummy" deviceset="DUMMY" device="" value="WAGO 713-1110">
+<attribute name="OC_REICHELT" value="WAGO 713-1110"/>
+</part>
+<part name="AUX$7" library="dummy" deviceset="DUMMY" device="" value="WAGO 713-1110">
+<attribute name="OC_REICHELT" value="WAGO 713-1110"/>
+</part>
+<part name="AUX$8" library="dummy" deviceset="DUMMY" device="" value="PHOENIX CONTACT BC 161,6 UT">
+<attribute name="OC_CONRAD" value="702576"/>
+</part>
+<part name="AUX$9" library="dummy" deviceset="DUMMY" device="" value="PHOENIX CONTACT BC 161,6 OT U22">
+<attribute name="OC_CONRAD" value="702578"/>
+</part>
+<part name="AUX$10" library="dummy" deviceset="DUMMY" device="" value="PHOENIX CONTACT BC 161,6 DKL S TRANS">
+<attribute name="OC_CONRAD" value="702581"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -29462,6 +29528,12 @@ With round pins</description>
 <text x="281.94" y="248.92" size="2.54" layer="94" font="vector">Isolated 24V Input Channels</text>
 <text x="312.42" y="88.9" size="2.54" layer="94" font="vector">Digital Input Connector</text>
 <text x="185.42" y="88.9" size="2.54" layer="94" font="vector">Digital Output Connectors</text>
+<text x="144.78" y="144.78" size="1.27" layer="91">Constant Current Source with LM317, based on App Note
+AND8109/D by ON Semiconductor.
+
+The reason we do this is because we don't know the voltage
+applied to the +24V rails fed in externally, which may be anything
+from 4 to 30V.</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="48.26" y="226.06">
@@ -29641,7 +29713,9 @@ With round pins</description>
 </instance>
 <instance part="R215" gate="G$1" x="231.14" y="124.46"/>
 <instance part="GND55" gate="G$1" x="276.86" y="129.54" rot="R90"/>
-<instance part="OK116" gate="G$1" x="246.38" y="109.22" rot="R180"/>
+<instance part="OK116" gate="G$1" x="246.38" y="109.22" rot="R180">
+<attribute name="OC_REICHELT" x="246.38" y="109.22" size="1.27" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="R116" gate="G$1" x="264.16" y="106.68">
 <attribute name="OC_REICHELT" x="264.16" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
@@ -29759,17 +29833,23 @@ With round pins</description>
 <instance part="X4" gate="G$1" x="287.02" y="55.88" rot="R180"/>
 <instance part="JP6" gate="G$1" x="215.9" y="58.42" rot="R180"/>
 <instance part="JP2" gate="G$1" x="154.94" y="58.42" rot="R180"/>
-<instance part="IC6" gate="G$1" x="175.26" y="241.3"/>
+<instance part="IC6" gate="G$1" x="175.26" y="241.3">
+<attribute name="OC_REICHELT" x="175.26" y="241.3" size="1.27" layer="96" display="off"/>
+</instance>
 <instance part="R15" gate="G$1" x="182.88" y="226.06"/>
 <instance part="LED7" gate="G$1" x="195.58" y="243.84" rot="R90">
 <attribute name="OC_REICHELT" x="195.58" y="243.84" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="IC5" gate="G$1" x="175.26" y="210.82"/>
+<instance part="IC5" gate="G$1" x="175.26" y="210.82">
+<attribute name="OC_REICHELT" x="175.26" y="210.82" size="1.27" layer="96" display="off"/>
+</instance>
 <instance part="R16" gate="G$1" x="182.88" y="195.58"/>
 <instance part="LED8" gate="G$1" x="195.58" y="213.36" rot="R90">
 <attribute name="OC_REICHELT" x="195.58" y="213.36" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="IC7" gate="G$1" x="175.26" y="177.8"/>
+<instance part="IC7" gate="G$1" x="175.26" y="177.8">
+<attribute name="OC_REICHELT" x="175.26" y="177.8" size="1.27" layer="96" display="off"/>
+</instance>
 <instance part="R17" gate="G$1" x="182.88" y="162.56"/>
 <instance part="LED9" gate="G$1" x="195.58" y="180.34" rot="R90">
 <attribute name="OC_REICHELT" x="195.58" y="180.34" size="1.778" layer="96" rot="R90" display="off"/>
@@ -31957,6 +32037,7 @@ With round pins</description>
 <text x="330.2" y="96.52" size="1.778" layer="94" font="vector">I²C Connector</text>
 <text x="347.98" y="60.96" size="1.778" layer="94" font="vector">Power Connector</text>
 <wire x1="185.42" y1="111.76" x2="226.06" y2="111.76" width="0.1524" layer="94"/>
+<text x="231.14" y="175.26" size="1.778" layer="94" font="vector">Connectors and other auxiliary parts</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -32036,7 +32117,7 @@ With round pins</description>
 <attribute name="OC_REICHELT" x="101.6" y="63.5" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C13" gate="G$1" x="205.74" y="27.94">
-<attribute name="OC_REICHELT" x="205.74" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="PARTKEEPR_SKU" x="205.74" y="27.94" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="C14" gate="G$1" x="215.9" y="27.94">
 <attribute name="OC_REICHELT" x="215.9" y="27.94" size="1.778" layer="96" display="off"/>
@@ -32047,16 +32128,16 @@ With round pins</description>
 <attribute name="OC_REICHELT" x="40.64" y="208.28" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C15" gate="G$1" x="20.32" y="220.98" rot="R270">
-<attribute name="OC_REICHELT" x="20.32" y="220.98" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PARTKEEPR_SKU" x="20.32" y="220.98" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C16" gate="G$1" x="20.32" y="210.82" rot="R270">
-<attribute name="OC_REICHELT" x="20.32" y="210.82" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PARTKEEPR_SKU" x="20.32" y="210.82" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C17" gate="G$1" x="66.04" y="218.44" rot="R90">
-<attribute name="OC_REICHELT" x="66.04" y="218.44" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PARTKEEPR_SKU" x="66.04" y="218.44" size="1.27" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C18" gate="G$1" x="68.58" y="213.36" rot="R270">
-<attribute name="OC_REICHELT" x="68.58" y="213.36" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PARTKEEPR_SKU" x="68.58" y="213.36" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="P+36" gate="1" x="43.18" y="236.22"/>
 <instance part="GND27" gate="1" x="43.18" y="177.8"/>
@@ -32092,7 +32173,7 @@ With round pins</description>
 <attribute name="VALUE" x="261.62" y="203.2" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C19" gate="G$1" x="299.72" y="195.58">
-<attribute name="OC_REICHELT" x="299.72" y="195.58" size="1.27" layer="96" display="off"/>
+<attribute name="PARTKEEPR_SKU" x="299.72" y="195.58" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="C20" gate="G$1" x="307.34" y="195.58">
 <attribute name="OC_REICHELT" x="307.34" y="195.58" size="1.778" layer="96" display="off"/>
@@ -32231,6 +32312,36 @@ With round pins</description>
 </instance>
 <instance part="GND9" gate="1" x="177.8" y="162.56" rot="R90"/>
 <instance part="JP10" gate="G$1" x="327.66" y="45.72"/>
+<instance part="AUX$1" gate="G$1" x="238.76" y="170.18">
+<attribute name="OC_REICHELT" x="238.76" y="170.18" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="AUX$2" gate="G$1" x="238.76" y="160.02">
+<attribute name="OC_REICHELT" x="238.76" y="160.02" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="AUX$3" gate="G$1" x="238.76" y="149.86">
+<attribute name="OC_REICHELT" x="238.76" y="149.86" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="AUX$4" gate="G$1" x="238.76" y="139.7">
+<attribute name="OC_REICHELT" x="238.76" y="139.7" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="AUX$5" gate="G$1" x="264.16" y="170.18">
+<attribute name="OC_REICHELT" x="264.16" y="170.18" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="AUX$6" gate="G$1" x="264.16" y="160.02">
+<attribute name="OC_REICHELT" x="264.16" y="160.02" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="AUX$7" gate="G$1" x="264.16" y="149.86">
+<attribute name="OC_REICHELT" x="264.16" y="149.86" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="AUX$8" gate="G$1" x="294.64" y="170.18">
+<attribute name="OC_CONRAD" x="294.64" y="170.18" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="AUX$9" gate="G$1" x="294.64" y="160.02">
+<attribute name="OC_CONRAD" x="294.64" y="160.02" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="AUX$10" gate="G$1" x="294.64" y="149.86">
+<attribute name="OC_CONRAD" x="294.64" y="149.86" size="1.27" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -33638,6 +33749,18 @@ With round pins</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,2,30.48,63.5,VI,+24V,,,,"/>
+<approved hash="102,2,238.76,73.66,GND1,GNDI1,,,,"/>
+<approved hash="104,2,50.8,63.5,IC10,VO,N$100,,,"/>
+<approved hash="111,2,213.36,238.76,RXD/MOSI,,,,,"/>
+</errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
