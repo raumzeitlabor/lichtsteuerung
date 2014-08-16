@@ -11,11 +11,21 @@ This is the firmware for the RaumZeitLabor Lichtsteuerung.
 
 ## Quick Install
 
+### Installing Arduino 1.5 on Debian
+
+```bash
+echo "deb http://ftp.de.debian.org/debian/ experimental main non-free contrib" >> /etc/apt/sources.list
+apt-get update
+apt-get -t experimental arduino
+```
+
+### Installing required libraries
+
 ```bash
 cd ~/Arduino/libraries
 git clone https://github.com/raumzeitlabor/DMXSerial2.git
 git clone https://github.com/raumzeitlabor/bitlash.git
-cd ~/Arduino/hardware
+mkdir ~/Arduino/hardware && cd ~/Arduino/hardware
 git clone https://github.com/raumzeitlabor/lichtsteuerung-arduino.git
 ```
 
