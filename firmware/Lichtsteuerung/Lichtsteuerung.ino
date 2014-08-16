@@ -1,7 +1,7 @@
 #include <EEPROM.h>
 #include <avr/pgmspace.h>
 #include <DMXSerial2.h>
-#include <Bounce.h>
+//#include <Bounce.h>
 #include <bitlash.h>
 #include <Wire.h>
 
@@ -17,13 +17,14 @@
 #define NUM_OUTPUTS 32
 #define NUM_INPUTS 16
 
-#define I2C_EEPROM_ADDRESS 0x50
+#define I2C_EEPROM_ADDRESS 0x54
 
 #define EEPROM_OUTPUT_NAME_OFFSET 0x00000000
 #define EEPROM_INPUT_NAME_OFFSET  EEPROM_OUTPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_OUTPUTS)
 #define EEPROM_INPUT_MODE_OFFSET  EEPROM_INPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_INPUTS)
 #define EEPROM_OUTPUT_PRIVATE_FLAG_OFFSET EEPROM_INPUT_MODE_OFFSET+NUM_INPUTS
 
+#define ACTLED 51
 #define MAX_LABEL_LENGTH 32
 
 const char privateChannelsMessage[] = "Private Channel Map";
@@ -33,7 +34,9 @@ const char privateChannelsMessage[] = "Private Channel Map";
 bool outputs[NUM_OUTPUTS];
 bool dmxInputBlocked = false;
 
-uint8_t looper = 0;
+uint16_t looper = 0;
+uint16_t actlooper = 0;
+bool actledstate = LOW;
 
 const uint16_t my_pids[] = { E120_SLOT_DESCRIPTION, E120_DEFAULT_SLOT_VALUE,
 		E120_SLOT_INFO, PID_PRIVATE_CHANNELS };
@@ -49,12 +52,14 @@ NUM_OUTPUTS, // footprint
 PROGMEM const prog_uchar inputPins[] = { 0, 1, 2, 3, 4, 5, 6, 7, 16, 17, 18, 19,
 		20, 21, 22, 23 };
 
-Bounce debouncers[16];
+//Bounce debouncers[16];
 
 /**
  * Initializes the output array and sets up the pins required for the shift register.
  */
 void initOutputs() {
+  pinMode(ACTLED, OUTPUT);
+  
 	pinMode(SR_OUTPUT, OUTPUT);
 	pinMode(SR_SCK, OUTPUT);
 	pinMode(SR_RCK, OUTPUT);
@@ -62,7 +67,7 @@ void initOutputs() {
 
 	digitalWrite(SR_OE, LOW);
 	for (int i = 0; i < NUM_OUTPUTS; i++) {
-		outputs[i] = LOW;
+		outputs[i] = HIGH;
 	}
 
 	sendOutputs();
@@ -92,13 +97,14 @@ void setup(void) {
 	initOutputs();
 
 	initBitlash(115200);
+
 	DMXSerial2.init(&rdmInit, processCommand, DmxModePin, HIGH, LOW);
 
 	for (i = 0; i < sizeof(inputPins); i++) {
 		pinMode(pgm_read_byte(&inputPins[i]), INPUT);
 
-		debouncers[i].setPin(pgm_read_byte(&inputPins[i]));
-		debouncers[i].setInterval(10);
+		//debouncers[i].setPin(pgm_read_byte(&inputPins[i]));
+		//debouncers[i].setInterval(10);
 	}
 
 	addBitlashFunction("setoutputstate", (bitlash_function) bl_setOutputState);
@@ -129,12 +135,7 @@ void setup(void) {
 
 	Wire.begin();
 	delay(10);
-	/*  byte b = i2c_eeprom_read_byte(0x68, 0);
-	 
-	 Serial1.println(b);
-	 
-	 i2c_eeprom_write_byte(0x68, 0, 127);*/
-
+	
 	byte error, address;
 	int nDevices;
 	Serial1.println("Scanning...");
@@ -166,15 +167,30 @@ void setup(void) {
 		Serial1.println("No I2C devices found\n");
 	else
 		Serial1.println("done\n");
+
 }
 
 void loop(void) {
-	uint16_t i;
+    
+    runBitlash();
+    
+    actlooper++;
+    
+    if (actlooper==65535) {
+      actlooper = 0;
+      actledstate = !actledstate;
+      digitalWrite(ACTLED, actledstate);
+    }
+    
+
+        //runDMX();
+}
+
+void runDMX () {
+        uint16_t i;
 	bool outputMode;
 	bool removeBlock = true;
-
-	runBitlash();
-	DMXSerial2.tick();
+ 	DMXSerial2.tick();
 
 	looper++;
 
@@ -215,7 +231,7 @@ void loop(void) {
 		}
 
 		looper = 0;
-	}
+	} 
 }
 
 boolean processCommand(struct RDMDATA *rdm, uint16_t *nackReason) {
