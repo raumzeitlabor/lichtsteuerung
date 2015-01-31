@@ -1,3 +1,5 @@
+// TODO: Backup EEPROM contents to I²C EEPROM
+// TODO: Cleanup code
 #include <EEPROM.h>
 #include <avr/pgmspace.h>
 #include <DMXSerial2.h>
@@ -23,7 +25,6 @@
 #define EEPROM_INPUT_NAME_OFFSET  EEPROM_OUTPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_OUTPUTS)
 #define EEPROM_INPUT_MODE_OFFSET  EEPROM_INPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_INPUTS)
 #define EEPROM_OUTPUT_PRIVATE_FLAG_OFFSET EEPROM_INPUT_MODE_OFFSET+NUM_INPUTS
-
 #define ACTLED 51
 #define MAX_LABEL_LENGTH 32
 
@@ -31,7 +32,9 @@ const char privateChannelsMessage[] = "Private Channel Map";
 
 #define PID_PRIVATE_CHANNELS 0x8000
 
-bool outputs[NUM_OUTPUTS];
+volatile bool outputs[NUM_OUTPUTS];
+volatile bool inputs[NUM_INPUTS];
+volatile bool inputChanged[NUM_INPUTS];
 bool dmxInputBlocked = false;
 
 uint16_t looper = 0;
@@ -98,13 +101,8 @@ void setup(void) {
 
 	initBitlash(115200);
 
-	DMXSerial2.init(&rdmInit, processCommand, DmxModePin, HIGH, LOW);
-
 	for (i = 0; i < sizeof(inputPins); i++) {
 		pinMode(pgm_read_byte(&inputPins[i]), INPUT);
-
-		//debouncers[i].setPin(pgm_read_byte(&inputPins[i]));
-		//debouncers[i].setInterval(10);
 	}
 
 	addBitlashFunction("setoutputstate", (bitlash_function) bl_setOutputState);
@@ -170,202 +168,60 @@ void setup(void) {
 
 }
 
+void handleInput () {
+    int i;
+    bool j;
+    
+    for (i = 0; i < sizeof(inputPins); i++) {
+        j = digitalRead(pgm_read_byte(&inputPins[i]));
+        
+        if (j != inputs[i] && inputChanged[i] == 0) {
+            inputChanged[i] = true;
+        }
+        
+        inputs[i] = j;
+    }
+}
 void loop(void) {
+    String functionName = "onInput";
+    char lbuf[128];
+    int i;
     
     runBitlash();
-    
+    handleInput();
     actlooper++;
     
-    if (actlooper==65535) {
+    if (actlooper==1024) {
       actlooper = 0;
       actledstate = !actledstate;
       digitalWrite(ACTLED, actledstate);
+      
+      for(i=0;i<NUM_INPUTS;i++) {
+        if (inputChanged[i]) {
+            inputChanged[i] = 0; 
+           
+            functionName = "oninput";
+            functionName.concat(i+1);
+            
+            if (findscript((char*)functionName.c_str())) {
+              doCommand((char*)functionName.c_str());
+            }
+            
+            if (inputs[i]) {
+              functionName.concat("on");
+            } else {
+              functionName.concat("off");
+            }
+      
+            if (findscript((char*)functionName.c_str())) {
+              doCommand((char*)functionName.c_str());
+            }
+            
+            
+        }
+      }
+
     }
-    
 
-        //runDMX();
 }
-
-void runDMX () {
-        uint16_t i;
-	bool outputMode;
-	bool removeBlock = true;
- 	DMXSerial2.tick();
-
-	looper++;
-
-	// Only run every 255 ticks, this isn't critical
-	if (looper == 255) {
-		for (i = DMXSerial2.getStartAddress();
-				i < DMXSerial2.getStartAddress() + NUM_OUTPUTS; i++) {
-			if (DMXSerial2.read(i) > 127) {
-				outputMode = true;
-			} else {
-				outputMode = false;
-			}
-
-			if (outputMode != getOutputState(i)) {
-				removeBlock = false;
-			}
-
-		}
-
-		if (removeBlock == true) {
-			dmxInputBlocked = false;
-		}
-
-		if (!dmxInputBlocked) {
-			for (i = DMXSerial2.getStartAddress();
-					i < DMXSerial2.getStartAddress() + NUM_OUTPUTS; i++) {
-				// Check if the received DMX data 
-				if (DMXSerial2.read(i) > 127) {
-					if (getOutputState(i) == 0) {
-						setOutputState(i, 1);
-					}
-				} else {
-					if (getOutputState(i) == 1) {
-						setOutputState(i, 0);
-					}
-				}
-			}
-		}
-
-		looper = 0;
-	} 
-}
-
-boolean processCommand(struct RDMDATA *rdm, uint16_t *nackReason) {
-	byte CmdClass = rdm->CmdClass;     // command class
-	uint16_t Parameter = rdm->Parameter;    // parameter ID
-	int i, j;
-	boolean handled = false;
-
-// This is a sample of how to return some device specific data
-	if (CmdClass == E120_GET_COMMAND) {
-		switch (Parameter) {
-		case SWAPINT(E120_DEFAULT_SLOT_VALUE):
-			if (rdm->DataLength > 0) {
-				*nackReason = E120_NR_FORMAT_ERROR;
-			} else if (rdm->SubDev != 0) {
-				*nackReason = E120_NR_SUB_DEVICE_OUT_OF_RANGE;
-			} else {
-				rdm->DataLength = 3 * NUM_OUTPUTS;
-				for (i = 0; i < NUM_OUTPUTS; i++) {
-					rdm->Data[i * 3] = 0;
-					rdm->Data[(i * 3) + 1] = i;
-
-					if (getOutputState(i + 1) == 1) {
-						rdm->Data[(i * 3) + 2] = 255;
-					} else {
-						rdm->Data[(i * 3) + 2] = 0;
-					}
-
-				}
-				handled = true;
-			}
-
-			break;
-
-		case SWAPINT(E120_SLOT_DESCRIPTION):
-			// Return the requested slot
-			if (rdm->DataLength != 2) {
-				*nackReason = E120_NR_FORMAT_ERROR;
-				handled = false;
-			} else if (rdm->SubDev != 0) {
-				*nackReason = E120_NR_SUB_DEVICE_OUT_OF_RANGE;
-			} else {
-				i = READINT(rdm->Data);
-
-				if (i < NUM_OUTPUTS) {
-					// Copy the slot description
-
-					WRITEINT(rdm->Data, i);
-					for (j = 0; j < MAX_LABEL_LENGTH; j++) {
-						rdm->Data[j + 2] = i2c_eeprom_read_byte(
-								I2C_EEPROM_ADDRESS,
-								EEPROM_OUTPUT_NAME_OFFSET
-										+ ((i - 1) * MAX_LABEL_LENGTH) + j);
-						if (rdm->Data[j + 2] == '\0') {
-							break;
-						}
-					}
-					rdm->DataLength = j + 2;
-					handled = true;
-				} else {
-					*nackReason = E120_NR_FORMAT_ERROR;
-					handled = false;
-				}
-			}
-
-			break;
-
-		case SWAPINT(E120_SLOT_INFO):
-			if (rdm->DataLength > 0) {
-				*nackReason = E120_NR_FORMAT_ERROR;
-			} else if (rdm->SubDev != 0) {
-				*nackReason = E120_NR_SUB_DEVICE_OUT_OF_RANGE;
-			} else {
-				rdm->DataLength = 5 * NUM_OUTPUTS;
-				for (i = 0; i < NUM_OUTPUTS; i++) {
-					WRITEINT(rdm->Data + (i * 5), i);
-					rdm->Data[(i * 5) + 2] = 0;
-					WRITEINT(rdm->Data + (i * 5) + 3, 0xFFFF); // SD_UNDEFINED
-
-				}
-				handled = true;
-			}
-
-			break;
-
-		case SWAPINT(E120_PARAMETER_DESCRIPTION):
-			if (rdm->DataLength != 2) {
-				*nackReason = E120_NR_FORMAT_ERROR;
-			} else if (rdm->SubDev != 0) {
-				*nackReason = E120_NR_SUB_DEVICE_OUT_OF_RANGE;
-			} else if (READINT(rdm->Data) != PID_PRIVATE_CHANNELS) {
-				*nackReason = E120_NR_DATA_OUT_OF_RANGE;
-			} else {
-				i = READINT(rdm->Data);
-
-				if (i == PID_PRIVATE_CHANNELS) {
-					PARAMETER_DESCRIPTION_RESPONSE *parameterDescriptionResponse =
-							(PARAMETER_DESCRIPTION_RESPONSE *) (rdm->Data);
-
-					parameterDescriptionResponse->pid = SWAPINT(i);
-					parameterDescriptionResponse->pdlSize =
-							sizeof(privateChannelsMessage);
-					parameterDescriptionResponse->dataType =
-							E120_DS_UNSIGNED_BYTE;
-					parameterDescriptionResponse->commandClass = E120_CC_GET;
-					parameterDescriptionResponse->type = 0;
-					parameterDescriptionResponse->unit = E120_UNITS_NONE;
-					parameterDescriptionResponse->prefix = E120_PREFIX_NONE;
-					parameterDescriptionResponse->minValidValue = 0;
-					parameterDescriptionResponse->maxValidValue = SWAPINT32(
-							1UL);
-					parameterDescriptionResponse->defaultValue = 0;
-
-					memcpy(parameterDescriptionResponse->description,
-							privateChannelsMessage,
-							sizeof(privateChannelsMessage));
-					rdm->DataLength = sizeof(PARAMETER_DESCRIPTION_RESPONSE);
-
-					handled = true;
-				}
-			}
-			break;
-		case SWAPINT(PID_PRIVATE_CHANNELS):
-			rdm->DataLength = NUM_OUTPUTS;
-			for (i = 0; i < NUM_OUTPUTS; i++) {
-				rdm->Data[i] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_PRIVATE_FLAG_OFFSET + i);
-			}
-
-			handled = true;
-			break;
-
-		}
-	}
-
-	return handled;
-} // processCommand
 
