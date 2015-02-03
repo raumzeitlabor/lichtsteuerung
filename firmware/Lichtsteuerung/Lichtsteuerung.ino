@@ -1,4 +1,4 @@
-// TODO: Backup EEPROM contents to I²C EEPROM
+
 // TODO: Cleanup code
 #include <EEPROM.h>
 #include <avr/pgmspace.h>
@@ -6,10 +6,6 @@
 //#include <Bounce.h>
 #include <bitlash.h>
 #include <Wire.h>
-
-#define DmxModePin 36
-#define DmxModeOut LOW
-#define DmxModeIn HIGH
 
 #define SR_OUTPUT 39
 #define SR_SCK 38
@@ -20,6 +16,8 @@
 #define NUM_INPUTS 16
 
 #define I2C_EEPROM_ADDRESS 0x54
+#define I2C_EEPROM_BACKUP_ADDRESS 0x0700
+#define ARDUINO_EEPROM_SIZE 4096
 
 #define EEPROM_OUTPUT_NAME_OFFSET 0x00000000
 #define EEPROM_INPUT_NAME_OFFSET  EEPROM_OUTPUT_NAME_OFFSET + (MAX_LABEL_LENGTH * NUM_OUTPUTS)
@@ -30,8 +28,6 @@
 
 const char privateChannelsMessage[] = "Private Channel Map";
 
-#define PID_PRIVATE_CHANNELS 0x8000
-
 volatile bool outputs[NUM_OUTPUTS];
 volatile bool inputs[NUM_INPUTS];
 volatile bool inputChanged[NUM_INPUTS];
@@ -40,17 +36,6 @@ bool dmxInputBlocked = false;
 uint16_t looper = 0;
 uint16_t actlooper = 0;
 bool actledstate = LOW;
-
-const uint16_t my_pids[] = { E120_SLOT_DESCRIPTION, E120_DEFAULT_SLOT_VALUE,
-		E120_SLOT_INFO, PID_PRIVATE_CHANNELS };
-
-struct RDMINIT rdmInit = { "raumzeitlabor.de", 1, "Lichtsteuerung",
-NUM_OUTPUTS, // footprint
-		(sizeof(my_pids) / sizeof(uint16_t)), my_pids, { 0x09, 0x7F, 0x23, 0x42,
-				0x00, 0x00 }, E120_PRODUCT_CATEGORY_POWER, // Product category
-		0x00000001UL // Software Version
-
-		};
 
 PROGMEM const prog_uchar inputPins[] = { 0, 1, 2, 3, 4, 5, 6, 7, 16, 17, 18, 19,
 		20, 21, 22, 23 };
@@ -131,6 +116,7 @@ void setup(void) {
 	addBitlashFunction("anyoutputon", (bitlash_function) bl_anyOutputOn);
 	addBitlashFunction("aoo", (bitlash_function) bl_anyOutputOn);
 
+	addBitlashFunction("save", (bitlash_function) bl_backupArduinoEEPROM);
 	Wire.begin();
 	delay(10);
 	
@@ -166,6 +152,8 @@ void setup(void) {
 	else
 		Serial1.println("done\n");
 
+        restoreArduinoEEPROM();
+
 }
 
 void handleInput () {
@@ -183,10 +171,6 @@ void handleInput () {
     }
 }
 void loop(void) {
-    String functionName = "onInput";
-    char lbuf[128];
-    int i;
-    
     runBitlash();
     handleInput();
     actlooper++;
@@ -196,7 +180,17 @@ void loop(void) {
       actledstate = !actledstate;
       digitalWrite(ACTLED, actledstate);
       
-      for(i=0;i<NUM_INPUTS;i++) {
+//      runInputActionScripts();
+    }
+
+}
+
+void runInputActionScripts () {
+  uint8_t i;
+  String functionName = "onInput";
+  char lbuf[128];
+  
+  for(i=0;i<NUM_INPUTS;i++) {
         if (inputChanged[i]) {
             inputChanged[i] = 0; 
            
@@ -216,12 +210,24 @@ void loop(void) {
             if (findscript((char*)functionName.c_str())) {
               doCommand((char*)functionName.c_str());
             }
-            
-            
         }
       }
-
-    }
-
 }
 
+
+
+void restoreArduinoEEPROM () {
+   uint16_t i;
+   byte value;
+    
+   Serial1.print("Restoring Backup: ");
+    for (i=0;i<ARDUINO_EEPROM_SIZE;i++) {
+        value = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, I2C_EEPROM_BACKUP_ADDRESS + i);
+        if (value != EEPROM.read(i)) {
+            EEPROM.write(i, value);
+            Serial1.print("+");
+        }
+    }
+    
+    Serial1.print("done. ");
+}

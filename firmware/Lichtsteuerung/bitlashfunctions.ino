@@ -455,4 +455,23 @@ numvar bl_listInputs (void) {
 		Serial1.println(buffer);
 	}
 }
-// @todo: onInput(N)
+
+numvar bl_backupArduinoEEPROM (void) {
+    uint16_t i;
+    byte value;
+    
+    Serial1.print("Creating backup: ");
+    for (i=0;i<ARDUINO_EEPROM_SIZE;i++) {
+        value = EEPROM.read(i);
+        if (value != i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, I2C_EEPROM_BACKUP_ADDRESS + i)) {
+            i2c_eeprom_write_byte(I2C_EEPROM_ADDRESS, I2C_EEPROM_BACKUP_ADDRESS + i, value);
+            delay(10);
+            Serial1.print("+");
+        } else {
+            Serial1.print("=");
+        }
+    }
+    
+    Serial1.print("done. ");
+
+}
