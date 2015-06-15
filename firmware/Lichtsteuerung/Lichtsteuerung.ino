@@ -1,4 +1,4 @@
-
+// TODO: Automatic backup every N minutes
 // TODO: Cleanup code
 #include <EEPROM.h>
 #include <avr/pgmspace.h>
@@ -180,7 +180,7 @@ void loop(void) {
       actledstate = !actledstate;
       digitalWrite(ACTLED, actledstate);
       
-//      runInputActionScripts();
+      runInputActionScripts();
     }
 
 }
