@@ -538,9 +538,9 @@ DancingFo &amp; Felicitus</text>
 <text x="106" y="40.125" size="0.6096" layer="25" align="center">CONNECT
 GND TO
 GNDINT</text>
-<text x="132.5" y="80.25" size="1.016" layer="25" rot="R270" align="center-left">GND</text>
+<text x="137.58" y="80.25" size="1.016" layer="25" rot="R270" align="center-left">GND</text>
 <text x="135.125" y="80.25" size="1.016" layer="25" rot="R270" align="center-left">+24V</text>
-<text x="137.625" y="80.25" size="1.016" layer="25" rot="R270" align="center-left">+5V</text>
+<text x="132.545" y="80.25" size="1.016" layer="25" rot="R270" align="center-left">+5V</text>
 <text x="140.125" y="80.25" size="1.016" layer="25" rot="R270" align="center-left">GNDINT</text>
 <text x="142.75" y="80.25" size="1.016" layer="25" rot="R270" align="center-left">VCCIO1</text>
 <text x="145.25" y="80.25" size="1.016" layer="25" rot="R270" align="center-left">SDA</text>
@@ -7810,7 +7810,7 @@ NS Package M08A</description>
 <attribute name="OC_REICHELT" value="LM 317 LD" x="153" y="52" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R17" library="resistor" package="R0805" value="125" x="154.5" y="45" smashed="yes" rot="R270">
-<attribute name="NAME" x="155.641" y="46.762" size="0.6096" layer="25" rot="R270"/>
+<attribute name="NAME" x="155.641" y="46.127" size="0.6096" layer="25" rot="R270"/>
 </element>
 <element name="LED9" library="led" package="CHIP-LED0805" value="PWROK" x="156" y="12.75" smashed="yes" rot="R180">
 <attribute name="OC_REICHELT" value="SMD-LED 0805 RT" x="172" y="1.75" size="0.6096" layer="27" ratio="16" rot="R180" display="off"/>
@@ -11649,6 +11649,13 @@ NS Package M08A</description>
 <wire x1="68.35" y1="25.35" x2="69" y2="26" width="0.2032" layer="1"/>
 <wire x1="69" y1="26" x2="69" y2="27.305" width="0.2032" layer="1"/>
 <wire x1="69" y1="27.305" x2="68.905" y2="27.4" width="0.2032" layer="1"/>
+<contactref element="LED7" pad="A"/>
+<wire x1="68.35" y1="24.75" x2="68.35" y2="22.63" width="0.2032" layer="1"/>
+<wire x1="68.35" y1="22.63" x2="66.04" y2="20.32" width="0.2032" layer="1"/>
+<wire x1="66.04" y1="20.32" x2="48.26" y2="20.32" width="0.2032" layer="1"/>
+<wire x1="48.26" y1="20.32" x2="46.355" y2="18.415" width="0.2032" layer="1"/>
+<wire x1="46.355" y1="18.415" x2="46.355" y2="13.82" width="0.2032" layer="1"/>
+<wire x1="46.355" y1="13.82" x2="46.5" y2="13.675" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$86">
 <contactref element="IC6" pad="2"/>
@@ -11656,13 +11663,6 @@ NS Package M08A</description>
 <contactref element="IC6" pad="7"/>
 <contactref element="IC6" pad="6"/>
 <contactref element="IC6" pad="3"/>
-<contactref element="LED7" pad="A"/>
-<wire x1="46.5" y1="13.675" x2="46.5" y2="20.5" width="0.2032" layer="1"/>
-<wire x1="46.5" y1="20.5" x2="47" y2="21" width="0.2032" layer="1"/>
-<wire x1="47" y1="21" x2="65" y2="21" width="0.2032" layer="1"/>
-<wire x1="65" y1="21" x2="66" y2="22" width="0.2032" layer="1"/>
-<wire x1="66" y1="22" x2="66" y2="24.1" width="0.2032" layer="1"/>
-<wire x1="66" y1="24.1" x2="66.65" y2="24.75" width="0.2032" layer="1"/>
 <wire x1="66.65" y1="24.75" x2="66.65" y2="27.115" width="0.2032" layer="1"/>
 <wire x1="66.65" y1="27.115" x2="66.365" y2="27.4" width="0.2032" layer="1"/>
 <wire x1="66.365" y1="27.4" x2="67.635" y2="27.4" width="0.2032" layer="1"/>
@@ -11674,6 +11674,19 @@ NS Package M08A</description>
 <contactref element="R16" pad="1"/>
 <wire x1="102.905" y1="35.4" x2="102.905" y2="32.57" width="0.2032" layer="1"/>
 <wire x1="102.905" y1="32.57" x2="102.975" y2="32.5" width="0.2032" layer="1"/>
+<contactref element="LED8" pad="A"/>
+<wire x1="102.975" y1="32.5" x2="104.66" y2="32.5" width="0.2032" layer="1"/>
+<wire x1="104.66" y1="32.5" x2="104.775" y2="32.385" width="0.2032" layer="1"/>
+<via x="104.775" y="32.385" extent="1-16" drill="0.3"/>
+<wire x1="104.775" y1="32.385" x2="104.775" y2="30.48" width="0.2032" layer="16"/>
+<wire x1="104.775" y1="30.48" x2="104.14" y2="29.845" width="0.2032" layer="16"/>
+<wire x1="104.14" y1="29.845" x2="104.14" y2="23.495" width="0.2032" layer="16"/>
+<wire x1="104.14" y1="23.495" x2="102.87" y2="22.225" width="0.2032" layer="16"/>
+<via x="102.87" y="22.225" extent="1-16" drill="0.3"/>
+<wire x1="102.87" y1="22.225" x2="102.87" y2="15.24" width="0.2032" layer="1"/>
+<wire x1="102.87" y1="15.24" x2="100.965" y2="13.335" width="0.2032" layer="1"/>
+<wire x1="100.965" y1="13.335" x2="99.715" y2="13.335" width="0.2032" layer="1"/>
+<wire x1="99.715" y1="13.335" x2="99.5" y2="13.55" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$82">
 <contactref element="IC5" pad="2"/>
@@ -11681,26 +11694,30 @@ NS Package M08A</description>
 <contactref element="IC5" pad="7"/>
 <contactref element="IC5" pad="6"/>
 <contactref element="IC5" pad="3"/>
-<contactref element="LED8" pad="A"/>
 <wire x1="100.365" y1="40.6" x2="101.635" y2="40.6" width="0.2032" layer="1"/>
 <wire x1="100.365" y1="35.4" x2="101.635" y2="35.4" width="0.2032" layer="1"/>
 <wire x1="101.635" y1="35.4" x2="101.635" y2="40.6" width="0.2032" layer="1"/>
 <wire x1="101.275" y1="32.5" x2="101.275" y2="35.04" width="0.2032" layer="1"/>
 <wire x1="101.275" y1="35.04" x2="101.635" y2="35.4" width="0.2032" layer="1"/>
-<wire x1="101.275" y1="32.5" x2="101.275" y2="31.275" width="0.2032" layer="1"/>
-<wire x1="101.275" y1="31.275" x2="101" y2="31" width="0.2032" layer="1"/>
-<via x="101" y="31" extent="1-16" drill="0.3"/>
-<wire x1="101" y1="31" x2="101" y2="22" width="0.2032" layer="16"/>
-<via x="101" y="22" extent="1-16" drill="0.3"/>
-<wire x1="99.5" y1="13.55" x2="100.55" y2="13.55" width="0.2032" layer="1"/>
-<wire x1="100.55" y1="13.55" x2="101" y2="14" width="0.2032" layer="1"/>
-<wire x1="101" y1="14" x2="101" y2="22" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$83">
 <contactref element="IC7" pad="4"/>
 <contactref element="R17" pad="1"/>
-<wire x1="154.905" y1="49.4" x2="154.905" y2="46.255" width="0.2032" layer="1"/>
+<wire x1="154.94" y1="49.365" x2="154.94" y2="47.625" width="0.2032" layer="1"/>
 <wire x1="154.905" y1="46.255" x2="154.5" y2="45.85" width="0.2032" layer="1"/>
+<contactref element="LED9" pad="A"/>
+<wire x1="156" y1="13.8" x2="156" y2="23.705" width="0.2032" layer="1"/>
+<wire x1="156" y1="23.705" x2="155.575" y2="24.13" width="0.2032" layer="1"/>
+<wire x1="154.94" y1="46.29" x2="154.94" y2="47.625" width="0.2032" layer="1"/>
+<wire x1="154.94" y1="47.625" x2="153.67" y2="47.625" width="0.2032" layer="1"/>
+<via x="153.67" y="47.625" extent="1-16" drill="0.3"/>
+<wire x1="153.67" y1="47.625" x2="153.67" y2="41.91" width="0.2032" layer="16"/>
+<via x="153.67" y="41.91" extent="1-16" drill="0.3"/>
+<wire x1="153.67" y1="41.91" x2="153.67" y2="41.275" width="0.2032" layer="1"/>
+<wire x1="153.67" y1="41.275" x2="155.575" y2="39.37" width="0.2032" layer="1"/>
+<wire x1="155.575" y1="39.37" x2="155.575" y2="24.13" width="0.2032" layer="1"/>
+<wire x1="154.94" y1="49.365" x2="154.905" y2="49.4" width="0.2032" layer="1"/>
+<wire x1="154.94" y1="46.29" x2="154.5" y2="45.85" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$88">
 <contactref element="IC7" pad="2"/>
@@ -11708,7 +11725,6 @@ NS Package M08A</description>
 <contactref element="IC7" pad="7"/>
 <contactref element="IC7" pad="6"/>
 <contactref element="IC7" pad="3"/>
-<contactref element="LED9" pad="A"/>
 <wire x1="152.365" y1="49.4" x2="153.635" y2="49.4" width="0.2032" layer="1"/>
 <wire x1="153.635" y1="49.4" x2="153.635" y2="54.6" width="0.2032" layer="1"/>
 <wire x1="153.635" y1="54.6" x2="152.365" y2="54.6" width="0.2032" layer="1"/>
@@ -11716,11 +11732,6 @@ NS Package M08A</description>
 <wire x1="153.6" y1="44.15" x2="152.375" y2="45.375" width="0.2032" layer="1"/>
 <wire x1="152.375" y1="45.375" x2="152.375" y2="49.39" width="0.2032" layer="1"/>
 <wire x1="152.375" y1="49.39" x2="152.365" y2="49.4" width="0.2032" layer="1"/>
-<wire x1="156" y1="13.8" x2="156" y2="15.75" width="0.2032" layer="1"/>
-<wire x1="155" y1="16.75" x2="155" y2="40" width="0.2032" layer="1"/>
-<wire x1="155" y1="40" x2="154.5" y2="40.5" width="0.2032" layer="1"/>
-<wire x1="154.5" y1="40.5" x2="154.5" y2="44.15" width="0.2032" layer="1"/>
-<wire x1="155" y1="16.75" x2="156" y2="15.75" width="0.2032" layer="1"/>
 </signal>
 </signals>
 </board>
