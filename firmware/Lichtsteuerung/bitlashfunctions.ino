@@ -408,7 +408,7 @@ numvar bl_listOutputs (void) {
 		Serial1.print(i);
 		Serial1.print(": ");
 		if (getOutputState(i) == 1) {
-			Serial1.print("ON");
+			Serial1.print("ON ");
 		} else {
 			Serial1.print("OFF");
 		}
