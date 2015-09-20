@@ -17,6 +17,7 @@
 
 #define I2C_EEPROM_ADDRESS 0x54
 #define I2C_EEPROM_BACKUP_ADDRESS 0x0700
+#define I2C_EEPROM_SIZE 1048576
 #define ARDUINO_EEPROM_SIZE 4096
 
 #define EEPROM_OUTPUT_NAME_OFFSET 0x00000000
@@ -116,7 +117,9 @@ void setup(void) {
 	addBitlashFunction("anyoutputon", (bitlash_function) bl_anyOutputOn);
 	addBitlashFunction("aoo", (bitlash_function) bl_anyOutputOn);
 
-	addBitlashFunction("save", (bitlash_function) bl_backupArduinoEEPROM);
+        addBitlashFunction("save", (bitlash_function) bl_backupArduinoEEPROM);
+        addBitlashFunction("peep_e", (bitlash_function) bl_peep);
+        
 	Wire.begin();
 	delay(10);
 	
@@ -175,7 +178,7 @@ void loop(void) {
     handleInput();
     actlooper++;
     
-    if (actlooper==1024) {
+    if (actlooper==256) {
       actlooper = 0;
       actledstate = !actledstate;
       digitalWrite(ACTLED, actledstate);
