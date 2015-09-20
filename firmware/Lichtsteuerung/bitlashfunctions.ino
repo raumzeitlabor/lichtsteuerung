@@ -1,4 +1,6 @@
 #include <avr/pgmspace.h>
+#include <bitlash.h>
+#include <src/bitlash.h>
 
 #define MODE_TOGGLE 1
 #define MODE_MOMENTARY 2
@@ -416,6 +418,8 @@ numvar bl_listOutputs (void) {
 		for (j=0;j<MAX_LABEL_LENGTH;j++) {
 			buffer[j] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_OUTPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
 		}
+                buffer[j+1] = '\0';
+                
 		Serial1.print("  ");
 		Serial1.print(buffer);
 		
@@ -451,6 +455,9 @@ numvar bl_listInputs (void) {
 		for (j=0;j<MAX_LABEL_LENGTH;j++) {
 			buffer[j] = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, EEPROM_INPUT_NAME_OFFSET + ((i-1)*MAX_LABEL_LENGTH)+j);
 		}
+
+                buffer[j+1] = '\0';
+                
 		Serial1.print("  ");
 		Serial1.println(buffer);
 	}
@@ -474,4 +481,27 @@ numvar bl_backupArduinoEEPROM (void) {
     
     Serial1.print("done. ");
 
+}
+
+numvar bl_peep (void) {
+    long i=0;
+    byte b;
+
+    while (i <= I2C_EEPROM_SIZE) {
+	if (!(i&63)) {speol(); printHex(i); spb(':'); }
+          
+        if (!(i&7)) spb(' ');
+	if (!(i&3)) spb(' ');		
+	byte c = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, i) & 0xff;
+
+	//if (c == 0) spb('\\');
+	if (c == 0) spb('$');
+	//else if ((c == 255) || (c < 0)) spb('.');
+	else if (c == 255) spb('.');
+	else if (c < ' ') spb('^');
+	else spb(c);
+	i++;
+    }
+
+    speol();
 }
