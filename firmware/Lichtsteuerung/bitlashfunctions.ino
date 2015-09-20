@@ -19,6 +19,7 @@ const char usage_getInputName[] PROGMEM = "Usage: getInputName(port)\n\rport: In
 const char usage_setInputMode[] PROGMEM = "Usage: setInputMode(port,mode)\n\rport: Input Number (1-16)\n\rmode: MODE_TOGGLE or MODE_MOMENTARY\n\rExample: setInputMode(1, \"MODE_MOMENTARY\");\n\r";
 const char usage_getInputMode[] PROGMEM = "Usage: getInputMode(port)\n\rport: Input Number (1-16)\n\rPrints either MODE_TOGGLE or MODE_MOMENTARY\n\r";
 const char usage_setPrivateFlag[] PROGMEM = "Usage: setPrivateFlag(port, private)\n\rport: Output Number (1-32)\n\rprivate: 0=public, 1=private\n\r";
+const char usage_peepE[] PROGMEM = "Usage: peep_e(start_address)\n\rDumps 4096 bytes from the external I2C EEPROM.\n\rstart_address: EEPROM Start Address in decimal or hex (e.g. 0xFFF)\n\r";
 
 PGM_P const usage[] PROGMEM = {
 	usage_setOutputState,
@@ -31,7 +32,8 @@ PGM_P const usage[] PROGMEM = {
 	usage_getInputName,
 	usage_setInputMode,
 	usage_getInputMode,
-	usage_setPrivateFlag
+	usage_setPrivateFlag,
+	usage_peepE
 };
 
 const char messages_setDeviceName[] PROGMEM = "New device name: ";
@@ -484,24 +486,39 @@ numvar bl_backupArduinoEEPROM (void) {
 }
 
 numvar bl_peep (void) {
-    long i=0;
-    byte b;
+	long i=0;
+	byte j;
+	long start=0;
+	byte b;
+	byte buf[8];
 
-    while (i <= I2C_EEPROM_SIZE) {
-	if (!(i&63)) {speol(); printHex(i); spb(':'); }
-          
-        if (!(i&7)) spb(' ');
-	if (!(i&3)) spb(' ');		
-	byte c = i2c_eeprom_read_byte(I2C_EEPROM_ADDRESS, i) & 0xff;
+	if (getarg(0) != 1) {
+		strcpy_P(buffer, (PGM_P) pgm_read_word(&(usage[11])));
+		Serial1.println((char *) buffer);
+		return 0;
+	}
 
-	//if (c == 0) spb('\\');
-	if (c == 0) spb('$');
-	//else if ((c == 255) || (c < 0)) spb('.');
-	else if (c == 255) spb('.');
-	else if (c < ' ') spb('^');
-	else spb(c);
-	i++;
-    }
+	start = getarg(1);
 
-    speol();
+	for (i=start;i<start+4096;i+=16) {
+		i2c_eeprom_read_buffer(I2C_EEPROM_ADDRESS, i, buf, 16);
+
+		speol(); printIntegerInBase(i, 16, 6, '0'); Serial1.print(": ");
+
+		for (j=0;j<16;j++) {
+			printIntegerInBase(buf[j], 16, 2, '0');
+
+			Serial1.print(" ");
+		}
+
+		for (j=0;j<16;j++) {
+			if (isprint(buf[j])) {
+				Serial1.write(buf[j]);
+			} else {
+				Serial1.write(".");
+			}
+		}
+	}
+
+	speol();
 }
