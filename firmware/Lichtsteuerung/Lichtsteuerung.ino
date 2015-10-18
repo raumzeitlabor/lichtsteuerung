@@ -27,11 +27,19 @@
 #define ACTLED 51
 #define MAX_LABEL_LENGTH 32
 
+
+#include "i2c_eeprom.h"
+
 const char privateChannelsMessage[] = "Private Channel Map";
 
 volatile bool outputs[NUM_OUTPUTS];
 volatile bool inputs[NUM_INPUTS];
 volatile bool inputChanged[NUM_INPUTS];
+
+void sendOutputs();
+void restoreArduinoEEPROM();
+void runInputActionScripts();
+#include "functions.h"
 
 uint16_t looper = 0;
 uint16_t actlooper = 0;
@@ -39,6 +47,8 @@ bool actledstate = LOW;
 
 PROGMEM const prog_uchar inputPins[] = { 0, 1, 2, 3, 4, 5, 6, 7, 16, 17, 18, 19,
 		20, 21, 22, 23 };
+
+#include "bitlashfunctions.h"
 
 //Bounce debouncers[16];
 

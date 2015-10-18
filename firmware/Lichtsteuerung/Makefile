@@ -1,9 +1,7 @@
-# Very simple makefile which calls the arduino IDE in order to verify and upload code
-
-CODE=`readlink -f Lichtsteuerung.ino`
-
-verify:
-	arduino --board lichtsteuerung-arduino:avr:lichtsteuerung --verify $(CODE)
-
-flash:
-	arduino --board lichtsteuerung-arduino:avr:lichtsteuerung --upload $(CODE)
+BOARD_TAG     = mega2560
+MONITOR_PORT  = /dev/ttyUSB1
+ARDUINO_DIR   = /usr/share/arduino
+ARDMK_DIR     = /usr/share/arduino
+USER_LIB_PATH=./
+#MONITOR_BAUDRATE=57600
+include ./Arduino.mk
