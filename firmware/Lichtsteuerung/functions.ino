@@ -5,10 +5,6 @@
  * @param state bool false:off, true:on
  */
 boolean setOutputState (uint8_t port, boolean state) {
-	// Block the DMX inputs as soon as a state change on the port occurs;
-	// even if the state change is triggered by a DMX update.
-	dmxInputBlocked = true;
-	
 	if (port < 1 || port > 32) {
 		return false;
 	}

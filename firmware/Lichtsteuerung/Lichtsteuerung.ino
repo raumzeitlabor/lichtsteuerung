@@ -2,7 +2,6 @@
 // TODO: Cleanup code
 #include <EEPROM.h>
 #include <avr/pgmspace.h>
-#include <DMXSerial2.h>
 //#include <Bounce.h>
 #include <bitlash.h>
 #include <Wire.h>
@@ -32,7 +31,6 @@ const char privateChannelsMessage[] = "Private Channel Map";
 volatile bool outputs[NUM_OUTPUTS];
 volatile bool inputs[NUM_INPUTS];
 volatile bool inputChanged[NUM_INPUTS];
-bool dmxInputBlocked = false;
 
 uint16_t looper = 0;
 uint16_t actlooper = 0;
@@ -94,11 +92,6 @@ void setup(void) {
 	addBitlashFunction("setoutputstate", (bitlash_function) bl_setOutputState);
 	addBitlashFunction("sos", (bitlash_function) bl_setOutputState);
 
-	addBitlashFunction("getdevicename", (bitlash_function) bl_getDeviceName);
-	addBitlashFunction("setdevicename", (bitlash_function) bl_setDeviceName);
-	addBitlashFunction("getdmxstartaddress",
-			(bitlash_function) bl_getDMXStartAddress);
-	addBitlashFunction("getrdmuid", (bitlash_function) bl_getRDMUID);
 	addBitlashFunction("setoutputname", (bitlash_function) bl_setOutputName);
 	addBitlashFunction("getoutputname", (bitlash_function) bl_getOutputName);
 	addBitlashFunction("getoutputstate", (bitlash_function) bl_getOutputState);

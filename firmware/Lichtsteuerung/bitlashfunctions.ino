@@ -123,59 +123,6 @@ numvar bl_toggleOutputState(void) {
 
 	setOutputState(i, !getOutputState(i));
 }
-/**
- * Prints the device name to the serial output
- *
- * Usage: getDeviceName
- */
-numvar bl_getDeviceName(void) {
-	Serial1.println(DMXSerial2.deviceLabel);
-}
-
-/**
- * Sets the device name. ASCII only, 32 bytes max. Additional length will be cropped.
- *
- * Usage: setDeviceName [name]
- */
-numvar bl_setDeviceName(void) {
-	if (getarg(0) != 1) {
-		strcpy_P(buffer, (PGM_P) pgm_read_word(&(usage[1])));
-		Serial1.println((char *) buffer);
-		return 0;
-	}
-
-	// Copy the name to the device label and save the EEPROM.
-	strncpy(DMXSerial2.deviceLabel, (char *) getarg(1), MAX_LABEL_LENGTH);
-	DMXSerial2._saveEEPRom();
-
-	// Output confirmation message
-	strcpy_P(buffer, (PGM_P) pgm_read_word(&(messages[0])));
-	Serial1.print(buffer);
-	Serial1.println(DMXSerial2.deviceLabel);
-}
-
-/**
- * Prints the DMX start address.
- *
- * Usage: getDMXStartAddress
- */
-numvar bl_getDMXStartAddress(void) {
-	Serial1.println(DMXSerial2.getStartAddress());
-}
-
-/**
- * Prints the RDM UID on the serial output
- *
- * Usage: getRDMUID
- */
-numvar bl_getRDMUID(void) {
-	byte uid[6];
-	DMXSerial2.getDeviceID(uid);
-	PrintHex8(uid, 2);
-	Serial1.print(":");
-	PrintHex8(uid + 2, 4);
-	Serial1.println();
-}
 
 /**
  * Sets the output port name. ASCII only, 32 bytes max. Additional length will be cropped.
