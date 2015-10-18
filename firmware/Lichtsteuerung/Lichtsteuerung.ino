@@ -14,6 +14,7 @@
 #define NUM_OUTPUTS 32
 #define NUM_INPUTS 16
 
+#define I2C_MY_ADDRESS 0x23
 #define I2C_EEPROM_ADDRESS 0x54
 #define I2C_EEPROM_BACKUP_ADDRESS 0x0700
 #define I2C_EEPROM_SIZE 1048576
@@ -78,6 +79,16 @@ void sendOutputs() {
 	delayMicroseconds(10);
 }
 
+void receiveI2C (int numBytes) {
+    // Wire has a maximum buffer size of 32 bytes
+    byte b[32];
+    for (int i = 0; i < numBytes; i++) {
+	b[i] = Wire.read();
+    }
+    Serial1.println("receiveI2C");
+
+}
+
 void setup(void) {
 	int i = 0;
 
@@ -113,7 +124,8 @@ void setup(void) {
         addBitlashFunction("save", (bitlash_function) bl_backupArduinoEEPROM);
         addBitlashFunction("peep_e", (bitlash_function) bl_peep);
         
-	Wire.begin();
+	Wire.begin(I2C_MY_ADDRESS);
+	Wire.onReceive(receiveI2C);
 	delay(10);
 	
 	byte error, address;
@@ -122,6 +134,11 @@ void setup(void) {
 
 	nDevices = 0;
 	for (address = 1; address < 127; address++) {
+		// don't try to talk to ourselves
+                if (address == I2C_MY_ADDRESS) {
+                    continue;
+                }
+
 		// The i2c_scanner uses the return value of
 		// the Write.endTransmisstion to see if
 		// a device did acknowledge to the address.
